@@ -17,9 +17,6 @@ func getPlayerCam() -> Camera3D:
 
 
 func _on_camera_switch(area: CameraSwitch) -> void:
-	if area.cam1.is_current():
-		area.cam2.make_current()
-		print("switched to cam 2")
-	else:
-		area.cam1.make_current()
-		print("switched to cam 1")
+	if !area.cam.is_current():
+		area.cam.make_current()
+		print("switched camera")

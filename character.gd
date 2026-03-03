@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 
 const SPEED = 3.0
-const JUMP_VELOCITY = 4.5
+const JUMP_VELOCITY = 2.5
 @onready var edge_ray: RayCast3D = $EdgeRay
 
 
@@ -42,6 +42,12 @@ func _physics_process(delta: float) -> void:
 	var cam_right = cam_basis.x
 	cam_forward.y = 0
 	cam_right.y = 0
+	#left over from making ledge detection
+	if not edge_ray.is_colliding():
+		var basis = self.global_transform.basis
+		var forward = basis.z
+		forward.y = 0
+		
 
 	var direction = (cam_right * input_dir.x + cam_forward * input_dir.y).normalized()
 
