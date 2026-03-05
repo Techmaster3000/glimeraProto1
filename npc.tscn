@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b6cogfpad2l2y"]
+
+[ext_resource type="PackedScene" uid="uid://plpn606sxi2u" path="res://meshes/skull npc.fbx" id="1_ideak"]
+
+[node name="skull" type="Node3D" unique_id=1200212190]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1659989361]
+
+[node name="skull npc" parent="CharacterBody3D" unique_id=1502618100 instance=ExtResource("1_ideak")]
+transform = Transform3D(0.095909685, 0, 0.028307809, 0, 0.1, 0, -0.028307809, 0, 0.095909685, 0, 0, 0)
