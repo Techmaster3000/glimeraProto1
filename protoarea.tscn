@@ -5,12 +5,16 @@
 [ext_resource type="Script" uid="uid://6iauadqfys57" path="res://character.gd" id="2_tpdbc"]
 [ext_resource type="PackedScene" uid="uid://cc7rdfj4o8qop" path="res://gate.tscn" id="3_tpdbc"]
 [ext_resource type="PackedScene" uid="uid://dyyex5sxricmd" path="res://camera_switch.tscn" id="5_5ofox"]
+[ext_resource type="Script" uid="uid://dwtes78v3i3f3" path="res://camera_switch.gd" id="6_v6na3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tpdbc"]
-size = Vector3(5, 0.05, 2.5437927)
+size = Vector3(5, 0.05, 2.5141659)
 
 [sub_resource type="BoxMesh" id="BoxMesh_0dcuh"]
 size = Vector3(5, 0.05, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ldbg2"]
+size = Vector3(5, 0.05, 5.003685)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_m4gng"]
 size = Vector3(5, 0.05, 1)
@@ -51,7 +55,7 @@ script = ExtResource("1_0dcuh")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.872565, -0.05, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor2" unique_id=85310285]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.014404297)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.003894806)
 shape = SubResource("BoxShape3D_tpdbc")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor2" unique_id=323122552]
@@ -62,7 +66,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.823659, -0.05, 6.1366615)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor3" unique_id=229672055]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.014404297)
-shape = SubResource("BoxShape3D_tpdbc")
+shape = SubResource("BoxShape3D_ldbg2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor3" unique_id=1736472278]
 mesh = SubResource("BoxMesh_0dcuh")
@@ -118,9 +122,10 @@ debug_color = Color(0.1246284, 0.6472696, 0, 0.41960785)
 transform = Transform3D(0.9998541, 0.005651566, -0.016124683, 0.007813332, 0.6880338, 0.72563666, 0.01519531, -0.7256567, 0.6878892, -1.8585224, 3.0093923, 3.5889575)
 shadow_enabled = true
 
-[node name="CharacterBody3D" parent="." unique_id=1051319031 instance=ExtResource("1_h510c")]
+[node name="CharacterBody3D" parent="." unique_id=1051319031 node_paths=PackedStringArray("camera") instance=ExtResource("1_h510c")]
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0.1481967, 0)
 script = ExtResource("2_tpdbc")
+camera = NodePath("../Camera3D")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=313060992]
 transform = Transform3D(0.74505943, 0.31480327, -0.58803517, -0.016023098, 0.8898076, 0.4560546, 0.6668056, -0.33036566, 0.6680036, -2.5279276, 1.4820173, 2.9538696)
@@ -148,7 +153,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019635677, 0, 0)
 cam = NodePath("../Camera3D")
 
 [node name="CollisionShape3D" parent="CameraSwitch" index="0" unique_id=1021442571]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01973176, 0.52893776, 0.016357422)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35299325, 0.52893776, 0.016357422)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1553710352]
 environment = SubResource("Environment_5ofox")
@@ -178,12 +183,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.07, 0, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Platform/Floor1" unique_id=1564003142]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.05897522)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.04933442)
 shape = SubResource("BoxShape3D_tpdbc")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Platform/Floor1" unique_id=1615762656]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5114476, 0, 0, -0.055129647)
 mesh = SubResource("BoxMesh_0dcuh")
+
+[node name="CameraSwitch4" type="Area3D" parent="." unique_id=1302279254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0989683, 0.52893776, 0.016357422)
+script = ExtResource("6_v6na3")
+metadata/_custom_type_script = "uid://dwtes78v3i3f3"
 
 [connection signal="body_entered" from="CameraSwitch" to="." method="_on_camera_switch_body_entered"]
 [connection signal="body_shape_entered" from="CameraSwitch" to="." method="_on_camera_switch_body_shape_entered"]

@@ -1,7 +1,6 @@
 class_name CamMan
 extends Node3D
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 static var instance: CamMan
 
 func _ready():

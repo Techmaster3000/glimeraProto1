@@ -4,6 +4,7 @@ extends CharacterBody3D
 const SPEED = 3.0
 const JUMP_VELOCITY = 2.5
 @onready var edge_ray: RayCast3D = $EdgeRay
+@export var camera : Camera3D
 
 
 func _rotate_toward_movement(delta, direction):
@@ -17,9 +18,6 @@ func _rotate_toward_movement(delta, direction):
 
 
 func _physics_process(delta: float) -> void:
-	var camera = CamMan.instance.getPlayerCam()
-	
-	#var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	var input_dir = Vector2(
 		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
 		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
@@ -35,6 +33,8 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
+	if input_dir == Vector2(0,0):
+		camera = CamMan.instance.getPlayerCam()
 	
 	var cam_basis = camera.global_transform.basis
 
