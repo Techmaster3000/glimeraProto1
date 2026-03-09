@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://btbbvoxdixc6u"]
 
-[node name="Control" type="Control" unique_id=566110442]
+[node name="Prompt" type="Control" unique_id=566110442]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
