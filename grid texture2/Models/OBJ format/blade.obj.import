@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bccy71n6trvcq"
+path="res://.godot/imported/blade.obj-ca4d4454290c913f276e00710da1307c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/blade.obj-ca4d4454290c913f276e00710da1307c.mesh"]
+
+source_file="res://grid texture2/Models/OBJ format/blade.obj"
+dest_files=["res://.godot/imported/blade.obj-ca4d4454290c913f276e00710da1307c.mesh", "res://.godot/imported/blade.obj-ca4d4454290c913f276e00710da1307c.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

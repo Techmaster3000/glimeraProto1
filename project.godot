@@ -100,6 +100,13 @@ movie_writer/movie_file="C:/Users/MSI/Documents/Godot Engine/Godot Projects/glim
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
+[file_customization]
+
+folder_colors={
+"res://grid texture1/": "red",
+"res://grid texture2/": "red"
+}
+
 [gui]
 
 theme/custom="uid://bcibt73qths3g"

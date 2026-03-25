@@ -17,6 +17,9 @@ size = Vector3(5, 0.05, 5.0010996)
 [sub_resource type="BoxMesh" id="BoxMesh_0dcuh"]
 size = Vector3(5, 0.05, 5)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_rdw12"]
+size = Vector3(4.9324427, 0.83981323, 0.025390625)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_ldbg2"]
 size = Vector3(5, 0.05, 5.003685)
 
@@ -124,7 +127,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0049328804)
 shape = SubResource("BoxShape3D_6aibh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor2" unique_id=323122552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0045194626, -0.004507184, 0.0026715994)
 mesh = SubResource("BoxMesh_0dcuh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Floor2/MeshInstance3D" unique_id=1281593516]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.041872025, 0.39406496, 2.5105524)
+shape = SubResource("BoxShape3D_rdw12")
+debug_color = Color(0, 0.6498868, 0.13756791, 0.41960785)
 
 [node name="Floor3" type="StaticBody3D" parent="." unique_id=1964660199]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.823659, -0.05, 6.1366615)
@@ -144,7 +153,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8027163, 0, 0)
 shape = SubResource("BoxShape3D_m4gng")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Walkway" unique_id=2132755890]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.185, 1.8027163, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.185, 1.8035407, 0, -0.0028093457)
 mesh = SubResource("BoxMesh_0dcuh")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Walkway" unique_id=1225147937]

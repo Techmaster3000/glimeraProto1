@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c7xokxqbha4va"
+path="res://.godot/imported/banner-green.obj-0c38525c1f7f23505e313908a4b76963.mesh"
+
+[deps]
+
+files=["res://.godot/imported/banner-green.obj-0c38525c1f7f23505e313908a4b76963.mesh"]
+
+source_file="res://grid texture2/Models/OBJ format/banner-green.obj"
+dest_files=["res://.godot/imported/banner-green.obj-0c38525c1f7f23505e313908a4b76963.mesh", "res://.godot/imported/banner-green.obj-0c38525c1f7f23505e313908a4b76963.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
