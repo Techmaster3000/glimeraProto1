@@ -2,7 +2,7 @@
 
 [ext_resource type="MeshLibrary" uid="uid://bgsmbu6kega20" path="res://grid texture2/tiles.meshlib" id="1_58n1u"]
 [ext_resource type="Texture2D" uid="uid://p8aayrg630xo" path="res://grid texture1/PNG/Light/texture_01.png" id="2_dg562"]
-[ext_resource type="PackedScene" uid="uid://d36cuecbttmig" path="res://level_platform_1.tscn" id="3_sm5fm"]
+[ext_resource type="PackedScene" path="res://level_platform_1.tscn" id="3_sm5fm"]
 [ext_resource type="Texture2D" uid="uid://cppe7rhmys6yv" path="res://grid texture1/PNG/Dark/texture_04.png" id="4_c1hg8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6qhhg"]
@@ -61,7 +61,7 @@ material = SubResource("StandardMaterial3D_6qhhg")
 [node name="LevelPlatform1" parent="." unique_id=1902842772 instance=ExtResource("3_sm5fm")]
 
 [node name="street" type="MeshInstance3D" parent="." unique_id=1630750628]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.981346, 0.1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.1145, 0.1, 0)
 material_override = SubResource("StandardMaterial3D_3h1ku")
 mesh = SubResource("BoxMesh_kqgu5")
 
@@ -71,7 +71,7 @@ mesh = SubResource("BoxMesh_kqgu5")
 shape = SubResource("BoxShape3D_me1mb")
 
 [node name="left wall" type="MeshInstance3D" parent="." unique_id=1953433793]
-transform = Transform3D(1, 0, 0, 0, -0.023036273, -0.99973464, 0, 0.99973464, -0.023036273, -25.018757, 4.5601826, -4.709122)
+transform = Transform3D(1, 0, 0, 0, -0.023036273, -0.99973464, 0, 0.99973464, -0.023036273, -21.207712, 4.5601826, -4.709122)
 material_override = SubResource("StandardMaterial3D_3h1ku")
 mesh = SubResource("BoxMesh_kqgu5")
 
@@ -121,7 +121,7 @@ mesh = SubResource("BoxMesh_3h1ku")
 shape = SubResource("BoxShape3D_me1mb")
 
 [node name="right wall" type="MeshInstance3D" parent="." unique_id=1109387983]
-transform = Transform3D(1, 0, 0, 0, -0.023036273, -0.99973464, 0, 0.99973464, -0.023036273, -25.018757, 4.5601826, 5.1864333)
+transform = Transform3D(1, 0, 0, 0, -0.023036273, -0.99973464, 0, 0.99973464, -0.023036273, -21.093248, 4.5601826, 5.1864333)
 material_override = SubResource("StandardMaterial3D_3h1ku")
 mesh = SubResource("BoxMesh_kqgu5")
 
@@ -134,5 +134,3 @@ shape = SubResource("BoxShape3D_me1mb")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1604570889]
 transform = Transform3D(1, 0, 0, 0, 0.0978434, 0.9952018, 0, -0.9952018, 0.0978434, -4.1524787, 32.986633, -10.562389)
-
-[node name="assets" type="Node3D" parent="." unique_id=1987838135]
