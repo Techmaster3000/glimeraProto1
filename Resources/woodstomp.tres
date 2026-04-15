@@ -1,3 +1,9 @@
-[gd_resource type="Resource" format=3 uid="uid://cu4lo8bylldgh"]
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://cu4lo8bylldgh"]
+
+[ext_resource type="Texture2D" uid="uid://dxj0gowxh5kqh" path="res://images/sledgehammer_icon.png" id="1_dbuoa"]
+[ext_resource type="Script" uid="uid://o3m87lgr0qm6" path="res://scripts/item.gd" id="2_cmp71"]
 
 [resource]
+script = ExtResource("2_cmp71")
+name = "Woodstomp"
+icon = ExtResource("1_dbuoa")
