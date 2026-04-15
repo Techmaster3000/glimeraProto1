@@ -122,6 +122,8 @@ surface_material_override/0 = null
 [node name="Boot_001" parent="SubViewportContainer/SubViewport/Node3D/CharacterBody3D/MAsked Gli/Armature/Skeleton" parent_id_path=PackedInt32Array(1653024157, 201702736, 311386290) index="25" unique_id=868179833]
 surface_material_override/0 = null
 
+[node name="Icosphere" parent="SubViewportContainer/SubViewport/Node3D/CharacterBody3D/MAsked Gli/Armature/Skeleton" index="23" unique_id=257716365]
+transform = Transform3D(0.9946318, -0.04112623, -0.0949543, 0.031880386, 0.99478203, -0.096913815, 0.09844455, 0.093366385, 0.9907529, 0.0400483, 8.891133, 0.06900609)
 [node name="Hand_l" parent="SubViewportContainer/SubViewport/Node3D/CharacterBody3D/MAsked Gli/Armature/Skeleton" parent_id_path=PackedInt32Array(1653024157, 201702736, 311386290) index="26" unique_id=1083052840]
 surface_material_override/0 = null
 
@@ -157,11 +159,23 @@ surface_material_override/0 = null
 [node name="Torso" parent="SubViewportContainer/SubViewport/Node3D/CharacterBody3D/MAsked Gli/Armature/Skeleton" parent_id_path=PackedInt32Array(1653024157, 201702736, 311386290) index="36" unique_id=1490072013]
 surface_material_override/0 = null
 
+[node name="UpperArm_R" parent="SubViewportContainer/SubViewport/Node3D/CharacterBody3D/MAsked Gli/Armature/Skeleton" parent_id_path=PackedInt32Array(1653024157, 201702736, 311386290) index="39" unique_id=1416092234]
+surface_material_override/0 = null
+
+[node name="UpperArm_l" parent="SubViewportContainer/SubViewport/Node3D/CharacterBody3D/MAsked Gli/Armature/Skeleton" parent_id_path=PackedInt32Array(1653024157, 201702736, 311386290) index="41" unique_id=416098030]
+surface_material_override/0 = null
+
 [node name="Thigh_l" parent="SubViewportContainer/SubViewport/Node3D/CharacterBody3D/MAsked Gli/Armature/Skeleton" parent_id_path=PackedInt32Array(1653024157, 201702736, 311386290) index="44" unique_id=1042593285]
 surface_material_override/0 = null
 
 [node name="LowerArm_r" parent="SubViewportContainer/SubViewport/Node3D/CharacterBody3D/MAsked Gli/Armature/Skeleton" parent_id_path=PackedInt32Array(1653024157, 201702736, 311386290) index="45" unique_id=1398226969]
 surface_material_override/0 = null
+
+[node name="RightArmGraft" parent="SubViewportContainer/SubViewport/Node3D/CharacterBody3D/MAsked Gli/Armature/Skeleton" parent_id_path=PackedInt32Array(1653024157, 201702736, 311386290) index="46" unique_id=1562468153]
+transform = Transform3D(-0.3641956, -0.6157006, 0.6987662, -0.20734377, 0.7850676, 0.5836759, -0.9079485, 0.0676873, -0.41357976, -1.521171, 6.8571405, -0.40692425)
+
+[node name="LeftLegGraft" parent="SubViewportContainer/SubViewport/Node3D/CharacterBody3D/MAsked Gli/Armature/Skeleton" parent_id_path=PackedInt32Array(1653024157, 201702736, 311386290) index="47" unique_id=1148643271]
+transform = Transform3D(-0.7649549, -0.1226459, -0.63229895, -0.19781159, -0.8895219, 0.4118513, -0.6129557, 0.44012374, 0.6561833, 0.699149, 4.8927245, 0.8237202)
 
 [node name="AnimationPlayer" parent="SubViewportContainer/SubViewport/Node3D/CharacterBody3D/MAsked Gli" parent_id_path=PackedInt32Array(1653024157, 201702736, 1915688629) index="1" unique_id=1926690920]
 autoplay = &"Idle Straight"
