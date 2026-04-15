@@ -14,12 +14,12 @@
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_p0sxm"]
 panorama = ExtResource("1_vic2k")
 
-[sub_resource type="Sky" id="Sky_a2cb0"]
+[sub_resource type="Sky" id="Sky_e2chw"]
 sky_material = SubResource("PanoramaSkyMaterial_p0sxm")
 
 [sub_resource type="Environment" id="Environment_xkex8"]
 background_mode = 2
-sky = SubResource("Sky_a2cb0")
+sky = SubResource("Sky_e2chw")
 sky_rotation = Vector3(0, 0.31939524, 0)
 ambient_light_source = 3
 ssao_enabled = true
@@ -130,19 +130,19 @@ material_override = SubResource("StandardMaterial3D_4x40y")
 mesh = ExtResource("10_l3b7i")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D6" unique_id=1109248895]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 10.489243, 0.6145624, 3.973575)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1.5473347, 0.6145624, 3.973575)
 shape = SubResource("BoxShape3D_bv03a")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D6" unique_id=1593718479]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 6.5528703, 0.6145624, 4.387077)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 7.9396787, 0.6145624, -1.22258)
 shape = SubResource("BoxShape3D_m5tkt")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D6" unique_id=1454844825]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.8440194, 0.6145624, 5.4697876)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 9.0402, 0.6145624, 6.5075603)
 shape = SubResource("BoxShape3D_35oox")
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D6" unique_id=2121305534]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 9.258886, 0.6145624, -4.191474)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 11.084881, 0.6145624, -3.8321514)
 shape = SubResource("BoxShape3D_x4ex4")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="StaticBody3D6" unique_id=1112257600]
