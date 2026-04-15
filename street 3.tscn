@@ -16,12 +16,12 @@
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_3jxbn"]
 panorama = ExtResource("1_xuida")
 
-[sub_resource type="Sky" id="Sky_a2cb0"]
+[sub_resource type="Sky" id="Sky_ks7nf"]
 sky_material = SubResource("PanoramaSkyMaterial_3jxbn")
 
 [sub_resource type="Environment" id="Environment_bi58s"]
 background_mode = 2
-sky = SubResource("Sky_a2cb0")
+sky = SubResource("Sky_ks7nf")
 sky_rotation = Vector3(0, 0.31939524, 0)
 ambient_light_source = 3
 ssao_enabled = true
