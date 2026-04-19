@@ -1,6 +1,7 @@
 class_name NPC extends Node3D
 
 var is_player_in_range: bool = false
+@export var enemy_data: EnemyData
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,7 +20,7 @@ func DialogicSignal(arg:String):
 		print("battle started")
 		
 		#$"../WorldEnvironment".environment = null
-		get_tree().root.get_node("Root").from_overworld_to_battle()
+		get_tree().root.get_node("Root").from_overworld_to_battle(enemy_data)
 		
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	is_player_in_range = true

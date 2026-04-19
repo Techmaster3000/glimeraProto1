@@ -1,6 +1,7 @@
 extends Node3D
 
 @export var speed: float = 2.5
+@export var enemy_data: EnemyData 
 
 var player: Node3D = null
 var chasing: bool = false
@@ -42,6 +43,6 @@ func die():
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if active:
 		var game = get_tree().current_scene
-		game.from_overworld_to_battle()
+		game.from_overworld_to_battle(enemy_data)
 		chasing = false
 		active = false

@@ -14,6 +14,6 @@ script = ExtResource("1_dhfqu")
 weapons = Array[ExtResource("2_ral7u")]([ExtResource("3_labn4"), ExtResource("4_a7eij"), ExtResource("5_6w7re")])
 attack_pattern = "random"
 reward_consumables = Array[ExtResource("1_ob8d7")]([ExtResource("2_jsao7"), ExtResource("3_jqed2")])
-unit_name = "enemy2"
+unit_name = "Angry Dude"
 max_hp = 150
 metadata/_custom_type_script = "uid://b3ri4vlr52i3f"

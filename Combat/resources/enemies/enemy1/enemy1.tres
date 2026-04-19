@@ -11,6 +11,6 @@
 script = ExtResource("1_m2ypy")
 weapons = Array[ExtResource("2_1dvof")]([ExtResource("3_yct42"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls")])
 reward_consumables = Array[ExtResource("1_1dvof")]([ExtResource("2_yct42")])
-unit_name = "Enemy1"
+unit_name = "Skull"
 max_hp = 80
 metadata/_custom_type_script = "uid://b3ri4vlr52i3f"
