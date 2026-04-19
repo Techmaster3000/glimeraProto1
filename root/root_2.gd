@@ -13,6 +13,9 @@ var current_overworld = null
 var current_battle = null
 var current_state = ""
 
+var current_battle_enemy: EnemyData = null   
+
+
 func _ready():
 	$SceneTransition/ColorRect.modulate.a = 0
 	$SceneTransition2/ColorRect.modulate.a = 0
@@ -54,14 +57,16 @@ func show_overworld():
 	show_street("gli's_house")
 	
 
-func start_battle(battle_scene_path: String):
+func start_battle(battle_scene_path: String, enemy_data: EnemyData = null):
 	current_state = "battle"
+	if enemy_data != null:
+		current_battle_enemy = enemy_data  
 	
 	ui_scene.hide()
 	overworld_container.hide()
 	overworld_container.process_mode = Node.PROCESS_MODE_DISABLED
 	
-	_load_battle(battle_scene_path)
+	_load_battle(battle_scene_path, current_battle_enemy)
 	
 # -----------------
 # Handle Overworld
@@ -105,10 +110,13 @@ func show_street(street_name: String):
 # BATTLE HANDLING
 # -----------------
 
-func _load_battle(path: String):
+func _load_battle(path: String, enemy_data: EnemyData = null):
 	_cleanup_battle()
 	
 	var scene = load(path).instantiate()
+	if enemy_data != null:
+		scene.enemy_resource = enemy_data
+	
 	battle_container.add_child(scene)
 	current_battle = scene
 
@@ -127,11 +135,10 @@ func from_main_menu_to_overworld():
 		switch_world_scene("res://gli's_house.tscn")
 	)
 
-func from_overworld_to_battle():
+func from_overworld_to_battle(enemy_data: EnemyData = null):
 	MusicPlayer.play_music(load("res://Sounds/hipstop1_2.ogg"))
 	transition2.playscreenshatter(func():
-		
-		start_battle("res://Combat/scenes/battle.tscn")
+		start_battle("res://Combat/scenes/battle.tscn", enemy_data)
 	)
 
 func from_battle_to_overworld():

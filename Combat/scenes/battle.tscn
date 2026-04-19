@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dy8maci0u0st7"]
 
 [ext_resource type="Script" uid="uid://bkpf8bvp283gn" path="res://Combat/scripts/battle/battle_Scene.gd" id="1_a12nh"]
-[ext_resource type="Resource" uid="uid://db4t1iyhhrxfi" path="res://Combat/resources/enemies/enemy1/enemy1.tres" id="2_1fagd"]
+[ext_resource type="Resource" uid="uid://kc77x8sqfqls" path="res://Combat/resources/enemies/boss1/boss1.tres" id="2_01irj"]
 [ext_resource type="Texture2D" uid="uid://dfbqux15ppcwx" path="res://Textures/Cobblestone Texture/PavingStones150_2K-JPG_Color.jpg" id="3_r8c2t"]
 [ext_resource type="Texture2D" uid="uid://qpus3sohhdxt" path="res://Textures/Cobblestone Texture/PavingStones150_2K-JPG_AmbientOcclusion.jpg" id="4_01irj"]
 [ext_resource type="PackedScene" uid="uid://clwxteop31kjo" path="res://Combat/scenes/weapon_card.tscn" id="4_4k1nj"]
@@ -119,7 +119,7 @@ background_color = Color(0.3515629, 0.3515629, 0.35156286, 1)
 
 [node name="Battle" type="Node3D" unique_id=789942194]
 script = ExtResource("1_a12nh")
-enemy_resource = ExtResource("2_1fagd")
+enemy_resource = ExtResource("2_01irj")
 
 [node name="Env" type="Node3D" parent="." unique_id=1176667746]
 
