@@ -58,6 +58,7 @@ func show_overworld():
 	
 
 func start_battle(battle_scene_path: String, enemy_data: EnemyData = null):
+	MusicPlayer.play_music(load("res://Sounds/hipstop1_2.ogg"))
 	current_state = "battle"
 	if enemy_data != null:
 		current_battle_enemy = enemy_data  
@@ -122,6 +123,12 @@ func _load_battle(path: String, enemy_data: EnemyData = null):
 
 func _cleanup_battle():
 	if current_battle:
+		if PlayerManager.data.inventory.has(preload("res://Combat/resources/weapons/saw.tres")):
+			GraftGlobals.sawObtained = true
+			print("NYOOOOM")
+		if PlayerManager.data.inventory.has(preload("res://Combat/resources/weapons/hose.tres")):
+			GraftGlobals.hoseObtained = true
+			print("pshhhhhh")
 		current_battle.queue_free()
 		current_battle = null
 
@@ -132,11 +139,11 @@ func _cleanup_battle():
 #This is where you add the transitions.
 func from_main_menu_to_overworld():
 	transition1.playfade(func():
+		$CanvasLayer.show()
 		switch_world_scene("res://gli's_house.tscn")
 	)
 
 func from_overworld_to_battle(enemy_data: EnemyData = null):
-	MusicPlayer.play_music(load("res://Sounds/hipstop1_2.ogg"))
 	transition2.playscreenshatter(func():
 		start_battle("res://Combat/scenes/battle.tscn", enemy_data)
 	)

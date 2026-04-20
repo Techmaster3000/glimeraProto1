@@ -19,14 +19,17 @@ elif {target} == "junk":
 	join Gli left
 	Gli: Some bits I've found around the city. I really should organize these properly soon and see what can be salvaged for useful graftables.
 	[signal arg="remove_object"]
-	set {GraftGlobals.sawObtained} = true
 	# Destroy the pile of junk so that it can't be interacted with again
 	Gli: Oh, this might come in handy! Plus, having some graftables on me helps me feel less naked.
-	You got the Saw!
+	set {GraftGlobals.sledgehammerObtained} = true
+	You got the Sledgehammer!
 elif {target} == "door_fd":
 	if {GraftGlobals.violinObtained} == false:
 		join Gli left
 		Gli: I should graft on my violin before I go out in case the birds are in need of entertainment.
+	elif {GraftGlobals.sledgehammerObtained} == false:
+		join Gli left
+		Gli: Did I forget anything?
 	else:
 		join Gli left
 		Gli: Yes yes I heard y- Oh my…

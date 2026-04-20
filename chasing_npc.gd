@@ -36,13 +36,18 @@ func _process(delta):
 			anim.play("Idle")
 
 func die():
-	var statue = preload("res://statue.tscn").instantiate()
-	statue.global_position = global_position
-	get_parent().add_child(statue)
+	#var statue = preload("res://statue.tscn").instantiate()
+	#statue.global_position = global_position
+	#get_parent().add_child(statue)
 	queue_free()
+	
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if active:
+		print("active")
 		var game = get_tree().current_scene
 		game.from_overworld_to_battle(enemy_data)
 		chasing = false
 		active = false
+		die()
+	else: 
+		print("passive")

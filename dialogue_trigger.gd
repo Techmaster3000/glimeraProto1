@@ -29,7 +29,6 @@ func _process(delta: float) -> void:
 			match targetname:
 				"trash":
 					Dialogic.VAR.set_variable("target","junk")
-					GraftGlobals.sawObtained = true
 				"violin":
 					Dialogic.VAR.set_variable("target","violin")
 				"bed":
@@ -94,8 +93,13 @@ func _on_body_entered(body: Node3D) -> void:
 			prompt.visible = false
 		"Aggressive Cornelius":
 			var game = get_tree().current_scene
-			game.from_overworld_to_battle()
+			game.from_overworld_to_battle("res://Combat/resources/enemies/enemy1/enemy1.tres")
 			$"..".chasing = false
+		"Angry Steve":
+			var game = get_tree().current_scene
+			game.from_overworld_to_battle("res://Combat/resources/enemies/enemy2/enemy2.tres")
+			$"..".chasing = false
+	
 	
 
 func _on_body_exited(body: Node3D) -> void:

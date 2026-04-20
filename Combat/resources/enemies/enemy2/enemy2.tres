@@ -8,11 +8,13 @@
 [ext_resource type="Resource" uid="uid://d2l0b21iwhumt" path="res://Combat/resources/enemies/enemy2/enemy2_weapon1.tres" id="3_labn4"]
 [ext_resource type="Resource" uid="uid://cnuqwcno1v7ut" path="res://Combat/resources/enemies/enemy2/enemy2_weapon2.tres" id="4_a7eij"]
 [ext_resource type="Resource" uid="uid://c8pigtbvkkpat" path="res://Combat/resources/enemies/enemy2/enemy2_weapon3.tres" id="5_6w7re"]
+[ext_resource type="Resource" uid="uid://8uog0qgddqdj" path="res://Combat/resources/weapons/hose.tres" id="5_jsao7"]
 
 [resource]
 script = ExtResource("1_dhfqu")
 weapons = Array[ExtResource("2_ral7u")]([ExtResource("3_labn4"), ExtResource("4_a7eij"), ExtResource("5_6w7re")])
 attack_pattern = "random"
+reward_weapons = Array[ExtResource("2_ral7u")]([ExtResource("5_jsao7")])
 reward_consumables = Array[ExtResource("1_ob8d7")]([ExtResource("2_jsao7"), ExtResource("3_jqed2")])
 unit_name = "Angry Dude"
 max_hp = 150

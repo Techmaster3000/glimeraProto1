@@ -220,3 +220,11 @@ offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=791552629]
+visible = false
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1614960906]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "ESC to Menu"

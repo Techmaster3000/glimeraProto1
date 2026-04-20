@@ -6,10 +6,12 @@
 [ext_resource type="Resource" uid="uid://vel3gluw4ovk" path="res://Combat/resources/consumables/bandage_1.tres" id="2_yct42"]
 [ext_resource type="Resource" uid="uid://bkbf150e834iv" path="res://Combat/resources/enemies/enemy1/enemy1_weapon1.tres" id="3_yct42"]
 [ext_resource type="Resource" uid="uid://0vby3o2hv0kt" path="res://Combat/resources/enemies/enemy1/enemy1_weapon2.tres" id="4_7qyls"]
+[ext_resource type="Resource" uid="uid://bift21akoxrxf" path="res://Combat/resources/weapons/saw.tres" id="4_gqci1"]
 
 [resource]
 script = ExtResource("1_m2ypy")
 weapons = Array[ExtResource("2_1dvof")]([ExtResource("3_yct42"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls"), ExtResource("4_7qyls")])
+reward_weapons = Array[ExtResource("2_1dvof")]([ExtResource("4_gqci1")])
 reward_consumables = Array[ExtResource("1_1dvof")]([ExtResource("2_yct42")])
 unit_name = "Skull"
 max_hp = 80
