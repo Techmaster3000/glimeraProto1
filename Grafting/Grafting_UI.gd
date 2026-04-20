@@ -11,6 +11,10 @@ func _ready() -> void:
 	leftLegButton.texture_normal = legIcons[GraftGlobals.left_leg_graft_index]
 	if !GraftGlobals.sawObtained:
 		$ArmList.set_item_disabled(1, true)
+	if !GraftGlobals.sledgehammerObtained:
+		$LegList.set_item_disabled(1, true)
+	if !GraftGlobals.hoseObtained:
+		$ArmList.set_item_disabled(2, true)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
