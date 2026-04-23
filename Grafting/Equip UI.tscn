@@ -168,6 +168,7 @@ autoplay = &"Idle Straight"
 
 [node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=914894941]
 transform = Transform3D(0.99998873, 0, -0.0047298893, 0, 1, 0, 0.0047298595, 0, 0.99998873, -0.007721761, 0.33589268, 1.0756568)
+current = true
 fov = 45.821358
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport" unique_id=1768999714]

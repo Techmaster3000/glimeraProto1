@@ -1396,16 +1396,6 @@ bind/24/name = &"mixamorig_RightToe_End"
 bind/24/bone = -1
 bind/24/pose = Transform3D(-15.381837, -13.782842, 67.07379, 15.97779, -22.540565, -12.4784, 16.838728, 8.797524, 73.11204, -0.9332841, -0.40187946, 7.6947193)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wdhv"]
-resource_name = "Wood095"
-vertex_color_use_as_albedo = true
-albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
-emission_enabled = true
-emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 0.0
-normal_enabled = true
-normal_scale = 0.0
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_bdoax"]
 resource_name = "Cube_009"
 _surfaces = [{
@@ -1416,7 +1406,7 @@ _surfaces = [{
 "index_count": 192,
 "index_data": PackedByteArray("AAABAAIAAgADAAAACgBEAEUARQAMAAoAEAARAEYARgBHABAASABGABEAEQAVAEgARgBIABQAFAASAEYARwBGABIAEgATAEcASQBKABYAFgAXAEkAGQBKAEkASQAYABkAGgAbABwAHABLABoATABNAB4AHgAdAEwATgALAA0ADQBPAE4AHwAgACEAIQAiAB8AUABRACMAIwAkAFAAUgBTAA4ADgAPAFIAJwBUACUAJQAmACcABABVAAUABQAGAAQACAAJAFYAVgBXAAgAKgAoAFgAWABZACoAMABaAFsAWwAvADAAXABbAFoAWgAuAFwAWwBcADEAMQBdAFsALwBbAF0AXQAyAC8AXgA1ADYANgBfAF4AXgBfADMAMwA0AF4ANwBgADkAOQA7ADcAYQA4ADoAOgBiAGEAYwBkACsAKwApAGMAPABlAD4APgBAADwAZgA9AD8APwBnAGYAaAAtACwALABpAGgAQQBCAEMAQwBqAEEAawAHAGwAbABtAGsA"),
 "lods": [0.1267505, PackedByteArray("AAABAAIAAgADAAAABAADAAUABQAGAAQABwAFAAgACAAJAAcACgALAAwADQAMAAsADAANAA4ADgAPAAwAEAARABIAEgATABAAFAASABEAEQAVABQAFgAXABgAGQAWABgAGgAbABwAHAAdABoAHQAcAB4AHwAgACEAIQAiAB8AIgAhACMAIwAkACIAJQAmACcAKAApACoAKQAoACsALAArACgAKAAtACwALgAvADAALwAuADEAMQAyAC8AMwA0ADUANQA2ADMANwA4ADkAOgA5ADgAOQA7ADcAPAA9AD4APwA+AD0APgBAADwAQQBCAEMA")],
-"material": SubResource("StandardMaterial3D_6wdhv"),
+"material": ExtResource("8_c1b4b"),
 "name": "Wood095",
 "primitive": 3,
 "skin_data": PackedByteArray("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"),
@@ -1964,6 +1954,16 @@ bind/23/pose = Transform3D(45.175373, -6.3180923e-06, -1.8119812e-05, 8.404255e-
 bind/24/name = &"mixamorig_RightToe_End"
 bind/24/bone = -1
 bind/24/pose = Transform3D(-41.358967, -9.460828, 14.17974, 11.663528, -36.32398, -0.95041215, 13.934726, 2.323347, 42.88177, -0.29936695, -0.6526299, 4.8599796)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wdhv"]
+resource_name = "Wood095"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+normal_enabled = true
+normal_scale = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2w5lg"]
 resource_name = "Material.010"
@@ -2769,7 +2769,7 @@ _data = {
 }
 
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=1051319031]
-transform = Transform3D(-6.5567085e-09, 0, -0.15, 0, 0.15, 0, 0.15, 0, -6.5567085e-09, 0, 0, 0)
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
 collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=112217560]
@@ -2777,7 +2777,7 @@ transform = Transform3D(0.99999976, 0, 8.7396756e-13, 0, 0.99999976, 0, -8.73967
 shape = SubResource("CapsuleShape3D_vu45j")
 
 [node name="MAsked Gli" type="Node3D" parent="." unique_id=1915688629]
-transform = Transform3D(-1.9451567e-08, 0, 0.445, 0, 0.445, 0, -0.445, 0, -1.9451567e-08, 0, 0, 0)
+transform = Transform3D(0.445, 0, 0, 0, 0.445, 0, 0, 0, 0.445, 0, 0, 0)
 
 [node name="Armature" type="Node3D" parent="MAsked Gli" unique_id=1424227123]
 unique_name_in_owner = true
@@ -2847,7 +2847,7 @@ bones/8/parent = 3
 bones/8/rest = Transform3D(0, 1, 0, 0, 0, 1, 1, 0, 0, 0.4241892, 0.72463864, -0.023858625)
 bones/8/enabled = true
 bones/8/position = Vector3(0.4241892, 0.72463864, -0.023858625)
-bones/8/rotation = Quaternion(0.46303844, 0.5296002, 0.44853425, -0.55130404)
+bones/8/rotation = Quaternion(0.4999991, 0.5000009, 0.49999917, -0.500001)
 bones/8/scale = Vector3(1, 1, 1)
 bones/9/name = "LeftUpperArm"
 bones/9/parent = 8
@@ -2917,7 +2917,7 @@ bones/18/parent = 0
 bones/18/rest = Transform3D(-1, 0, 0, 0, -1, 0, 0, 0, 1, 0.6844859, -0.30648077, 0.008246556)
 bones/18/enabled = true
 bones/18/position = Vector3(0.6844859, -0.30648077, 0.008246556)
-bones/18/rotation = Quaternion(0.1173242, 0.17080262, 0.9719004, -0.111675)
+bones/18/rotation = Quaternion(6.5485874e-11, -7.288713e-10, 1, -5.960508e-08)
 bones/18/scale = Vector3(1, 1, 1)
 bones/19/name = "LeftLowerLeg"
 bones/19/parent = 18
@@ -3276,7 +3276,6 @@ surface_material_override/0 = ExtResource("8_c1b4b")
 mesh = SubResource("ArrayMesh_bdoax")
 skin = SubResource("Skin_a28ks")
 skeleton = NodePath("..")
-surface_material_override/0 = ExtResource("8_c1b4b")
 
 [node name="Shin Guard" type="MeshInstance3D" parent="MAsked Gli/Armature/Skeleton" unique_id=446963812]
 mesh = SubResource("ArrayMesh_r65re")
@@ -3375,7 +3374,7 @@ bone_name = "RightLowerArm"
 bone_idx = 15
 
 [node name="LeftLegGraft" type="BoneAttachment3D" parent="MAsked Gli/Armature/Skeleton" unique_id=1148643271]
-transform = Transform3D(-0.7698533, -0.12522581, -0.62581486, -0.19593088, -0.88683856, 0.41848338, -0.6074017, 0.44478732, 0.6582, 0.7095487, 4.888203, 0.8195702)
+transform = Transform3D(-0.578409, -0.026882706, -0.8153038, -0.037069827, -0.9975582, 0.05919092, -0.8149042, 0.06445973, 0.5760001, 0.7095487, 4.888203, 0.8195702)
 bone_name = "LeftUpperLeg"
 bone_idx = 18
 
@@ -3403,5 +3402,16 @@ doppler_tracking = 2
 
 [node name="GraftingSystem" type="Node" parent="." unique_id=1353283170]
 script = ExtResource("8_wdpcj")
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=217380420]
+transform = Transform3D(-0.99999976, 0, -8.7422755e-08, 0, 0.99999976, 0, 8.7422755e-08, 0, -0.99999976, 0.18252848, 2.628, -2.1372804e-07)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=1360403716]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 2.2682602e-07, 0, 1.1856042)
+spring_length = 3.0
+
+[node name="Follow Cam" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1776547098]
+transform = Transform3D(6.6666684, 0, 0, 0, 6.439507, 1.7254608, 0, -1.7254608, 6.439507, 5.328382e-07, 3.6966941, 6.0949583)
+fov = 70.0
 
 [editable path="MAsked Gli/Armature/Skeleton/ViolinPlace/Violin 1"]

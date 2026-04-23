@@ -129,6 +129,9 @@ func _cleanup_battle():
 		if PlayerManager.data.inventory.has(preload("res://Combat/resources/weapons/hose.tres")):
 			GraftGlobals.hoseObtained = true
 			print("pshhhhhh")
+		#if BattleManager.enemy == preload("res://Combat/resources/enemies/boss1/boss1.tres"):
+			#if BattleManager.enemy.unit
+			#get_tree().change_scene_to_file("res://Sounds/SFX/Bye.tscn")
 		current_battle.queue_free()
 		current_battle = null
 

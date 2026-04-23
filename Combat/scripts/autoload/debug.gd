@@ -11,5 +11,5 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		var is_fullscreen : bool = DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN
 		var target_mode : int = DisplayServer.WINDOW_MODE_WINDOWED if is_fullscreen else DisplayServer.WINDOW_MODE_FULLSCREEN
 		DisplayServer.window_set_mode(target_mode)
-	elif event.is_action_pressed("Slow_Mode"):
-		Engine.time_scale = 2.0 if Engine.time_scale == 1.0 else 1.0
+	#elif event.is_action_pressed("Slow_Mode"):
+		#Engine.time_scale = 2.0 if Engine.time_scale == 1.0 else 1.0

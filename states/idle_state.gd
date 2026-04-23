@@ -14,7 +14,7 @@ func physics_update(_delta):
 	var input_dir = player.get_input()
 
 	# If player moves, switch to MoveState
-	if input_dir != Vector2.ZERO:
+	if input_dir != Vector3.ZERO:
 		state_machine.change_state(move_state)
 		return
 
