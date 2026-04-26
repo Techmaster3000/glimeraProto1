@@ -2768,6 +2768,9 @@ _data = {
 &"get Hit": ExtResource("9_jb3kq")
 }
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_c1b4b"]
+radius = 1.0
+
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=1051319031]
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
 collision_layer = 2
@@ -3407,11 +3410,12 @@ script = ExtResource("8_wdpcj")
 transform = Transform3D(-0.99999976, 0, -8.7422755e-08, 0, 0.99999976, 0, 8.7422755e-08, 0, -0.99999976, 0.18252848, 2.628, -2.1372804e-07)
 
 [node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=1360403716]
-transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 2.2682602e-07, 0, 1.1856042)
-spring_length = 3.0
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 3.427267e-07, 0.7628207, -0.08145633)
+shape = SubResource("SphereShape3D_c1b4b")
+spring_length = 6.0
 
 [node name="Follow Cam" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1776547098]
-transform = Transform3D(6.6666684, 0, 0, 0, 6.439507, 1.7254608, 0, -1.7254608, 6.439507, 5.328382e-07, 3.6966941, 6.0949583)
+transform = Transform3D(6.6666684, 1.9273003e-08, 5.5211444e-09, -2.0045276e-08, 6.376353, 1.9459186, 3.4481218e-10, -1.9459186, 6.376353, 3.874302e-07, 2.410731, 8.075065)
 fov = 70.0
 
 [editable path="MAsked Gli/Armature/Skeleton/ViolinPlace/Violin 1"]
