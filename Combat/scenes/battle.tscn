@@ -135,12 +135,12 @@ shape = SubResource("BoxShape3D_3inix")
 
 [node name="Player" parent="." unique_id=1051319031 instance=ExtResource("4_q77w5")]
 unique_name_in_owner = true
-transform = Transform3D(-0.9598052, 0, -0.2806667, 0, 1, 0, 0.2806667, 0, -0.9598052, 5, 0, 0)
+transform = Transform3D(-0.7682834, 0, -0.6401096, 0, 1, 0, 0.6401096, 0, -0.7682834, 5, 0, 0)
 script = ExtResource("5_1fagd")
 
 [node name="Enemy" parent="." unique_id=1449211599 instance=ExtResource("4_egpmh")]
 unique_name_in_owner = true
-transform = Transform3D(0.4007678, 0, 0.29897347, 0, 0.5, 0, -0.29897347, 0, 0.4007678, -10, 3, 0)
+transform = Transform3D(0.49130636, 0, 0.0928333, 0, 0.5, 0, -0.0928333, 0, 0.49130636, -10, 3, 0)
 script = ExtResource("6_r8c2t")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=771652485]
@@ -164,9 +164,9 @@ anchor_left = 0.591
 anchor_top = 0.037
 anchor_right = 0.919
 anchor_bottom = 0.08400001
-offset_left = -0.7200928
+offset_left = -909.7201
 offset_top = 0.040000916
-offset_right = -0.48010254
+offset_right = -909.4801
 offset_bottom = 0.27999115
 grow_horizontal = 2
 grow_vertical = 0
@@ -195,9 +195,9 @@ anchor_left = 0.74300003
 anchor_top = 0.08800001
 anchor_right = 0.77400005
 anchor_bottom = 0.124000005
-offset_left = -0.5600586
+offset_left = -909.56006
 offset_top = -0.040008545
-offset_right = 0.9199219
+offset_right = -908.0801
 offset_bottom = 0.07998657
 theme_override_font_sizes/font_size = 28
 text = "Gli"
@@ -217,9 +217,9 @@ anchor_left = 0.028
 anchor_top = 0.163
 anchor_right = 0.44900003
 anchor_bottom = 0.20300001
-offset_left = 2.2399979
+offset_left = 896.24
 offset_top = -0.040008545
-offset_right = 43.91992
+offset_right = 937.9199
 offset_bottom = -0.2400055
 grow_horizontal = 2
 grow_vertical = 2
@@ -245,9 +245,9 @@ anchor_left = 0.12100001
 anchor_top = 0.037
 anchor_right = 0.44900003
 anchor_bottom = 0.08400001
-offset_left = -0.32000732
+offset_left = 893.68
 offset_top = 0.040000916
-offset_right = -0.080078125
+offset_right = 893.9199
 offset_bottom = 0.27999115
 grow_horizontal = 2
 grow_vertical = 0
@@ -277,9 +277,9 @@ anchor_left = 0.23600002
 anchor_top = 0.08800001
 anchor_right = 0.333
 anchor_bottom = 0.124000005
-offset_left = 0.87997437
+offset_left = 894.88
 offset_top = -0.040008545
-offset_right = 0.64001465
+offset_right = 894.64
 offset_bottom = 0.07998657
 theme_override_font_sizes/font_size = 28
 text = "Enemy Name "
@@ -293,9 +293,9 @@ anchor_left = 0.245
 anchor_top = 0.13700001
 anchor_right = 0.326
 anchor_bottom = 0.15200001
-offset_left = -0.4000244
+offset_left = 893.6
 offset_top = -14.960007
-offset_right = 0.08001709
+offset_right = 894.08
 offset_bottom = -0.16000366
 theme_override_font_sizes/font_size = 22
 text = "Element : Rock"
@@ -485,9 +485,9 @@ anchor_left = 0.59400004
 anchor_top = 0.12200001
 anchor_right = 0.83300006
 anchor_bottom = 0.16800001
-offset_left = 0.51989746
+offset_left = -817.4801
 offset_top = 0.23999023
-offset_right = 0.6398926
+offset_right = -817.3601
 offset_bottom = -0.4400177
 grow_horizontal = 0
 grow_vertical = 2
@@ -501,9 +501,9 @@ anchor_left = 0.12200001
 anchor_top = 0.124000005
 anchor_right = 0.455
 anchor_bottom = 0.162
-offset_left = 0.75997925
+offset_left = 903.76
 offset_top = 0.07998657
-offset_right = 0.39996338
+offset_right = 903.39996
 offset_bottom = 0.039993286
 
 [node name="GraftMenu" parent="Battle_UI" unique_id=1743679526 instance=ExtResource("5_lpir7")]
@@ -595,13 +595,13 @@ anchor_bottom = 1.0
 grow_vertical = 2
 stretch = true
 
-[node name="SubViewport1" type="SubViewport" parent="SubViewportContainer1" unique_id=1395845255]
+[node name="SubViewport2" type="SubViewport" parent="SubViewportContainer1" unique_id=123518556]
 handle_input_locally = false
 size = Vector2i(960, 1080)
 render_target_update_mode = 4
 
-[node name="Camera3D1" type="Camera3D" parent="SubViewportContainer1/SubViewport1" unique_id=951482207]
-transform = Transform3D(0.89100647, -0.01584404, 0.45371395, 0, 0.99939084, 0.034899496, -0.4539905, -0.031095678, 0.89046377, -7.859, 3.3, 4.529)
+[node name="Camera3D2" type="Camera3D" parent="SubViewportContainer1/SubViewport2" unique_id=1976917586]
+transform = Transform3D(0.8910065, 0.01584404, -0.45371395, 0, 0.99939084, 0.034899496, 0.45399052, -0.031095678, 0.89046377, 2.841, 2.8, 4.201)
 
 [node name="SubViewportContainer2" type="SubViewportContainer" parent="." unique_id=1849388782]
 anchors_preset = -1
@@ -613,10 +613,10 @@ grow_vertical = 2
 size_flags_horizontal = 8
 stretch = true
 
-[node name="SubViewport2" type="SubViewport" parent="SubViewportContainer2" unique_id=123518556]
+[node name="SubViewport1" type="SubViewport" parent="SubViewportContainer2" unique_id=1395845255]
 handle_input_locally = false
 size = Vector2i(960, 1080)
 render_target_update_mode = 4
 
-[node name="Camera3D2" type="Camera3D" parent="SubViewportContainer2/SubViewport2" unique_id=1976917586]
-transform = Transform3D(0.8910065, 0.01584404, -0.45371395, 0, 0.99939084, 0.034899496, 0.45399052, -0.031095678, 0.89046377, 2.841, 2.8, 4.201)
+[node name="Camera3D1" type="Camera3D" parent="SubViewportContainer2/SubViewport1" unique_id=951482207]
+transform = Transform3D(0.89100647, -0.01584404, 0.45371395, 0, 0.99939084, 0.034899496, -0.4539905, -0.031095678, 0.89046377, -7.859, 3.3, 4.529)
