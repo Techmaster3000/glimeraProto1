@@ -3,7 +3,7 @@ extends CharacterBody3D
 
 const SPEED = 1
 const JUMP_VELOCITY = 2.5
-@onready var camera := $"CameraPivot/SpringArm3D/Follow Cam" as Camera3D
+@onready var camera := $"CameraPivot/Camera3D" as Camera3D
 @onready var _camera_pivot := $CameraPivot as Node3D
 
 var knockback_velocity: Vector3 = Vector3.ZERO
@@ -13,18 +13,21 @@ var knockback_time := 0.0
 @export var tilt_limit = deg_to_rad(75)
 
 
+
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
+		pass
 		# Pitch (up/down) → pivot only
-		_camera_pivot.rotation.x -= event.screen_relative.y * mouse_sensitivity
-		_camera_pivot.rotation.x = clampf(
-			_camera_pivot.rotation.x,
-			-tilt_limit,
-			tilt_limit
-		)
+		#_camera_pivot.rotation.x -= event.screen_relative.y * mouse_sensitivity
+		#_camera_pivot.rotation.x = clampf(
+			#_camera_pivot.rotation.x,
+			#-tilt_limit,
+			#tilt_limit
+		#)
 
 		# Yaw (left/right) → player ONLY
-		_camera_pivot.rotate_y(-event.screen_relative.x * mouse_sensitivity)
+		#_camera_pivot.rotate_y(-event.screen_relative.x * mouse_sensitivity)
 
 func _ready() -> void:
 	pass
