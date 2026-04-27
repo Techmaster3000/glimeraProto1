@@ -9,6 +9,8 @@
 [ext_resource type="Animation" uid="uid://bni5san3flrp2" path="res://Animations/Idle.anim" id="8_jb3kq"]
 [ext_resource type="Script" uid="uid://bvuuj1hvtosya" path="res://all_new_grafting_system.gd" id="8_wdpcj"]
 [ext_resource type="Animation" uid="uid://d0qj4aimqfui8" path="res://Animations/get Hit.anim" id="9_jb3kq"]
+[ext_resource type="Script" uid="uid://dpnlb1qx4femm" path="res://camera_springarm.gd" id="12_7tnxx"]
+[ext_resource type="Script" uid="uid://tvhr2mx36gkh" path="res://camera_follow.gd" id="13_bwfjh"]
 [ext_resource type="Material" path="res://Textures/Metal Texture/Metal061B_1K-JPG.tres" id="17_pm3tn"]
 [ext_resource type="Animation" uid="uid://dnnponmgph6w7" path="res://Animations/Idle Straight.anim" id="32_go3uk"]
 
@@ -2768,8 +2770,8 @@ _data = {
 &"get Hit": ExtResource("9_jb3kq")
 }
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_c1b4b"]
-radius = 1.0
+[sub_resource type="SphereShape3D" id="SphereShape3D_bwfjh"]
+radius = 0.3
 
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=1051319031]
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
@@ -3390,7 +3392,7 @@ bone_idx = 3
 transform = Transform3D(-1.1640927, 0.7746126, 0.0697381, 0.76763606, 1.1645077, -0.12106503, -0.12499218, -0.06242675, -1.3930111, 0.38285306, 0.81784594, -0.70476484)
 visible = false
 
-[node name="Point" parent="MAsked Gli/Armature/Skeleton/ViolinPlace/Violin 1" index="13" unique_id=1736229204]
+[node name="Point" parent="MAsked Gli/Armature/Skeleton/ViolinPlace/Violin 1" index="13" unique_id=382164975]
 visible = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="MAsked Gli" unique_id=1926690920]
@@ -3406,16 +3408,21 @@ doppler_tracking = 2
 [node name="GraftingSystem" type="Node" parent="." unique_id=1353283170]
 script = ExtResource("8_wdpcj")
 
-[node name="CameraPivot" type="Node3D" parent="." unique_id=217380420]
-transform = Transform3D(-0.99999976, 0, -8.7422755e-08, 0, 0.99999976, 0, 8.7422755e-08, 0, -0.99999976, 0.18252848, 2.628, -2.1372804e-07)
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1869565040]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+script = ExtResource("12_7tnxx")
 
-[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=1360403716]
-transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 3.427267e-07, 0.7628207, -0.08145633)
-shape = SubResource("SphereShape3D_c1b4b")
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=842616409]
+shape = SubResource("SphereShape3D_bwfjh")
 spring_length = 6.0
 
-[node name="Follow Cam" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1776547098]
-transform = Transform3D(6.6666684, 1.9273003e-08, 5.5211444e-09, -2.0045276e-08, 6.376353, 1.9459186, 3.4481218e-10, -1.9459186, 6.376353, 3.874302e-07, 2.410731, 8.075065)
-fov = 70.0
+[node name="SpringPosition" type="Node3D" parent="CameraPivot/SpringArm3D" unique_id=903575987]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 3, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=1476175876 node_paths=PackedStringArray("spring_arm")]
+transform = Transform3D(6.666666, 0, 0, 0, 6.666666, 0, 0, 0, 6.666666, 0, 0, 0)
+script = ExtResource("13_bwfjh")
+spring_arm = NodePath("../SpringArm3D/SpringPosition")
+lerp_power = 6.0
 
 [editable path="MAsked Gli/Armature/Skeleton/ViolinPlace/Violin 1"]
