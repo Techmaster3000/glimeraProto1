@@ -1,7 +1,7 @@
 extends Control
 
 @onready var background: Panel = $Background
-@onready var title: Label = $Title
+@onready var title: TextureRect = $Title
 @onready var menu_buttons: VBoxContainer = $MenuButtons
 @onready var settings: Panel = $Settings
 @onready var button_sfx: AudioStreamPlayer = $ButtonSFX

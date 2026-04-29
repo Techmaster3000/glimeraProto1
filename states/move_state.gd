@@ -5,8 +5,15 @@ extends State
 @export var fall_state : State
 @onready var input_dir : Vector3
 
+	
+	
 func enter():
 	state_machine.animMachine.travel("Walk")
+
+
+func go_to_Idle():
+	state_machine.change_state(idle_state)
+	print("Go to Idle")	
 	
 func physics_update(delta):
 	var input_dir = player.get_input()
@@ -36,7 +43,7 @@ func physics_update(delta):
 		return
 
 	if input_dir == Vector3.ZERO:
-		state_machine.change_state(idle_state)
+		go_to_Idle()
 		return
 
 	# --- Movement ---
