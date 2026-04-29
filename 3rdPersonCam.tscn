@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dtcotjhfc4ego"]
+
+[ext_resource type="Script" uid="uid://dpnlb1qx4femm" path="res://camera_springarm.gd" id="1_7n724"]
+[ext_resource type="Script" uid="uid://tvhr2mx36gkh" path="res://camera_follow.gd" id="2_78g7m"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_bwfjh"]
+radius = 0.3
+
+[node name="CameraPivot" type="Node3D" unique_id=52364364]
+script = ExtResource("1_7n724")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=780093982]
+shape = SubResource("SphereShape3D_bwfjh")
+spring_length = 6.0
+
+[node name="SpringPosition" type="Node3D" parent="SpringArm3D" unique_id=1418701145]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 3, 0)
+
+[node name="CharacterCam" type="Camera3D" parent="." unique_id=385701434 node_paths=PackedStringArray("spring_arm")]
+transform = Transform3D(6.666666, 0, 0, 0, 6.666666, 0, 0, 0, 6.666666, 0, 0, 0)
+script = ExtResource("2_78g7m")
+spring_arm = NodePath("../SpringArm3D/SpringPosition")
+lerp_power = 6.0

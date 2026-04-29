@@ -1,6 +1,6 @@
 extends Node3D
 
-@export var mouse_sensibility: float = 0.05
+@export var mouse_sensibility: float = 0.01
 @export var default_length: float = 6.0
 @export var min_length: float = 0.5
 @onready var spring_arm := $SpringArm3D

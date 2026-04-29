@@ -3,7 +3,7 @@ extends CharacterBody3D
 
 const SPEED = 1
 const JUMP_VELOCITY = 2.5
-@onready var camera := $"CameraPivot/Camera3D" as Camera3D
+@onready var camera := $"CameraPivot/CharacterCam" as Camera3D
 @onready var _camera_pivot := $CameraPivot as Node3D
 
 var knockback_velocity: Vector3 = Vector3.ZERO
