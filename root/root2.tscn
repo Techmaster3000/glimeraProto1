@@ -227,4 +227,5 @@ visible = false
 [node name="Label" type="Label" parent="CanvasLayer" unique_id=1614960906]
 offset_right = 40.0
 offset_bottom = 23.0
-text = "ESC to Menu"
+text = "ESC to Menu
+Right Mouse controls Camera"
