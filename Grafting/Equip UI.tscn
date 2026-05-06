@@ -3,19 +3,127 @@
 [ext_resource type="PackedScene" uid="uid://dumgnjj1m80d0" path="res://EquipMenu.tscn" id="1_cammf"]
 [ext_resource type="Script" uid="uid://cvrmcslx3dyrr" path="res://Grafting/Grafting_UI.gd" id="1_nsmwh"]
 [ext_resource type="Texture2D" uid="uid://cnrnvcin8rpus" path="res://Grafting/arm icon.png" id="2_l3mp2"]
-[ext_resource type="Material" uid="uid://t07ec0vtnteb" path="res://Shaders/Blur.tres" id="2_nsmwh"]
-[ext_resource type="Texture2D" uid="uid://dfq6hkm4cc71f" path="res://images/icon.svg" id="3_lvtd6"]
 [ext_resource type="Texture2D" uid="uid://fodpwarglyty" path="res://Grafting/saw icon.png" id="3_n4bap"]
-[ext_resource type="Texture2D" uid="uid://dganjay82mm7b" path="res://SimpleFlatKeys/Dark/0-Key.png" id="4_g7rxt"]
 [ext_resource type="Texture2D" uid="uid://lk17a0nohra3" path="res://Grafting/sledgehammer icon.png" id="4_gjxvf"]
 [ext_resource type="Texture2D" uid="uid://st4dv0rl87sd" path="res://Grafting/Hose Icon.png" id="4_n4bap"]
+[ext_resource type="Texture2D" uid="uid://b46tfu5idgkyk" path="res://images/641693.png" id="7_g7rxt"]
 
-[sub_resource type="Theme" id="Theme_3faqq"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lvtd6"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
 
-[sub_resource type="LabelSettings" id="LabelSettings_o00t5"]
-font_size = 62
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vbv8"]
+bg_color = Color(0.9882353, 0.9882353, 0.9882353, 0.19607843)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
 
-[node name="Control" type="Control" unique_id=992539865 node_paths=PackedStringArray("leftLegButton", "rightArmButton")]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gjxvf"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g7rxt"]
+bg_color = Color(0, 0, 0, 0.3137255)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_maqgg"]
+bg_color = Color(0, 0, 0, 0.3137255)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l3mp2"]
+bg_color = Color(0, 0, 0, 0.3137255)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l5bjg"]
+bg_color = Color(0, 0, 0, 0.3137255)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n4bap"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_smwc3"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l2vi8"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[node name="Control" type="Control" unique_id=992539865]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -27,8 +135,10 @@ mouse_default_cursor_shape = 2
 script = ExtResource("1_nsmwh")
 armIcons = Array[Texture2D]([ExtResource("2_l3mp2"), ExtResource("3_n4bap"), ExtResource("4_n4bap")])
 legIcons = Array[Texture2D]([ExtResource("2_l3mp2"), ExtResource("4_gjxvf")])
-leftLegButton = NodePath("ColorRect2/VBoxContainer/HBoxContainer/TextureButton")
-rightArmButton = NodePath("ColorRect/VBoxContainer/HBoxContainer2/TextureButton2")
+armGraftNames = Array[String](["Default", "Saw", "Hose"])
+armGraftDescs = Array[String](["", "ı saw u", "hose it up"])
+legGraftNames = Array[String](["Default", "Sledgehammer"])
+legGraftDescs = Array[String](["", "smack that stoney"])
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=577141664]
 layout_mode = 1
@@ -169,132 +279,140 @@ autoplay = &"Idle Straight"
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport" unique_id=1768999714]
 transform = Transform3D(1, 0, 0, 0, 0.9226593, 0.38561618, 0, -0.38561618, 0.9226593, 0, 0.67658234, 1.2380623)
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=63572152]
-material = ExtResource("2_nsmwh")
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.39900002
-anchor_bottom = 1.033
-offset_right = -62.080017
-offset_bottom = -35.640015
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=755877414]
-layout_mode = 1
-anchors_preset = 11
-anchor_left = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -767.0
-grow_horizontal = 0
-grow_vertical = 2
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="ColorRect/VBoxContainer" unique_id=1648916928]
-custom_minimum_size = Vector2(0, 300)
-layout_mode = 2
-size_flags_vertical = 3
-theme = SubResource("Theme_3faqq")
-
-[node name="Label" type="Label" parent="ColorRect/VBoxContainer/HBoxContainer2" unique_id=451084990]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Right Arm"
-label_settings = SubResource("LabelSettings_o00t5")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="TextureButton2" type="TextureButton" parent="ColorRect/VBoxContainer/HBoxContainer2" unique_id=941066337]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture_normal = ExtResource("3_lvtd6")
-ignore_texture_size = true
-stretch_mode = 4
-
-[node name="ColorRect2" type="ColorRect" parent="." unique_id=1617707482]
-material = ExtResource("2_nsmwh")
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.60400003
-anchor_right = 1.0
-anchor_bottom = 0.97900003
-offset_left = 56.319946
-offset_bottom = 22.679932
-grow_horizontal = 0
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect2" unique_id=554768728]
-layout_mode = 1
-anchors_preset = 9
-anchor_bottom = 1.0
-offset_top = 8.0
-offset_right = 753.0
-grow_vertical = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect2/VBoxContainer" unique_id=82745908]
-custom_minimum_size = Vector2(0, 300)
-layout_mode = 2
-size_flags_vertical = 3
-theme = SubResource("Theme_3faqq")
-
-[node name="TextureButton" type="TextureButton" parent="ColorRect2/VBoxContainer/HBoxContainer" unique_id=1987664766]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture_normal = ExtResource("3_lvtd6")
-texture_pressed = ExtResource("4_g7rxt")
-ignore_texture_size = true
-stretch_mode = 4
-
-[node name="Label" type="Label" parent="ColorRect2/VBoxContainer/HBoxContainer" unique_id=1661617161]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Left Leg"
-label_settings = SubResource("LabelSettings_o00t5")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ArmList" type="ItemList" parent="." unique_id=1139947939]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-item_count = 3
-max_columns = 4
-icon_mode = 0
-fixed_icon_size = Vector2i(400, 400)
-item_0/text = "Basic"
-item_0/icon = ExtResource("2_l3mp2")
-item_1/text = "Saw"
-item_1/icon = ExtResource("3_n4bap")
-item_2/text = "Garden Hose"
-item_2/icon = ExtResource("4_n4bap")
-
-[node name="LegList" type="ItemList" parent="." unique_id=1976916116]
-visible = false
+[node name="Label" type="Label" parent="." unique_id=1880185111]
 layout_mode = 0
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-item_count = 2
-max_columns = 4
-icon_mode = 0
-fixed_icon_size = Vector2i(400, 400)
-item_0/text = "Basic"
-item_0/icon = ExtResource("2_l3mp2")
-item_1/text = "Hammer"
-item_1/icon = ExtResource("4_gjxvf")
+offset_left = 52.0
+offset_top = 12.0
+offset_right = 400.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 70
+text = "G R A F T S"
 
-[connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer2/TextureButton2" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="ColorRect2/VBoxContainer/HBoxContainer/TextureButton" to="." method="_on_leg_button_pressed"]
-[connection signal="item_selected" from="ArmList" to="." method="_on_arm_list_item_selected"]
-[connection signal="item_selected" from="LegList" to="." method="_on_leg_list_item_selected"]
+[node name="RightArmSlot" type="Button" parent="." unique_id=729243373]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_left = 612.0
+offset_top = 320.0
+offset_right = 712.0
+offset_bottom = 420.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_lvtd6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7vbv8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_gjxvf")
+
+[node name="LeftArmSlot" type="Button" parent="." unique_id=628482005]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_left = 1224.0
+offset_top = 320.0
+offset_right = 1374.0
+offset_bottom = 470.0
+theme_override_constants/icon_max_width = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_g7rxt")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_maqgg")
+icon = ExtResource("7_g7rxt")
+icon_alignment = 1
+
+[node name="RightLegSlot" type="Button" parent="." unique_id=1510301006]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_left = 612.0
+offset_top = 633.0
+offset_right = 712.0
+offset_bottom = 733.0
+theme_override_constants/icon_max_width = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_l3mp2")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_l5bjg")
+icon = ExtResource("7_g7rxt")
+icon_alignment = 1
+
+[node name="LeftLegSlot" type="Button" parent="." unique_id=210651934]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_left = 1223.0
+offset_top = 632.0
+offset_right = 1323.0
+offset_bottom = 732.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_n4bap")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_smwc3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l2vi8")
+
+[node name="InfoCard" type="Panel" parent="." unique_id=329842494]
+custom_minimum_size = Vector2(300, 380)
+layout_mode = 0
+offset_left = 1514.0
+offset_top = 302.0
+offset_right = 1814.0
+offset_bottom = 682.0
+
+[node name="InfoName" type="Label" parent="InfoCard" unique_id=1691062328]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 4.0
+offset_right = 299.0
+offset_bottom = 27.0
+theme_override_font_sizes/font_size = 28
+horizontal_alignment = 1
+
+[node name="InfoDesc" type="Label" parent="InfoCard" unique_id=972389833]
+custom_minimum_size = Vector2(180, 60)
+layout_mode = 0
+offset_top = 312.0
+offset_right = 300.0
+offset_bottom = 372.0
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="InfoIcon" type="TextureRect" parent="InfoCard" unique_id=1156199061]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 37.0
+offset_right = 289.0
+offset_bottom = 292.0
+expand_mode = 3
+stretch_mode = 5
+
+[node name="GraftGrid" type="HBoxContainer" parent="." unique_id=405111424]
+custom_minimum_size = Vector2(0, 110)
+layout_mode = 0
+offset_left = 10.0
+offset_top = 857.0
+offset_right = 1907.0
+offset_bottom = 1070.0
+theme_override_constants/separation = 10
+
+[node name="Label2" type="Label" parent="." unique_id=2032925349]
+layout_mode = 0
+offset_left = 1791.0
+offset_top = 18.0
+offset_right = 1902.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 26
+text = "ESC back"
+
+[node name="Line2D" type="Line2D" parent="." unique_id=3348599]
+points = PackedVector2Array(857, 507, 757, 492, 726, 469)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+end_cap_mode = 2
+
+[node name="Line2D2" type="Line2D" parent="." unique_id=446654342]
+points = PackedVector2Array(893, 685, 817, 673, 779, 702)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="." unique_id=487064687]
+points = PackedVector2Array(1126, 507, 1220, 491, 1252, 466)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="." unique_id=2048527851]
+points = PackedVector2Array(1081, 686, 1160, 677, 1192, 708)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+
+[connection signal="pressed" from="RightArmSlot" to="." method="_on_right_arm_slot_pressed"]
+[connection signal="pressed" from="LeftLegSlot" to="." method="_on_left_leg_slot_pressed"]
 
 [editable path="SubViewportContainer/SubViewport/Node3D"]
 [editable path="SubViewportContainer/SubViewport/Node3D/CharacterBody3D"]
