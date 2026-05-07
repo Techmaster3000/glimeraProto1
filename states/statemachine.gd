@@ -19,6 +19,7 @@ func _ready():
 	
 	current_state = initial_state
 	current_state.call_deferred("enter")
+	Dialogic.timeline_started.connect(change_state)
 	
 	emit_signal("state_changed", current_state)
 
@@ -39,7 +40,8 @@ func change_state(new_state: State):
 func _process(delta):
 	if current_state and Dialogic.current_timeline == null:
 		current_state.update(delta)
-
+	if Dialogic.current_timeline != null:
+		change_state(initial_state)
 
 func _physics_process(delta):
 	if current_state and Dialogic.current_timeline == null:
@@ -47,3 +49,5 @@ func _physics_process(delta):
 	
 	if player and Dialogic.current_timeline == null:
 		player.move_and_slide()
+	if Dialogic.current_timeline != null:
+		change_state(initial_state)

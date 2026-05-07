@@ -3,11 +3,13 @@
 [ext_resource type="FontFile" uid="uid://bq8bno25i4gyr" path="res://ui/Game Paused DEMO.otf" id="1_06t4h"]
 [ext_resource type="Script" uid="uid://dqr418el2k8mt" path="res://ui/main_menu.gd" id="1_7vrkn"]
 [ext_resource type="Texture2D" uid="uid://dfq6hkm4cc71f" path="res://images/icon.svg" id="2_arv2f"]
+[ext_resource type="Texture2D" uid="uid://bjqkqhibdwbkc" path="res://images/Kopie van Glimera pitch v2.png" id="3_5klac"]
+[ext_resource type="FontFile" uid="uid://iljwk62chotc" path="res://ui/StoryScript-Regular.ttf" id="3_lsdqh"]
 [ext_resource type="Script" uid="uid://c34dxhktvhmap" path="res://ui/audio_control.gd" id="4_jix8l"]
 [ext_resource type="Script" uid="uid://d36oofhkq5sxy" path="res://ui/window_options.gd" id="5_glbon"]
 [ext_resource type="Script" uid="uid://bwd3qlffpad6o" path="res://ui/inputremapbutton.gd" id="6_nlkkf"]
 [ext_resource type="PackedScene" uid="uid://dsc3ihpwxa6w6" path="res://ui/input_remap_button.tscn" id="6_qe12f"]
-[ext_resource type="AudioStream" uid="uid://cral320sc5djp" path="res://ui/Glimera theme 1.mp3" id="8_arv2f"]
+[ext_resource type="AudioStream" uid="uid://cymos6wnah1s5" path="res://ui/Glimera theme 1 v2.ogg" id="9_5klac"]
 [ext_resource type="AudioStream" uid="uid://qar5rufr34os" path="res://Sounds/UI Start.wav" id="9_arv2f"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_arv2f"]
@@ -27,19 +29,28 @@ velocity_pivot = Vector3(0, 21.715, 0)
 gravity = Vector3(0, 700, 0)
 linear_accel_min = -2.2351742e-06
 linear_accel_max = -2.2351742e-06
-scale_min = 16.31
-scale_max = 30.0
+scale_min = 5.0
+scale_max = 15.0
 color_ramp = SubResource("GradientTexture1D_5klac")
 turbulence_enabled = true
 turbulence_noise_strength = 6.69
 turbulence_noise_scale = 7.85
 
+[sub_resource type="Theme" id="Theme_5klac"]
+default_font = ExtResource("3_lsdqh")
+default_font_size = 40
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
-bg_color = Color(0, 0.56078434, 0.09019608, 1)
-corner_radius_top_left = 100
-corner_radius_top_right = 100
-corner_radius_bottom_right = 100
-corner_radius_bottom_left = 100
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_blend = true
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
 corner_detail = 1
 shadow_color = Color(1, 1, 1, 0.6)
 shadow_size = 1
@@ -96,7 +107,7 @@ grow_vertical = 2
 [node name="GPUParticles2D" type="GPUParticles2D" parent="Background" unique_id=150308194]
 material = SubResource("ShaderMaterial_arv2f")
 position = Vector2(960, 0)
-amount = 500
+amount = 1000
 lifetime = 5.0
 process_material = SubResource("ParticleProcessMaterial_5klac")
 
@@ -130,7 +141,8 @@ alignment = 1
 [node name="StartButton" type="Button" parent="MenuButtons" unique_id=2028129636]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme = SubResource("Theme_5klac")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.078431375, 1, 0, 1)
 theme_override_colors/font_hover_color = Color(0.078431375, 1, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0.078431375, 1, 0, 1)
@@ -143,10 +155,11 @@ text = "Start Game"
 [node name="SettingsButton" type="Button" parent="MenuButtons" unique_id=1168352789]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.078431375, 1, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_fonts/font = ExtResource("3_lsdqh")
+theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_06t4h")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
@@ -155,36 +168,32 @@ text = "Settings"
 [node name="QuitButton" type="Button" parent="MenuButtons" unique_id=353058018]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.078431375, 1, 0, 1)
 theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_lsdqh")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_06t4h")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
 text = "Quit Game"
 
-[node name="Title" type="Label" parent="." unique_id=1228155308]
-visible = false
+[node name="Title" type="TextureRect" parent="." unique_id=1017367661]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 0.263
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.263
-offset_left = -255.0
-offset_top = -41.42401
-offset_right = 256.0
-offset_bottom = 41.57599
+anchor_bottom = 0.5
+offset_left = -344.0
+offset_top = -320.0
+offset_right = 1576.0
+offset_bottom = 5.0
 grow_horizontal = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 1
-theme_override_constants/shadow_offset_y = 5
-theme_override_fonts/font = ExtResource("1_06t4h")
-theme_override_font_sizes/font_size = 60
-text = "Glimera"
-horizontal_alignment = 1
+grow_vertical = 2
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("3_5klac")
 
 [node name="Settings" type="Panel" parent="." unique_id=1973624480]
 layout_mode = 1
@@ -452,12 +461,12 @@ anchor_left = 0.48700002
 anchor_top = 0.90800005
 anchor_right = 0.48700002
 anchor_bottom = 0.90800005
-offset_left = -103.77901
-offset_top = -27.312012
-offset_right = 104.22099
-offset_bottom = 27.687988
+offset_left = -104.31514
+offset_top = -26.968018
+offset_right = 103.68486
+offset_bottom = 30.031982
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.078431375, 1, 0, 1)
 theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 1)
@@ -468,7 +477,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
 text = "Back"
 
 [node name="Background Music" type="AudioStreamPlayer" parent="." unique_id=984557550]
-stream = ExtResource("8_arv2f")
+stream = ExtResource("9_5klac")
 autoplay = true
 bus = &"Music"
 parameters/looping = true
