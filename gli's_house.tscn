@@ -197,49 +197,225 @@ states/Walk/position = Vector2(686.6667, 122.666664)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_jb3kq"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_c1b4b"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_7tnxx"), "Idle", "Idle Pause", SubResource("AnimationNodeStateMachineTransition_lyohd"), "Idle Pause", "Idle", SubResource("AnimationNodeStateMachineTransition_2ia7u"), "Idle Pause", "Walk", SubResource("AnimationNodeStateMachineTransition_0fer6"), "Walk", "Idle Pause", SubResource("AnimationNodeStateMachineTransition_aeagw")]
 graph_offset = Vector2(68, 52)
 
+[sub_resource type="Animation" id="Animation_xolg8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Camera3D:current")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CharacterBody3D/CameraPivot/CharacterCam:current")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CharacterBody3D:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.051648, -1.5707964, 1.7120458)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CharacterBody3D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.5962183, 0.039276615, -1.6967171)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/Camera3D:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.414634, -0.9639591, 0.06509689)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Camera3D:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.16493829, 0.43286085, -1.490219)]
+}
+
+[sub_resource type="Animation" id="Animation_oy0wj"]
+resource_name = "intro"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Camera3D:current")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CharacterBody3D/CameraPivot/CharacterCam:current")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CharacterBody3D:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(1.051648, -1.5707964, 1.7120458), Vector3(1.0524335, -3.1415927, 1.712168), Vector3(0, -5.0056043, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CharacterBody3D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0.8995499, 0.039276615, -1.4371094), Vector3(0.5962183, 0.039276615, -1.6967171), Vector3(0.5962183, -0.20261769, -1.6967171)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/Camera3D:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.55),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.414634, -0.9639591, 0.06509689), Vector3(-0.41463405, -1.5839175, 0.06509687)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Camera3D:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.55),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.16493829, 0.43286085, -1.490219), Vector3(-0.17640059, 0.47175592, -1.7631286)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_repcq"]
+_data = {
+&"RESET": SubResource("Animation_xolg8"),
+&"intro": SubResource("Animation_oy0wj")
+}
+
 [node name="Gli\'s House" type="Node3D" unique_id=964664953]
 
 [node name="Gli\'s House" parent="." unique_id=2131513319 instance=ExtResource("1_jxn1f")]
 transform = Transform3D(0.725, 0, 0, 0, 0.725, 0, 0, 0, 0.725, -0.0011026859, 0.44751966, -0.0025135875)
 
-[node name="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1464107932) index="0" unique_id=1064807973]
+[node name="Cube" parent="Gli\'s House" index="0" unique_id=1217710111]
+lod_bias = 0.001
+
+[node name="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1564678183) index="0" unique_id=1435117646]
 transform = Transform3D(1.0000014, 0, 0, 0, 1, 0, 0, 0, 1.0000014, 1.0656933, -0.16235358, 0.02139318)
 shape = SubResource("BoxShape3D_hpmq0")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1464107932) index="1" unique_id=1630444938]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1564678183) index="1" unique_id=1630444938]
 transform = Transform3D(1.0000014, 0, 0, 0, 1, 0, 0, 0, 1.0000014, -1.0529188, -0.16235358, 0.02139318)
 shape = SubResource("BoxShape3D_hpmq0")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1464107932) index="2" unique_id=1406550744]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1564678183) index="2" unique_id=1406550744]
 transform = Transform3D(1.0000014, 0, 0, 0, 1, 0, 0, 0, 1.0000014, -0.062256098, -0.16235358, 1.44776)
 shape = SubResource("BoxShape3D_ckf6d")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1464107932) index="3" unique_id=516306221]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1564678183) index="3" unique_id=516306221]
 transform = Transform3D(1.0000014, 0, 0, 0, 1, 0, 0, 0, 1.0000014, -0.062256087, -0.16235358, -1.3895105)
 shape = SubResource("BoxShape3D_ckf6d")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1464107932) index="4" unique_id=1613164362]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1564678183) index="4" unique_id=1613164362]
 transform = Transform3D(1.0000014, 0, 0, 0, 1, 0, 0, 0, 1.0000014, 0.005615193, 0.45855713, -0.053711236)
 shape = SubResource("BoxShape3D_oy0wj")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1464107932) index="5" unique_id=1231109242]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1564678183) index="5" unique_id=1231109242]
 transform = Transform3D(1.0000014, 0, 0, 0, 1, 0, 0, 0, 1.0000014, 0.5962687, -0.18234253, -0.06692535)
 shape = SubResource("BoxShape3D_repcq")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1464107932) index="6" unique_id=1498014155]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1564678183) index="6" unique_id=1498014155]
 transform = Transform3D(1.0000014, 0, 0, 0, 1, 0, 0, 0, 1.0000014, -0.59697115, -0.18234253, -0.06634554)
 shape = SubResource("BoxShape3D_evm52")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1464107932) index="7" unique_id=537118807]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1564678183) index="7" unique_id=537118807]
 transform = Transform3D(1.0000014, 0, 0, 0, 1, 0, 0, 0, 1.0000014, 0.005129278, -1.2559218, -0.053711236)
 shape = SubResource("BoxShape3D_8e81o")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1464107932) index="8" unique_id=337862628]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Gli\'s House/Cube/StaticBody3D" parent_id_path=PackedInt32Array(2131513319, 1564678183) index="8" unique_id=337862628]
 transform = Transform3D(1.0000014, 0, 0, 0, 1, 0, 0, 0, 1.0000014, 0.005129278, 0.98414344, -0.053711236)
 shape = SubResource("BoxShape3D_8e81o")
 
-[node name="Plane" parent="Gli\'s House" index="1" unique_id=1305589555]
+[node name="Plane" parent="Gli\'s House" index="1" unique_id=472469954]
 transform = Transform3D(0, 0.37285325, 0, 0, 0, -0.37285325, -0.17557044, 0, 0, 1.7647204, -0.41783765, 0.5103046)
+lod_bias = 0.001
+
+[node name="Cube_001" parent="Gli\'s House" index="2" unique_id=1783012147]
+lod_bias = 0.001
+
+[node name="Cube_002" parent="Gli\'s House" index="3" unique_id=1368151500]
+lod_bias = 0.036
+
+[node name="Plane_001" parent="Gli\'s House" index="4" unique_id=2119440425]
+lod_bias = 0.001
+
+[node name="Plane_002" parent="Gli\'s House" index="5" unique_id=1060350743]
+lod_bias = 0.001
+
+[node name="Plane_003" parent="Gli\'s House" index="6" unique_id=1453180549]
+lod_bias = 0.001
 
 [node name="bed" type="Node3D" parent="Gli\'s House" unique_id=566372229]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 1.5497602, -0.80624855, -2.6837404)
@@ -296,7 +472,46 @@ shape = SubResource("CapsuleShape3D_xolg8")
 [node name="Violin 1" parent="Gli\'s House/violin" unique_id=795157991 instance=ExtResource("5_q74gi")]
 transform = Transform3D(3.9666677, 0, 0, 0, 3.9666677, 0, 0, 0, 3.966668, -2.0641289, 2.41291, 1.4788132)
 
-[node name="Point" parent="Gli\'s House/violin/Violin 1" index="13" unique_id=1736229204]
+[node name="BézierCurve" parent="Gli\'s House/violin/Violin 1" index="0" unique_id=996457241]
+lod_bias = 0.05
+
+[node name="BézierCurve_005" parent="Gli\'s House/violin/Violin 1" index="1" unique_id=1987846444]
+lod_bias = 0.1
+
+[node name="BézierCurve_006" parent="Gli\'s House/violin/Violin 1" index="2" unique_id=1612916114]
+lod_bias = 0.1
+
+[node name="BézierCurve_007" parent="Gli\'s House/violin/Violin 1" index="3" unique_id=1975294197]
+lod_bias = 0.1
+
+[node name="BézierCurve_008" parent="Gli\'s House/violin/Violin 1" index="4" unique_id=1709188441]
+lod_bias = 0.1
+
+[node name="Cube" parent="Gli\'s House/violin/Violin 1" index="5" unique_id=1999066845]
+lod_bias = 0.05
+
+[node name="Cube_001" parent="Gli\'s House/violin/Violin 1" index="6" unique_id=200372241]
+lod_bias = 0.05
+
+[node name="Cube_003" parent="Gli\'s House/violin/Violin 1" index="7" unique_id=1350676090]
+lod_bias = 0.05
+
+[node name="Cylinder" parent="Gli\'s House/violin/Violin 1" index="8" unique_id=8084426]
+lod_bias = 0.05
+
+[node name="Cylinder_001" parent="Gli\'s House/violin/Violin 1" index="9" unique_id=1520350445]
+lod_bias = 0.05
+
+[node name="Cylinder_002" parent="Gli\'s House/violin/Violin 1" index="10" unique_id=1008945428]
+lod_bias = 0.05
+
+[node name="Cylinder_003" parent="Gli\'s House/violin/Violin 1" index="11" unique_id=2075206161]
+lod_bias = 0.05
+
+[node name="Cylinder_004" parent="Gli\'s House/violin/Violin 1" index="12" unique_id=1610560048]
+lod_bias = 0.05
+
+[node name="Point" parent="Gli\'s House/violin/Violin 1" index="13" unique_id=556216702]
 visible = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Gli\'s House/violin/Violin 1" unique_id=1097881492]
@@ -348,7 +563,7 @@ script = ExtResource("18_xolg8")
 canvas = NodePath("../UI Elements")
 
 [node name="CharacterBody3D" parent="." unique_id=1051319031 instance=ExtResource("3_k363o")]
-transform = Transform3D(0, 0, 0.099999994, 0, 0.1, 0, -0.099999994, 0, 0, 0, -0.20852904, -1.7625492)
+transform = Transform3D(-0.085959524, 0.012223134, -0.049614083, 0.049119983, -0.006984681, -0.0868242, -0.01407803, -0.09900407, -2.1687006e-09, 0.5962183, 0.039276615, -1.6967171)
 floor_block_on_wall = false
 floor_max_angle = 1.420698
 script = ExtResource("4_pkypn")
@@ -628,6 +843,13 @@ min_length = 0.3
 
 [node name="SpringArm3D" parent="CharacterBody3D/CameraPivot" index="0" unique_id=780093982]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999999, 0, 0, 3.5584164)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1503050043]
+libraries/ = SubResource("AnimationLibrary_repcq")
+autoplay = &"intro"
+
+[node name="Camera3D" type="Camera3D" parent="AnimationPlayer" unique_id=170743946]
+transform = Transform3D(0.59059155, 0.29312986, -0.75184876, 0.059538763, 0.91332525, 0.40285495, 0.8047713, -0.28268686, 0.5219496, 0.16493829, 0.43286085, -1.490219)
 
 [connection signal="body_entered" from="Gli\'s House/bed/Area3D" to="Gli\'s House/bed/Area3D" method="_on_body_entered"]
 [connection signal="body_exited" from="Gli\'s House/bed/Area3D" to="Gli\'s House/bed/Area3D" method="_on_body_exited"]

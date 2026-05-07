@@ -169,7 +169,6 @@ ssil_enabled = true
 sdfgi_enabled = true
 sdfgi_use_occlusion = true
 glow_enabled = true
-glow_intensity = 0.1
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.005
 
@@ -595,6 +594,7 @@ mouse_sensibility = 0.005
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999999, 0, 0, 3.5584164)
 
 [node name="CharacterCam" parent="CharacterBody3D/CameraPivot" index="1" unique_id=385701434]
+current = true
 fov = 60.0
 
 [node name="House 1" parent="." unique_id=1538674489 instance=ExtResource("2_mc20k")]
@@ -604,7 +604,7 @@ transform = Transform3D(0.57, 0, 0, 0, 0.57, 0, 0, 0, 0.57, -2.4134228, 1.167739
 transform = Transform3D(-0.57, 0, 0, 0, 0.57, 0, 0, 0, 0.57, 2.5576777, 1.1677396, -1.4634721)
 visible = false
 
-[node name="Cube_089" parent="House 2" index="92" unique_id=2061131097]
+[node name="Cube_089" parent="House 2" index="92" unique_id=1617893737]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05084753, 1.2737782, -1.3115671)
 
 [node name="House 3" parent="." unique_id=473036691 instance=ExtResource("13_na6ls")]
@@ -639,7 +639,7 @@ mesh = SubResource("BoxMesh_g56ap")
 [node name="Book House 1" parent="." unique_id=1162743246 instance=ExtResource("13_wapi5")]
 transform = Transform3D(-6.030262e-08, 0, -1.3795631, 0, 1.3795631, 0, 1.3795631, 0, -6.030262e-08, 0.37049317, 0, -2.3785627)
 
-[node name="Cube_003" parent="Book House 1" index="4" unique_id=475265175]
+[node name="Cube_003" parent="Book House 1" index="4" unique_id=715402679]
 transform = Transform3D(1, 0, 7.1054274e-15, 0, 1.0830063, 0, 0, 0, 1.2777057, -0.0014623404, 0.97189015, -0.40148333)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Book House 1" unique_id=10004118]
@@ -667,41 +667,41 @@ transform = Transform3D(1.7875423, 0, 0, 0, 1, 0, 0, 0, 1, -7.2309217, -0.190999
 [node name="stairs" parent="StaticBody3D5" unique_id=873191669 instance=ExtResource("16_g56ap")]
 transform = Transform3D(-1.7484556e-08, 0, -0.88, 0, 0.31, 0, 0.4, 0, -3.8466023e-08, 0.90764236, 0.24720126, -0.21936429)
 
-[node name="Cube" parent="StaticBody3D5/stairs" index="0" unique_id=1724377641]
+[node name="Cube" parent="StaticBody3D5/stairs" index="0" unique_id=788017120]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.03122282, -0.25388527)
 mesh = SubResource("ArrayMesh_na6ls")
 
-[node name="Cube_001" parent="StaticBody3D5/stairs" index="1" unique_id=2010704790]
+[node name="Cube_001" parent="StaticBody3D5/stairs" index="1" unique_id=1963658937]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7763568e-15, 0, -0.24157023)
 
 [node name="stairs2" parent="StaticBody3D5" unique_id=651821649 instance=ExtResource("16_g56ap")]
 transform = Transform3D(-1.7484556e-08, 0, -0.88, 0, 0.31, 0, 0.4, 0, -3.8466023e-08, 0.90764236, 0.7809516, -0.81956863)
 
-[node name="Cube" parent="StaticBody3D5/stairs2" index="0" unique_id=1724377641]
+[node name="Cube" parent="StaticBody3D5/stairs2" index="0" unique_id=788017120]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.03122282, -0.25388527)
 mesh = SubResource("ArrayMesh_na6ls")
 
-[node name="Cube_001" parent="StaticBody3D5/stairs2" index="1" unique_id=2010704790]
+[node name="Cube_001" parent="StaticBody3D5/stairs2" index="1" unique_id=1963658937]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7763568e-15, 0, -0.24785826)
 
 [node name="stairs3" parent="StaticBody3D5" unique_id=2035639660 instance=ExtResource("16_g56ap")]
 transform = Transform3D(-1.7484556e-08, 0, -0.88, 0, 0.31, 0, 0.4, 0, -3.8466023e-08, 0.9076425, 1.3175006, -2.8896396)
 
-[node name="Cube" parent="StaticBody3D5/stairs3" index="0" unique_id=1724377641]
+[node name="Cube" parent="StaticBody3D5/stairs3" index="0" unique_id=788017120]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.03122282, -0.25388527)
 mesh = SubResource("ArrayMesh_na6ls")
 
-[node name="Cube_001" parent="StaticBody3D5/stairs3" index="1" unique_id=2010704790]
+[node name="Cube_001" parent="StaticBody3D5/stairs3" index="1" unique_id=1963658937]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7763568e-15, 0, -0.24519284)
 
 [node name="stairs4" parent="StaticBody3D5" unique_id=1009255268 instance=ExtResource("16_g56ap")]
 transform = Transform3D(-1.7484556e-08, 0, -0.88, 0, 0.31, 0, 0.4, 0, -3.8466023e-08, 0.9076425, 1.851251, -3.489844)
 
-[node name="Cube" parent="StaticBody3D5/stairs4" index="0" unique_id=1724377641]
+[node name="Cube" parent="StaticBody3D5/stairs4" index="0" unique_id=788017120]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.03122282, -0.25388527)
 mesh = SubResource("ArrayMesh_na6ls")
 
-[node name="Cube_001" parent="StaticBody3D5/stairs4" index="1" unique_id=2010704790]
+[node name="Cube_001" parent="StaticBody3D5/stairs4" index="1" unique_id=1963658937]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7763568e-15, 0, -0.24365829)
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="StaticBody3D5" unique_id=1259884898]
@@ -900,6 +900,9 @@ script = ExtResource("33_8ndlx")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Aggressive Cornelius/ChaseDetection" unique_id=2032257097]
 transform = Transform3D(0.9930537, 0, -0.117658615, 0, 1.0000539, 0, 0.117658615, 0, 0.9930537, 2.1590896, 0.43618903, 1.2676039)
 shape = SubResource("BoxShape3D_y0srq")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1872519167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.947407, 2.2767498, 0)
 
 [connection signal="body_entered" from="Angry Steve/Area3D" to="Angry Steve" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Angry Steve/ChaseDetection" to="Angry Steve/ChaseDetection" method="_on_body_entered"]

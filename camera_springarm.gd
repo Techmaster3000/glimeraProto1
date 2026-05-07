@@ -10,7 +10,7 @@ func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion: #&& Input.is_action_pressed("mouse_right") add this to get control over camera
 		rotation.y -= event.relative.x * mouse_sensibility
 		rotation.y = wrapf(rotation.y, 0.0, TAU)
 		rotation.x -= event.relative.y * mouse_sensibility
