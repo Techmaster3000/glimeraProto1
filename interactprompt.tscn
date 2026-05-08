@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://btbbvoxdixc6u"]
 
-[ext_resource type="Shader" uid="uid://dolipjk2ghj4g" path="res://fadeblock.gdshader" id="1_2go4k"]
+[ext_resource type="Shader" uid="uid://dolipjk2ghj4g" path="res://Shaders/fadeblock.gdshader" id="1_2go4k"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rhjco"]
 shader = ExtResource("1_2go4k")

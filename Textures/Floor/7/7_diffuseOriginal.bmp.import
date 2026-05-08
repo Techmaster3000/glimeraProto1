@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcp5dtxkg5nvo"
 path.s3tc="res://.godot/imported/7_diffuseOriginal.bmp-c7c42af8d8113bd78308e52f96283014.s3tc.ctex"
+path.etc2="res://.godot/imported/7_diffuseOriginal.bmp-c7c42af8d8113bd78308e52f96283014.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Textures/Floor/7/7_diffuseOriginal.bmp"
-dest_files=["res://.godot/imported/7_diffuseOriginal.bmp-c7c42af8d8113bd78308e52f96283014.s3tc.ctex"]
+dest_files=["res://.godot/imported/7_diffuseOriginal.bmp-c7c42af8d8113bd78308e52f96283014.s3tc.ctex", "res://.godot/imported/7_diffuseOriginal.bmp-c7c42af8d8113bd78308e52f96283014.etc2.ctex"]
 
 [params]
 

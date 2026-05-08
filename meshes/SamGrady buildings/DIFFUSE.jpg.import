@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://2b86wae3plh8"
 path.s3tc="res://.godot/imported/DIFFUSE.jpg-499f4072ad4422653420fb57688a0b58.s3tc.ctex"
+path.etc2="res://.godot/imported/DIFFUSE.jpg-499f4072ad4422653420fb57688a0b58.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://meshes/SamGrady buildings/DIFFUSE.jpg"
-dest_files=["res://.godot/imported/DIFFUSE.jpg-499f4072ad4422653420fb57688a0b58.s3tc.ctex"]
+dest_files=["res://.godot/imported/DIFFUSE.jpg-499f4072ad4422653420fb57688a0b58.s3tc.ctex", "res://.godot/imported/DIFFUSE.jpg-499f4072ad4422653420fb57688a0b58.etc2.ctex"]
 
 [params]
 

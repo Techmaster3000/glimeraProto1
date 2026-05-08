@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dtcotjhfc4ego"]
 
-[ext_resource type="Script" uid="uid://dpnlb1qx4femm" path="res://camera_springarm.gd" id="1_7n724"]
-[ext_resource type="Script" uid="uid://tvhr2mx36gkh" path="res://camera_follow.gd" id="2_78g7m"]
+[ext_resource type="Script" uid="uid://dpnlb1qx4femm" path="res://scripts/camera_springarm.gd" id="1_7n724"]
+[ext_resource type="Script" uid="uid://tvhr2mx36gkh" path="res://scripts/camera_follow.gd" id="2_78g7m"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_bwfjh"]
 radius = 0.3
