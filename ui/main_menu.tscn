@@ -9,8 +9,8 @@
 [ext_resource type="Script" uid="uid://d36oofhkq5sxy" path="res://ui/window_options.gd" id="5_glbon"]
 [ext_resource type="Script" uid="uid://bwd3qlffpad6o" path="res://ui/inputremapbutton.gd" id="6_nlkkf"]
 [ext_resource type="PackedScene" uid="uid://dsc3ihpwxa6w6" path="res://ui/input_remap_button.tscn" id="6_qe12f"]
-[ext_resource type="AudioStream" uid="uid://cymos6wnah1s5" path="res://ui/Glimera theme 1 v2.ogg" id="9_5klac"]
-[ext_resource type="AudioStream" uid="uid://qar5rufr34os" path="res://Sounds/UI Start.wav" id="9_arv2f"]
+[ext_resource type="AudioStream" uid="uid://cymos6wnah1s5" path="res://Sounds/Music/Glimera theme 1 v2.ogg" id="9_5klac"]
+[ext_resource type="AudioStream" uid="uid://qar5rufr34os" path="res://Sounds/SFX/UI Start.wav" id="9_arv2f"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_arv2f"]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://da8rayfiko1ak"
 path.s3tc="res://.godot/imported/PavingStones150_2K-JPG_Displacement.jpg-bfbac95c4db511f240091bb4bd342859.s3tc.ctex"
+path.etc2="res://.godot/imported/PavingStones150_2K-JPG_Displacement.jpg-bfbac95c4db511f240091bb4bd342859.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Textures/Cobblestone Texture/PavingStones150_2K-JPG_Displacement.jpg"
-dest_files=["res://.godot/imported/PavingStones150_2K-JPG_Displacement.jpg-bfbac95c4db511f240091bb4bd342859.s3tc.ctex"]
+dest_files=["res://.godot/imported/PavingStones150_2K-JPG_Displacement.jpg-bfbac95c4db511f240091bb4bd342859.s3tc.ctex", "res://.godot/imported/PavingStones150_2K-JPG_Displacement.jpg-bfbac95c4db511f240091bb4bd342859.etc2.ctex"]
 
 [params]
 

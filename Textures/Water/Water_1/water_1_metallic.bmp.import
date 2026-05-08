@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3ub67e1qrmv3"
 path.s3tc="res://.godot/imported/water_1_metallic.bmp-d4b82c978cb21820d1bddc45258993da.s3tc.ctex"
+path.etc2="res://.godot/imported/water_1_metallic.bmp-d4b82c978cb21820d1bddc45258993da.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Textures/Water/Water_1/water_1_metallic.bmp"
-dest_files=["res://.godot/imported/water_1_metallic.bmp-d4b82c978cb21820d1bddc45258993da.s3tc.ctex"]
+dest_files=["res://.godot/imported/water_1_metallic.bmp-d4b82c978cb21820d1bddc45258993da.s3tc.ctex", "res://.godot/imported/water_1_metallic.bmp-d4b82c978cb21820d1bddc45258993da.etc2.ctex"]
 
 [params]
 

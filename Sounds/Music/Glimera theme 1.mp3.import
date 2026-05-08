@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cral320sc5djp"
+path="res://.godot/imported/Glimera theme 1.mp3-07f60af1dbf3b5122e05c80e3ad8f1ad.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Music/Glimera theme 1.mp3"
+dest_files=["res://.godot/imported/Glimera theme 1.mp3-07f60af1dbf3b5122e05c80e3ad8f1ad.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

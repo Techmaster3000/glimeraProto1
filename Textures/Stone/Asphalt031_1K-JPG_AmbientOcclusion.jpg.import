@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtmapf7e1hstx"
 path.s3tc="res://.godot/imported/Asphalt031_1K-JPG_AmbientOcclusion.jpg-b7953f11424909f1ee349e74998340d8.s3tc.ctex"
+path.etc2="res://.godot/imported/Asphalt031_1K-JPG_AmbientOcclusion.jpg-b7953f11424909f1ee349e74998340d8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Textures/Stone/Asphalt031_1K-JPG_AmbientOcclusion.jpg"
-dest_files=["res://.godot/imported/Asphalt031_1K-JPG_AmbientOcclusion.jpg-b7953f11424909f1ee349e74998340d8.s3tc.ctex"]
+dest_files=["res://.godot/imported/Asphalt031_1K-JPG_AmbientOcclusion.jpg-b7953f11424909f1ee349e74998340d8.s3tc.ctex", "res://.godot/imported/Asphalt031_1K-JPG_AmbientOcclusion.jpg-b7953f11424909f1ee349e74998340d8.etc2.ctex"]
 
 [params]
 

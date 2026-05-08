@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk2c3jb6b4vxd"
 path.s3tc="res://.godot/imported/Violin 1_Wood023_1K-PNG_Roughness.png-5f06a0be12d1f343e80472ef6649bd53.s3tc.ctex"
+path.etc2="res://.godot/imported/Violin 1_Wood023_1K-PNG_Roughness.png-5f06a0be12d1f343e80472ef6649bd53.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Grafting/Violin/Violin 1_Wood023_1K-PNG_Roughness.png"
-dest_files=["res://.godot/imported/Violin 1_Wood023_1K-PNG_Roughness.png-5f06a0be12d1f343e80472ef6649bd53.s3tc.ctex"]
+dest_files=["res://.godot/imported/Violin 1_Wood023_1K-PNG_Roughness.png-5f06a0be12d1f343e80472ef6649bd53.s3tc.ctex", "res://.godot/imported/Violin 1_Wood023_1K-PNG_Roughness.png-5f06a0be12d1f343e80472ef6649bd53.etc2.ctex"]
 
 [params]
 
