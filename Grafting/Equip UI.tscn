@@ -123,12 +123,58 @@ corner_radius_top_right = 100
 corner_radius_bottom_right = 100
 corner_radius_bottom_left = 100
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xl5b8"]
+bg_color = Color(0, 0, 0, 0.7058824)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mu6j1"]
+bg_color = Color(0, 0, 0, 0)
+border_width_bottom = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06m8q"]
+bg_color = Color(0.84705883, 0.84705883, 0.84705883, 0.19607843)
+border_width_bottom = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dx7kf"]
+bg_color = Color(0.9529412, 0.9529412, 0.9529412, 0.11764706)
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2txt6"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_bottom = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8235u"]
+bg_color = Color(0.93333334, 0.93333334, 0.93333334, 0.19607843)
+border_width_bottom = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3iepb"]
+bg_color = Color(0.92535293, 0.9253528, 0.9253529, 0.11764706)
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m1vc2"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_bottom = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_drt4x"]
+bg_color = Color(0.9019608, 0.9019608, 0.9019608, 0.19607843)
+border_width_bottom = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xykr1"]
+bg_color = Color(0.9254902, 0.9254902, 0.9254902, 0.11764706)
+border_width_bottom = 2
+
 [node name="Control" type="Control" unique_id=992539865]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_default_cursor_shape = 2
@@ -279,27 +325,24 @@ autoplay = &"Idle Straight"
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport" unique_id=1768999714]
 transform = Transform3D(1, 0, 0, 0, 0.9226593, 0.38561618, 0, -0.38561618, 0.9226593, 0, 0.67658234, 1.2380623)
 
-[node name="Label" type="Label" parent="." unique_id=1880185111]
-layout_mode = 0
-offset_left = 52.0
-offset_top = 12.0
-offset_right = 400.0
-offset_bottom = 108.0
-theme_override_font_sizes/font_size = 70
-text = "G R A F T S"
+[node name="GraftsPage" type="Control" parent="." unique_id=77643113]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
 
-[node name="RightArmSlot" type="Button" parent="." unique_id=729243373]
+[node name="RightArmSlot" type="Button" parent="GraftsPage" unique_id=729243373]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
 offset_left = 612.0
 offset_top = 320.0
-offset_right = 712.0
-offset_bottom = 420.0
+offset_right = 762.0
+offset_bottom = 470.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_lvtd6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_7vbv8")
 theme_override_styles/hover = SubResource("StyleBoxFlat_gjxvf")
 
-[node name="LeftArmSlot" type="Button" parent="." unique_id=628482005]
+[node name="LeftArmSlot" type="Button" parent="GraftsPage" unique_id=628482005]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
 offset_left = 1224.0
@@ -312,39 +355,40 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_maqgg")
 icon = ExtResource("7_g7rxt")
 icon_alignment = 1
 
-[node name="RightLegSlot" type="Button" parent="." unique_id=1510301006]
+[node name="RightLegSlot" type="Button" parent="GraftsPage" unique_id=1510301006]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
 offset_left = 612.0
 offset_top = 633.0
-offset_right = 712.0
-offset_bottom = 733.0
+offset_right = 762.0
+offset_bottom = 783.0
 theme_override_constants/icon_max_width = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_l3mp2")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_l5bjg")
 icon = ExtResource("7_g7rxt")
 icon_alignment = 1
 
-[node name="LeftLegSlot" type="Button" parent="." unique_id=210651934]
+[node name="LeftLegSlot" type="Button" parent="GraftsPage" unique_id=210651934]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
 offset_left = 1223.0
 offset_top = 632.0
-offset_right = 1323.0
-offset_bottom = 732.0
+offset_right = 1373.0
+offset_bottom = 782.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_n4bap")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_smwc3")
 theme_override_styles/hover = SubResource("StyleBoxFlat_l2vi8")
 
-[node name="InfoCard" type="Panel" parent="." unique_id=329842494]
+[node name="InfoCard" type="Panel" parent="GraftsPage" unique_id=329842494]
 custom_minimum_size = Vector2(300, 380)
 layout_mode = 0
 offset_left = 1514.0
 offset_top = 302.0
 offset_right = 1814.0
 offset_bottom = 682.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xl5b8")
 
-[node name="InfoName" type="Label" parent="InfoCard" unique_id=1691062328]
+[node name="InfoName" type="Label" parent="GraftsPage/InfoCard" unique_id=1691062328]
 layout_mode = 0
 offset_left = -1.0
 offset_top = 4.0
@@ -353,7 +397,7 @@ offset_bottom = 27.0
 theme_override_font_sizes/font_size = 28
 horizontal_alignment = 1
 
-[node name="InfoDesc" type="Label" parent="InfoCard" unique_id=972389833]
+[node name="InfoDesc" type="Label" parent="GraftsPage/InfoCard" unique_id=972389833]
 custom_minimum_size = Vector2(180, 60)
 layout_mode = 0
 offset_top = 312.0
@@ -362,7 +406,7 @@ offset_bottom = 372.0
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="InfoIcon" type="TextureRect" parent="InfoCard" unique_id=1156199061]
+[node name="InfoIcon" type="TextureRect" parent="GraftsPage/InfoCard" unique_id=1156199061]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 0
 offset_left = 11.0
@@ -372,7 +416,7 @@ offset_bottom = 292.0
 expand_mode = 3
 stretch_mode = 5
 
-[node name="GraftGrid" type="HBoxContainer" parent="." unique_id=405111424]
+[node name="GraftGrid" type="HBoxContainer" parent="GraftsPage" unique_id=405111424]
 custom_minimum_size = Vector2(0, 110)
 layout_mode = 0
 offset_left = 10.0
@@ -381,38 +425,104 @@ offset_right = 1907.0
 offset_bottom = 1070.0
 theme_override_constants/separation = 10
 
-[node name="Label2" type="Label" parent="." unique_id=2032925349]
+[node name="Label2" type="Label" parent="GraftsPage" unique_id=2032925349]
 layout_mode = 0
 offset_left = 1791.0
-offset_top = 18.0
+offset_top = 36.0
 offset_right = 1902.0
-offset_bottom = 54.0
+offset_bottom = 72.0
 theme_override_font_sizes/font_size = 26
 text = "ESC back"
 
-[node name="Line2D" type="Line2D" parent="." unique_id=3348599]
+[node name="Line2D" type="Line2D" parent="GraftsPage" unique_id=3348599]
 points = PackedVector2Array(857, 507, 757, 492, 726, 469)
 width = 2.0
 default_color = Color(0, 0, 0, 1)
 end_cap_mode = 2
 
-[node name="Line2D2" type="Line2D" parent="." unique_id=446654342]
+[node name="Line2D2" type="Line2D" parent="GraftsPage" unique_id=446654342]
 points = PackedVector2Array(893, 685, 817, 673, 779, 702)
 width = 2.0
 default_color = Color(0, 0, 0, 1)
 
-[node name="Line2D3" type="Line2D" parent="." unique_id=487064687]
+[node name="Line2D3" type="Line2D" parent="GraftsPage" unique_id=487064687]
 points = PackedVector2Array(1126, 507, 1220, 491, 1252, 466)
 width = 2.0
 default_color = Color(0, 0, 0, 1)
 
-[node name="Line2D4" type="Line2D" parent="." unique_id=2048527851]
+[node name="Line2D4" type="Line2D" parent="GraftsPage" unique_id=2048527851]
 points = PackedVector2Array(1081, 686, 1160, 677, 1192, 708)
 width = 2.0
 default_color = Color(0, 0, 0, 1)
 
-[connection signal="pressed" from="RightArmSlot" to="." method="_on_right_arm_slot_pressed"]
-[connection signal="pressed" from="LeftLegSlot" to="." method="_on_left_leg_slot_pressed"]
+[node name="Label" type="Label" parent="GraftsPage" unique_id=1880185111]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 12.0
+offset_right = 400.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 70
+text = "G R A F T I N G"
+
+[node name="SettingsPage" type="Control" parent="." unique_id=390541024]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="InventoryPage" type="Control" parent="." unique_id=615978731]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TabBar" type="HBoxContainer" parent="." unique_id=582616486]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -202.0
+offset_top = 33.0
+offset_right = 203.0
+offset_bottom = 76.0
+grow_horizontal = 2
+theme_override_constants/separation = 15
+
+[node name="SettingsTab" type="Button" parent="TabBar" unique_id=1314654137]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_mu6j1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_06m8q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dx7kf")
+text = "Settings"
+
+[node name="GraftsTab" type="Button" parent="TabBar" unique_id=1369280653]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_2txt6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8235u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3iepb")
+text = "Grafting"
+
+[node name="InventoryTab" type="Button" parent="TabBar" unique_id=1008254444]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_m1vc2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_drt4x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xykr1")
+text = "Inventory"
+
+[connection signal="pressed" from="GraftsPage/RightArmSlot" to="." method="_on_right_arm_slot_pressed"]
+[connection signal="pressed" from="GraftsPage/LeftLegSlot" to="." method="_on_left_leg_slot_pressed"]
+[connection signal="pressed" from="TabBar/SettingsTab" to="." method="_on_settings_tab_pressed"]
+[connection signal="pressed" from="TabBar/GraftsTab" to="." method="_on_grafts_tab_pressed"]
+[connection signal="pressed" from="TabBar/InventoryTab" to="." method="_on_inventory_tab_pressed"]
 
 [editable path="SubViewportContainer/SubViewport/Node3D"]
 [editable path="SubViewportContainer/SubViewport/Node3D/CharacterBody3D"]

@@ -10,27 +10,54 @@ extends Control
 var selected_slot : String = ""
 var is_open : bool = false
 
-@onready var graft_grid = $GraftGrid
-@onready var info_card = $InfoCard
-@onready var info_name = $InfoCard/InfoName
-@onready var info_desc = $InfoCard/InfoDesc
-@onready var info_icon = $InfoCard/InfoIcon
-@onready var arm_slot = $RightArmSlot
-@onready var leg_slot = $LeftLegSlot
+@onready var graft_grid = $GraftsPage/GraftGrid
+@onready var info_card = $GraftsPage/InfoCard
+@onready var info_name = $GraftsPage/InfoCard/InfoName
+@onready var info_desc = $GraftsPage/InfoCard/InfoDesc
+@onready var info_icon = $GraftsPage/InfoCard/InfoIcon
+@onready var arm_slot = $GraftsPage/RightArmSlot
+@onready var leg_slot = $GraftsPage/LeftLegSlot
+
+@onready var grafts_page = $GraftsPage
+@onready var inventory_page = $InventoryPage
+@onready var settings_page = $SettingsPage
 
 func _ready() -> void:
 	set_process_input(true)
 	#visible = false
 	info_card.visible = false
 	graft_grid.visible = false
-	$LeftArmSlot.disabled = true
-	$RightLegSlot.disabled = true
+	$GraftsPage/LeftArmSlot.disabled = true
+	$GraftsPage/RightLegSlot.disabled = true
+	_show_page("grafts")
+	if armIcons.size() > GraftGlobals.right_arm_graft_index:
+		arm_slot.icon = armIcons[GraftGlobals.right_arm_graft_index]
+		arm_slot.add_theme_constant_override("icon_max_width", 150)
+	if legIcons.size() > GraftGlobals.left_leg_graft_index:
+		leg_slot.icon = legIcons[GraftGlobals.left_leg_graft_index]
+		leg_slot.add_theme_constant_override("icon_max_width", 150)
 
 func _input(event) -> void:
 	if event is InputEventKey and event.pressed:
 		if event.keycode == KEY_ESCAPE:
 			is_open = !is_open
 			visible = is_open
+
+func _show_page(page: String) -> void:
+	grafts_page.visible = page == "grafts"
+	inventory_page.visible = page == "inventory"
+	settings_page.visible = page == "settings"
+
+func _on_grafts_tab_pressed() -> void:
+	_show_page("grafts")
+
+func _on_inventory_tab_pressed() -> void:
+	#print("inventory tab pressed")
+	_show_page("inventory")
+
+func _on_settings_tab_pressed() -> void:
+	#print("settings tab pressed")
+	_show_page("settings")
 
 func _on_right_arm_slot_pressed() -> void:
 	selected_slot = "arm"
@@ -55,7 +82,6 @@ func _populate_grid(icons: Array[Texture2D], names: Array[String]) -> void:
 		btn.ignore_texture_size = true
 		btn.custom_minimum_size = Vector2(200, 200)
 		btn.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
-
 		var is_locked = false
 		if selected_slot == "arm":
 			if i == 1 and !GraftGlobals.sawObtained: is_locked = true
@@ -94,3 +120,19 @@ func _on_graft_hovered(index: int) -> void:
 		info_name.text = legGraftNames[index] if index < legGraftNames.size() else ""
 		info_desc.text = legGraftDescs[index] if index < legGraftDescs.size() else ""
 		info_icon.texture = legIcons[index]
+
+
+func _on_button_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_button_2_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_button_3_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_grafts_pressed() -> void:
+	pass # Replace with function body.
