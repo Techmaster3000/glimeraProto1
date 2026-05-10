@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://hvr2gr5rmfjp"
 path.s3tc="res://.godot/imported/Asphalt031_1K-JPG_Displacement.jpg-443c8e3fcb87e4b68941b933cc1793bb.s3tc.ctex"
+path.etc2="res://.godot/imported/Asphalt031_1K-JPG_Displacement.jpg-443c8e3fcb87e4b68941b933cc1793bb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Textures/Stone/Asphalt031_1K-JPG_Displacement.jpg"
-dest_files=["res://.godot/imported/Asphalt031_1K-JPG_Displacement.jpg-443c8e3fcb87e4b68941b933cc1793bb.s3tc.ctex"]
+dest_files=["res://.godot/imported/Asphalt031_1K-JPG_Displacement.jpg-443c8e3fcb87e4b68941b933cc1793bb.s3tc.ctex", "res://.godot/imported/Asphalt031_1K-JPG_Displacement.jpg-443c8e3fcb87e4b68941b933cc1793bb.etc2.ctex"]
 
 [params]
 

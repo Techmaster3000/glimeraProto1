@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bixdkk52hjtpk"
 path.s3tc="res://.godot/imported/NightEnvironmentHDRI009_8K_TONEMAPPED.jpg-0cab2c726527d91b07f7112260d70d41.s3tc.ctex"
+path.etc2="res://.godot/imported/NightEnvironmentHDRI009_8K_TONEMAPPED.jpg-0cab2c726527d91b07f7112260d70d41.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://images/NightEnvironmentHDRI009_8K_TONEMAPPED.jpg"
-dest_files=["res://.godot/imported/NightEnvironmentHDRI009_8K_TONEMAPPED.jpg-0cab2c726527d91b07f7112260d70d41.s3tc.ctex"]
+dest_files=["res://.godot/imported/NightEnvironmentHDRI009_8K_TONEMAPPED.jpg-0cab2c726527d91b07f7112260d70d41.s3tc.ctex", "res://.godot/imported/NightEnvironmentHDRI009_8K_TONEMAPPED.jpg-0cab2c726527d91b07f7112260d70d41.etc2.ctex"]
 
 [params]
 

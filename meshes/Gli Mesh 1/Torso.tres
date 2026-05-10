@@ -1,7 +1,7 @@
 [gd_resource type="ArrayMesh" format=4 uid="uid://f7pr6okaorw8"]
 
 [ext_resource type="Material" uid="uid://bt7o37gnl4j2j" path="res://meshes/Gli Mesh 1/skin.tres" id="1_j05au"]
-[ext_resource type="Shader" uid="uid://8oupr2xsmh42" path="res://Chest Shader 2.tres" id="2_otfvs"]
+[ext_resource type="Shader" uid="uid://8oupr2xsmh42" path="res://Shaders/Chest Shader 2.tres" id="2_otfvs"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_l8o4a"]
 render_priority = 0

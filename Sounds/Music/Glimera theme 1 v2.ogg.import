@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cymos6wnah1s5"
+path="res://.godot/imported/Glimera theme 1 v2.ogg-9d0d78ef72886a7d6ba34101fee28395.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/Music/Glimera theme 1 v2.ogg"
+dest_files=["res://.godot/imported/Glimera theme 1 v2.ogg-9d0d78ef72886a7d6ba34101fee28395.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=20.71
+bpm=70.0
+beat_count=0
+bar_beats=3

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyyvr7r6n6mjl"
 path.s3tc="res://.godot/imported/Asphalt031_1K-JPG_Color.jpg-e41471993439ad212b2829f2842cb17e.s3tc.ctex"
+path.etc2="res://.godot/imported/Asphalt031_1K-JPG_Color.jpg-e41471993439ad212b2829f2842cb17e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Textures/Stone/Asphalt031_1K-JPG_Color.jpg"
-dest_files=["res://.godot/imported/Asphalt031_1K-JPG_Color.jpg-e41471993439ad212b2829f2842cb17e.s3tc.ctex"]
+dest_files=["res://.godot/imported/Asphalt031_1K-JPG_Color.jpg-e41471993439ad212b2829f2842cb17e.s3tc.ctex", "res://.godot/imported/Asphalt031_1K-JPG_Color.jpg-e41471993439ad212b2829f2842cb17e.etc2.ctex"]
 
 [params]
 

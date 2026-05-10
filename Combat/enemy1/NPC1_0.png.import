@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw5nijp4kbn2s"
 path.s3tc="res://.godot/imported/NPC1_0.png-c0dd6b973d165343820ba10ecf031973.s3tc.ctex"
+path.etc2="res://.godot/imported/NPC1_0.png-c0dd6b973d165343820ba10ecf031973.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Combat/enemy1/NPC1_0.png"
-dest_files=["res://.godot/imported/NPC1_0.png-c0dd6b973d165343820ba10ecf031973.s3tc.ctex"]
+dest_files=["res://.godot/imported/NPC1_0.png-c0dd6b973d165343820ba10ecf031973.s3tc.ctex", "res://.godot/imported/NPC1_0.png-c0dd6b973d165343820ba10ecf031973.etc2.ctex"]
 
 [params]
 
