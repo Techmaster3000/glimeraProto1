@@ -1,6 +1,6 @@
 extends Area3D
 
-@export var target_street : Resource
+@export var target_street : String
 @export var spawn_name : String
 
 func _on_body_entered(body: Node3D) -> void:
