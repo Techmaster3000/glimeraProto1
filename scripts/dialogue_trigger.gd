@@ -62,7 +62,7 @@ func DialogicSignal(arg:String):
 		node.queue_free()
 	if arg == "open_door":
 		var game = get_tree().current_scene
-		game.transition_to_street(load("res://Streets/Street1-1.tscn"), "Spawn_FromHouse")
+		game.transition_to_street("res://Streets/Street1-1.tscn", "Spawn_FromHouse")
 	if arg == "start_quest_1":
 		print("quest 1 started")
 		Dialogic.VAR.set_variable("quest_1","started")
