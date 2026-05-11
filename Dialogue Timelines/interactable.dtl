@@ -35,6 +35,14 @@ elif {target} == "door_fd":
 		Gli: Yes yes I heard y- Oh my…
 		[signal arg="open_door"]
 # Street 1
+elif {target} == "door_glihouse":
+	I didn't forget anything. I'm sure of it.
+elif {target} == "door_neighbour1":
+	No ones home.
+elif {target} == "door_neighbour2":
+	No ones responding.
+elif {target} == "door_building1":
+	No ones here.
 elif {target} == "frz_chr_outside_house":
 	join skull right
 	if {talkedTo} == false:

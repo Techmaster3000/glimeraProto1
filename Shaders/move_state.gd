@@ -13,7 +13,6 @@ func enter():
 
 func go_to_Idle():
 	state_machine.change_state(idle_state)
-	print("Go to Idle")	
 	
 func physics_update(delta):
 	var input_dir = player.get_input()
