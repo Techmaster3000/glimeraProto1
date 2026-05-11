@@ -2,10 +2,10 @@
 
 [ext_resource type="FontFile" uid="uid://bq8bno25i4gyr" path="res://ui/Game Paused DEMO.otf" id="1_06t4h"]
 [ext_resource type="Script" uid="uid://dqr418el2k8mt" path="res://ui/main_menu.gd" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://cfsj32glu142d" path="res://images/Start Screen.png" id="2_5klac"]
 [ext_resource type="Texture2D" uid="uid://dfq6hkm4cc71f" path="res://images/icon.svg" id="2_arv2f"]
-[ext_resource type="Texture2D" uid="uid://bjqkqhibdwbkc" path="res://images/Kopie van Glimera pitch v2.png" id="3_5klac"]
-[ext_resource type="FontFile" uid="uid://iljwk62chotc" path="res://ui/StoryScript-Regular.ttf" id="3_lsdqh"]
 [ext_resource type="Script" uid="uid://c34dxhktvhmap" path="res://ui/audio_control.gd" id="4_jix8l"]
+[ext_resource type="Texture2D" uid="uid://cne7kbsq88fyh" path="res://images/yamukSaatkule.png" id="4_lsdqh"]
 [ext_resource type="Script" uid="uid://d36oofhkq5sxy" path="res://ui/window_options.gd" id="5_glbon"]
 [ext_resource type="Script" uid="uid://bwd3qlffpad6o" path="res://ui/inputremapbutton.gd" id="6_nlkkf"]
 [ext_resource type="PackedScene" uid="uid://dsc3ihpwxa6w6" path="res://ui/input_remap_button.tscn" id="6_qe12f"]
@@ -14,68 +14,49 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_arv2f"]
 
-[sub_resource type="Gradient" id="Gradient_arv2f"]
-colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_5klac"]
-gradient = SubResource("Gradient_arv2f")
-
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_5klac"]
 lifetime_randomness = 0.15
 particle_flag_disable_z = true
 emission_shape = 3
 emission_box_extents = Vector3(950, 18.12, 1)
 velocity_pivot = Vector3(0, 21.715, 0)
+direction = Vector3(0, 1, 0)
+spread = 0.0
 gravity = Vector3(0, 700, 0)
 linear_accel_min = -2.2351742e-06
 linear_accel_max = -2.2351742e-06
-scale_min = 5.0
-scale_max = 15.0
-color_ramp = SubResource("GradientTexture1D_5klac")
+scale_max = 2.0
+color = Color(0.99215686, 0.9607843, 0.95686275, 0.23529412)
 turbulence_enabled = true
 turbulence_noise_strength = 6.69
 turbulence_noise_scale = 7.85
 
-[sub_resource type="Theme" id="Theme_5klac"]
-default_font = ExtResource("3_lsdqh")
-default_font_size = 40
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lsdqh"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_blend = true
-corner_radius_top_left = 25
-corner_radius_top_right = 25
-corner_radius_bottom_right = 25
-corner_radius_bottom_left = 25
-corner_detail = 1
-shadow_color = Color(1, 1, 1, 0.6)
-shadow_size = 1
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q75kt"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06t4h"]
-content_margin_right = 35.0
-bg_color = Color(0, 0.56078434, 0.09019608, 1)
-corner_radius_top_left = 100
-corner_radius_top_right = 100
-corner_radius_bottom_right = 100
-corner_radius_bottom_left = 100
-corner_detail = 1
-shadow_color = Color(1, 1, 1, 0.6)
-shadow_size = 2
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kaxbk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
-content_margin_right = 35.0
-bg_color = Color(0, 0.56078434, 0.09019608, 0.6862745)
-corner_radius_top_left = 100
-corner_radius_top_right = 100
-corner_radius_bottom_right = 100
-corner_radius_bottom_left = 100
-corner_detail = 1
-shadow_color = Color(1, 1, 1, 0.6)
-shadow_size = 2
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jiymt"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8jgmr"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0nobx"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bgtsx"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0i0gl"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iyrh0"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_fu7sn"]
 color = Color(1, 1, 1, 1)
@@ -87,6 +68,36 @@ thickness = 6
 color = Color(0, 0.56078434, 0.09019608, 1)
 thickness = 6
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
+bg_color = Color(0, 0.56078434, 0.09019608, 0)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06t4h"]
+bg_color = Color(0, 0, 0, 0.7058824)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
+bg_color = Color(1, 1, 1, 0.078431375)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+corner_detail = 1
+
 [node name="Main Menu" type="Control" unique_id=630457395]
 layout_mode = 3
 anchors_preset = 15
@@ -96,19 +107,24 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7vrkn")
 
-[node name="Background" type="Panel" parent="." unique_id=658892450]
+[node name="Background" type="TextureRect" parent="." unique_id=645523199]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_5klac")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="Background" unique_id=150308194]
+visible = false
+texture_filter = 1
 material = SubResource("ShaderMaterial_arv2f")
 position = Vector2(960, 0)
-amount = 1000
+amount = 5
 lifetime = 5.0
+randomness = 1.0
+trail_enabled = true
 process_material = SubResource("ParticleProcessMaterial_5klac")
 
 [node name="Parallax2D" type="Parallax2D" parent="Background" unique_id=1038948208]
@@ -129,71 +145,147 @@ anchor_left = 0.5
 anchor_top = 0.57600003
 anchor_right = 0.5
 anchor_bottom = 0.57600003
-offset_left = -133.5
-offset_top = -122.74802
-offset_right = 133.5
-offset_bottom = 122.25198
+offset_left = -758.0
+offset_top = -183.08002
+offset_right = -491.0
+offset_bottom = 61.919983
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 9
+theme_override_constants/separation = 0
 alignment = 1
 
 [node name="StartButton" type="Button" parent="MenuButtons" unique_id=2028129636]
+clip_contents = true
 layout_mode = 2
 size_flags_vertical = 3
-theme = SubResource("Theme_5klac")
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0.078431375, 1, 0, 1)
-theme_override_colors/font_hover_color = Color(0.078431375, 1, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.078431375, 1, 0, 1)
 theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_06t4h")
-theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
-text = "Start Game"
+theme_override_styles/normal = SubResource("StyleBoxFlat_lsdqh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q75kt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kaxbk")
+text = "Start"
+
+[node name="ClockIcon" type="TextureRect" parent="MenuButtons/StartButton" unique_id=61750780]
+visible = false
+modulate = Color(0.8593361, 0.5238907, 0.47744077, 1)
+layout_mode = 0
+offset_top = 106.99999
+offset_right = 2360.0
+offset_bottom = 1747.0
+rotation = -1.5707964
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_lsdqh")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="MenuButtons/StartButton" unique_id=883525371]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.000002
+offset_right = 114.0
+offset_bottom = 76.0
+rotation = -0.06832033
+theme_override_font_sizes/font_size = 35
+text = "S t"
+
+[node name="Label2" type="Label" parent="MenuButtons/StartButton" unique_id=1321346666]
+visible = false
+layout_mode = 0
+offset_left = 113.0
+offset_top = 15.000002
+offset_right = 190.0
+offset_bottom = 70.0
+rotation = -0.24725834
+theme_override_font_sizes/font_size = 35
+text = "a r t"
 
 [node name="SettingsButton" type="Button" parent="MenuButtons" unique_id=1168352789]
+clip_contents = true
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0.078431375, 1, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_lsdqh")
 theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_06t4h")
-theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jiymt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8jgmr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0nobx")
 text = "Settings"
 
+[node name="ClockIcon" type="TextureRect" parent="MenuButtons/SettingsButton" unique_id=906000457]
+visible = false
+modulate = Color(0.85882354, 0.5254902, 0.47843137, 1)
+layout_mode = 0
+offset_left = 0.9999981
+offset_top = 109.000015
+offset_right = 2361.0
+offset_bottom = 1749.0
+rotation = -1.5707964
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_lsdqh")
+
+[node name="Label" type="Label" parent="MenuButtons/SettingsButton" unique_id=1189150743]
+visible = false
+layout_mode = 0
+offset_left = 34.0
+offset_top = 15.0
+offset_right = 141.0
+offset_bottom = 70.0
+rotation = 0.022375617
+theme_override_font_sizes/font_size = 35
+text = "S e t t"
+
+[node name="Label2" type="Label" parent="MenuButtons/SettingsButton" unique_id=1620179710]
+visible = false
+layout_mode = 0
+offset_left = 127.0
+offset_top = 16.0
+offset_right = 237.0
+offset_bottom = 71.0
+rotation = -0.27459383
+theme_override_font_sizes/font_size = 35
+text = "i n g s"
+
 [node name="QuitButton" type="Button" parent="MenuButtons" unique_id=353058018]
+clip_contents = true
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0.078431375, 1, 0, 1)
-theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_lsdqh")
 theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_06t4h")
-theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
-text = "Quit Game"
+theme_override_styles/normal = SubResource("StyleBoxFlat_bgtsx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0i0gl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_iyrh0")
+text = "Quit"
 
-[node name="Title" type="TextureRect" parent="." unique_id=1017367661]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -344.0
-offset_top = -320.0
-offset_right = 1576.0
-offset_bottom = 5.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.375, 0.375)
-texture = ExtResource("3_5klac")
+[node name="ClockIcon" type="TextureRect" parent="MenuButtons/QuitButton" unique_id=731191480]
+visible = false
+modulate = Color(0.85882354, 0.5254902, 0.47843137, 1)
+layout_mode = 0
+offset_left = 0.9999981
+offset_top = 107.000015
+offset_right = 2361.0
+offset_bottom = 1747.0
+rotation = -1.5707964
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_lsdqh")
+
+[node name="Label" type="Label" parent="MenuButtons/QuitButton" unique_id=251534386]
+visible = false
+layout_mode = 0
+offset_left = 71.00001
+offset_top = 19.0
+offset_right = 186.0
+offset_bottom = 74.0
+rotation = 0.016724844
+theme_override_font_sizes/font_size = 35
+text = "Q u"
+
+[node name="Label2" type="Label" parent="MenuButtons/QuitButton" unique_id=1006785912]
+visible = false
+layout_mode = 0
+offset_left = 129.0
+offset_top = 17.0
+offset_right = 274.0
+offset_bottom = 118.0
+rotation = -0.23759139
+theme_override_font_sizes/font_size = 35
+text = "i t
+"
 
 [node name="Settings" type="Panel" parent="." unique_id=1973624480]
 layout_mode = 1
@@ -466,10 +558,6 @@ offset_top = -26.968018
 offset_right = 103.68486
 offset_bottom = 30.031982
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0.078431375, 1, 0, 1)
-theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_06t4h")
@@ -487,8 +575,20 @@ stream = ExtResource("9_arv2f")
 volume_db = -9.0
 bus = &"SFX"
 
+[connection signal="button_down" from="MenuButtons/StartButton" to="." method="_on_start_button_button_down"]
+[connection signal="button_up" from="MenuButtons/StartButton" to="." method="_on_start_button_button_up"]
+[connection signal="mouse_entered" from="MenuButtons/StartButton" to="." method="_on_start_button_mouse_entered"]
+[connection signal="mouse_exited" from="MenuButtons/StartButton" to="." method="_on_start_button_mouse_exited"]
 [connection signal="pressed" from="MenuButtons/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="button_down" from="MenuButtons/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_up" from="MenuButtons/SettingsButton" to="." method="_on_settings_button_button_up"]
+[connection signal="mouse_entered" from="MenuButtons/SettingsButton" to="." method="_on_settings_button_mouse_entered"]
+[connection signal="mouse_exited" from="MenuButtons/SettingsButton" to="." method="_on_settings_button_mouse_exited"]
 [connection signal="pressed" from="MenuButtons/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="button_down" from="MenuButtons/QuitButton" to="." method="_on_quit_button_button_down"]
+[connection signal="button_up" from="MenuButtons/QuitButton" to="." method="_on_quit_button_button_up"]
+[connection signal="mouse_entered" from="MenuButtons/QuitButton" to="." method="_on_quit_button_mouse_entered"]
+[connection signal="mouse_exited" from="MenuButtons/QuitButton" to="." method="_on_quit_button_mouse_exited"]
 [connection signal="pressed" from="MenuButtons/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="value_changed" from="Settings/TabContainer/Audio/AudioControl" to="Settings/TabContainer/Audio/AudioControl" method="_on_value_changed"]
 [connection signal="value_changed" from="Settings/TabContainer/Audio/MusicControl" to="Settings/TabContainer/Audio/MusicControl" method="_on_value_changed"]
