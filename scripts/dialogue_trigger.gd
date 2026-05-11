@@ -37,6 +37,32 @@ func _process(delta: float) -> void:
 					Dialogic.VAR.set_variable("target","window")
 				"door_fd":
 					Dialogic.VAR.set_variable("target","door_fd")
+				"door_glihouse":
+					Dialogic.VAR.set_variable("target","door_glihouse")
+				"door_neighbour1":
+					Dialogic.VAR.set_variable("target","door_neighbour1")
+				"door_neighbour2":
+					Dialogic.VAR.set_variable("target","door_neighbour2")
+				"door_building1":
+					Dialogic.VAR.set_variable("target","door_building1")
+				"door_building2":
+					Dialogic.VAR.set_variable("target","door_building1")
+				"door_building3":
+					Dialogic.VAR.set_variable("target","door_building1")
+				"door_building4":
+					Dialogic.VAR.set_variable("target","door_building1")
+				"door_building5":
+					Dialogic.VAR.set_variable("target","door_building1")
+				"door_building6":
+					Dialogic.VAR.set_variable("target","door_building1")
+				"door_building7":
+					Dialogic.VAR.set_variable("target","door_building1")
+				"door_building8":
+					Dialogic.VAR.set_variable("target","door_building1")
+				"door_building9":
+					Dialogic.VAR.set_variable("target","door_building1")
+				"door_building10":
+					Dialogic.VAR.set_variable("target","door_building1")
 				"Passive Bob":
 					Dialogic.VAR.set_variable("target","passive_bob")
 				"Calm Marcus":
@@ -58,16 +84,17 @@ func DialogicSignal(arg:String):
 	if not inRange:
 		return
 	#removes trash
-	if arg == "remove_object": 
-		node.queue_free()
-	if arg == "open_door":
-		var game = get_tree().current_scene
-		game.transition_to_street(load("res://Streets/Street1-1.tscn"), "Spawn_FromHouse")
-	if arg == "start_quest_1":
-		print("quest 1 started")
-		Dialogic.VAR.set_variable("quest_1","started")
-	if arg == "angry_steve":
-		pass
+	match arg:
+		"remove_object": 
+			node.queue_free()
+		"open_door":
+			var game = get_tree().current_scene
+			game.transition_to_street("res://Streets/Street1-1.tscn", "Spawn_FromHouse")
+		"start_quest_1":
+			print("quest 1 started")
+			Dialogic.VAR.set_variable("quest_1","started")
+		"angry_steve":
+			pass
 
 func _on_body_entered(body: Node3D) -> void:
 	inRange = true
