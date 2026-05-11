@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://r7atwil6eh20"
-path.s3tc="res://.godot/imported/Panorama_Sky_11-512x512.png-e9725d13ba556b4fe15968d6c4798ab6.s3tc.ctex"
-path.etc2="res://.godot/imported/Panorama_Sky_11-512x512.png-e9725d13ba556b4fe15968d6c4798ab6.etc2.ctex"
+uid="uid://d08mryvlym53l"
+path.s3tc="res://.godot/imported/plywood_nor_8k.jpg-f90d0c420584603f5be9861ee8692950.s3tc.ctex"
+path.etc2="res://.godot/imported/plywood_nor_8k.jpg-f90d0c420584603f5be9861ee8692950.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/Sky Panorama/Panorama_Sky_11-512x512.png"
-dest_files=["res://.godot/imported/Panorama_Sky_11-512x512.png-e9725d13ba556b4fe15968d6c4798ab6.s3tc.ctex", "res://.godot/imported/Panorama_Sky_11-512x512.png-e9725d13ba556b4fe15968d6c4798ab6.etc2.ctex"]
+source_file="res://meshes/Houses/textures/plywood_nor_8k.jpg"
+dest_files=["res://.godot/imported/plywood_nor_8k.jpg-f90d0c420584603f5be9861ee8692950.s3tc.ctex", "res://.godot/imported/plywood_nor_8k.jpg-f90d0c420584603f5be9861ee8692950.etc2.ctex"]
 
 [params]
 
@@ -23,12 +23,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://meshes/Houses/textures/plywood_nor_8k.jpg"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

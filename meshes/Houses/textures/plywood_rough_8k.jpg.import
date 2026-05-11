@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://r7atwil6eh20"
-path.s3tc="res://.godot/imported/Panorama_Sky_11-512x512.png-e9725d13ba556b4fe15968d6c4798ab6.s3tc.ctex"
-path.etc2="res://.godot/imported/Panorama_Sky_11-512x512.png-e9725d13ba556b4fe15968d6c4798ab6.etc2.ctex"
+uid="uid://dbwey4jffevjp"
+path.s3tc="res://.godot/imported/plywood_rough_8k.jpg-0783196593d152e7562075b1b6e9dac8.s3tc.ctex"
+path.etc2="res://.godot/imported/plywood_rough_8k.jpg-0783196593d152e7562075b1b6e9dac8.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/Sky Panorama/Panorama_Sky_11-512x512.png"
-dest_files=["res://.godot/imported/Panorama_Sky_11-512x512.png-e9725d13ba556b4fe15968d6c4798ab6.s3tc.ctex", "res://.godot/imported/Panorama_Sky_11-512x512.png-e9725d13ba556b4fe15968d6c4798ab6.etc2.ctex"]
+source_file="res://meshes/Houses/textures/plywood_rough_8k.jpg"
+dest_files=["res://.godot/imported/plywood_rough_8k.jpg-0783196593d152e7562075b1b6e9dac8.s3tc.ctex", "res://.godot/imported/plywood_rough_8k.jpg-0783196593d152e7562075b1b6e9dac8.etc2.ctex"]
 
 [params]
 
