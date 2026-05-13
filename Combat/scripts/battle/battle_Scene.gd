@@ -3,6 +3,8 @@ extends Node3D
 @export var enemy_resource: EnemyData = null
 
 
+@onready var player_hit_flash: Panel = %PlayerHitFlash
+@onready var enemy_hit_flash: Panel = %EnemyHitFlash
 @onready var timer_label: Label = %TimerLabel
 @onready var timer_bar: ProgressBar = %TimerBar
 @onready var enemy_name_label: Label = %EnemyNameLabel
@@ -31,6 +33,7 @@ extends Node3D
 
 @onready var player_effects_label: RichTextLabel = %player_effects_label
 @onready var enemy_effects_label: RichTextLabel = %enemy_effects_label
+@onready var enemy_weapon_icon: TextureRect = %EnemyWeaponIcon
 
 # ── Lifecycle ─────────────────────────────────────────────────────────────────
 func _ready() -> void:
@@ -50,6 +53,17 @@ func _ready() -> void:
 	enemy_element.text = "Element: %s" % Weapon.element_name(BattleManager.enemy.element)
 	_on_player_hp(PlayerManager.data.current_hp, PlayerManager.data.max_hp)
 	_on_enemy_hp(BattleManager.enemy.current_hp, BattleManager.enemy.max_hp)
+
+	player_hit_flash.modulate.a = 0.0
+	enemy_hit_flash.modulate.a = 0.0
+	
+	for flash in [player_hit_flash, enemy_hit_flash]:
+		var style = StyleBoxFlat.new()
+		style.corner_radius_top_left = 50
+		style.corner_radius_top_right = 50
+		style.corner_radius_bottom_left = 50
+		style.corner_radius_bottom_right = 50
+		flash.add_theme_stylebox_override("panel", style)
 
 func _process(_delta: float) -> void:
 	if player_effects_label:
@@ -120,14 +134,21 @@ func _on_log(msg: String) -> void:
 	battle_log.append_text(msg + "\n")
 
 func _on_player_hp(hp: int, max_hp: int) -> void:
+	var old_hp = player_hp_bar.value
 	player_hp_bar.max_value = max_hp
 	player_hp_bar.value = hp
 	player_hp_label.text = "HP: %d / %d" % [hp, max_hp]
+	if hp < old_hp:
+		_flash_bar(player_hit_flash, player_hp_bar, Color(1, 0, 0, 1))
 
 func _on_enemy_hp(hp: int, max_hp: int) -> void:
+	var old_hp = enemy_hp_bar.value
 	enemy_hp_bar.max_value = max_hp
 	enemy_hp_bar.value = hp
 	enemy_hp_label.text = "HP: %d / %d" % [hp, max_hp]
+	if hp < old_hp:
+		_flash_bar(enemy_hit_flash, enemy_hp_bar, Color(1, 1, 0, 1))
+
 
 func _on_cooldown(slot: int, remaining: float, total: float) -> void:
 	if slot < weapon_cards.size():
@@ -146,10 +167,12 @@ func _on_action_cooldown(action: String, remaining: float, total: float) -> void
 		if c != null and c.quantity > 0:
 			consumable_card.set_on_cooldown(remaining > 0.0, remaining, total)
 
-func _on_enemy_timer(remaining: float, total: float, weapon_name: String, element_name: String) -> void:
+func _on_enemy_timer(remaining: float, total: float, weapon_name: String, element_name: String, weapon: Weapon) -> void:
 	timer_label.text = "%s (%s) strikes in %.1fs" % [weapon_name, element_name, remaining]
 	timer_bar.max_value = total
 	timer_bar.value = remaining
+	if enemy_weapon_icon and weapon and weapon.icon:
+		enemy_weapon_icon.texture = weapon.icon
 
 func _on_battle_ended(player_won: bool, weapons_dropped: Array[Weapon], consumables_dropped: Array[Consumable]) -> void:
 	result_label.text = "🏆 VICTORY!" if player_won else "💀 DEFEATED"
@@ -219,3 +242,14 @@ func _refresh_consumable_card() -> void:
 			consumable_card.set_empty()
 		return
 	consumable_card.display(c)
+
+func _flash_bar(flash: Panel, bar: ProgressBar, color: Color) -> void:
+	var style = flash.get_theme_stylebox("panel") as StyleBoxFlat
+	style.bg_color = color
+	flash.size.x = bar.size.x
+	flash.position.x = 0
+	flash.modulate.a = 0.8
+	var tween = create_tween()
+	tween.tween_property(flash, "modulate:a", 0.0, 0.4)\
+		.set_trans(Tween.TRANS_QUAD)\
+		.set_ease(Tween.EASE_OUT)
