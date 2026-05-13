@@ -31,6 +31,7 @@ ControllerIcons="*uid://d2cyg24h3ss8r"
 GraftGlobals="*uid://ddwa1wyywsuth"
 SFXPlayer="*uid://bhojwcno7gi1b"
 MusicPlayer="*uid://blpcv03sdkav6"
+TimeManager="*uid://ddg0be1awl7mb"
 
 [dialogic]
 
