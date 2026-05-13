@@ -79,3 +79,5 @@ shape = SubResource("BoxShape3D_vme05")
 [connection signal="body_exited" from="back" to="." method="_on_back_body_exited"]
 [connection signal="body_entered" from="front" to="." method="_on_front_body_entered"]
 [connection signal="body_exited" from="front" to="." method="_on_front_body_exited"]
+
+[editable path="NPC2"]

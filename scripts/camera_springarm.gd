@@ -16,6 +16,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		rotation.x -= event.relative.y * mouse_sensibility
 		rotation.x = clampf(rotation.x, -PI/2, PI/4)
 
+
 func _physics_process(delta: float) -> void:
 	var space_state = get_world_3d().direct_space_state
 	var origin = global_position
