@@ -35,6 +35,14 @@ elif {target} == "door_fd":
 		Gli: Yes yes I heard y- Oh my…
 		[signal arg="open_door"]
 # Street 1
+elif {target} == "door_glihouse":
+	I didn't forget anything. I'm sure of it.
+elif {target} == "door_neighbour1":
+	No ones home.
+elif {target} == "door_neighbour2":
+	No ones responding.
+elif {target} == "door_building1":
+	No ones here.
 elif {target} == "frz_chr_outside_house":
 	join skull right
 	if {talkedTo} == false:
@@ -48,7 +56,7 @@ elif {target} == "frz_chr_outside_house":
 		Gli: ...
 	leave --All--
 elif {target} == "door_nbr":
-	audio -
+	audio sfx "res://Sounds/SFX/vine-boom-sound-effect(chosic.com).mp3"
 	There’s no response.
 elif {target} == "window_nbr1":
 	There’s no one here.
@@ -65,7 +73,7 @@ elif {target} == "defeated_enemy":
 elif {target} == "passive_bob":
 	if {talkedTo} == false:
 		# Knock on door
-		audio -
+		audio sfx "res://Sounds/SFX/vine-boom-sound-effect(chosic.com).mp3"
 		[signal arg="open_door_sf"]
 		join Gli left
 		join skull right

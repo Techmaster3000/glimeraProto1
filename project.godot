@@ -31,6 +31,7 @@ GraftGlobals="*uid://ddwa1wyywsuth"
 SFXPlayer="*uid://bhojwcno7gi1b"
 MusicPlayer="*uid://blpcv03sdkav6"
 StoryFlags="*uid://285ib4l7abgw"
+TimeManager="*uid://ddg0be1awl7mb"
 
 [dialogic]
 
@@ -64,8 +65,8 @@ variables={
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.03
 text/initial_text_reveal_skippable=true
-text/text_reveal_skip_delay=0.1
-text/advance_delay=0.1
+text/text_reveal_skip_delay=0.05
+text/advance_delay=0.05
 text/autoadvance_per_character_delay=0.1
 text/autoadvance_ignored_characters_enabled=true
 animations/join_default_length=0.5
@@ -95,6 +96,12 @@ audio/channel_defaults={
 },
 "music": {
 "audio_bus": "Music",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+},
+"sfx": {
+"audio_bus": "SFX",
 "fade_length": 0.0,
 "loop": true,
 "volume": 0.0
