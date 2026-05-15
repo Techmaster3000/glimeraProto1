@@ -15,11 +15,18 @@
 [ext_resource type="Script" uid="uid://brs8yqwgni5t4" path="res://scripts/states/fall_state.gd" id="11_hpmq0"]
 [ext_resource type="Script" uid="uid://chd4v2dchvucb" path="res://scripts/CameraManager.gd" id="13_fgv2f"]
 [ext_resource type="PackedScene" uid="uid://btbbvoxdixc6u" path="res://interactprompt.tscn" id="14_4adts"]
+[ext_resource type="Animation" uid="uid://detr8h7vtume" path="res://Animations/Cast Spell.anim" id="14_8e81o"]
 [ext_resource type="PackedScene" uid="uid://bcv71xsvoofkr" path="res://dial_box.tscn" id="15_hpmq0"]
+[ext_resource type="Animation" uid="uid://bni5san3flrp2" path="res://Animations/Idle.anim" id="15_ilb4s"]
 [ext_resource type="Script" uid="uid://bsvbxxmkshgvi" path="res://scripts/dialogue_manager.gd" id="16_ckf6d"]
+[ext_resource type="Animation" uid="uid://dnnponmgph6w7" path="res://Animations/Idle Straight.anim" id="16_w7ba4"]
+[ext_resource type="Animation" uid="uid://b5odahiaixn7t" path="res://Animations/Walk2.anim" id="17_kemhk"]
 [ext_resource type="Script" uid="uid://c7wgluufenq2k" path="res://prompt_manager.gd" id="17_q74gi"]
+[ext_resource type="Animation" uid="uid://d0qj4aimqfui8" path="res://Animations/get Hit.anim" id="18_iouyl"]
 [ext_resource type="Script" uid="uid://dr88cobc5dqk4" path="res://scripts/scene_switcher.gd" id="18_xolg8"]
 [ext_resource type="PackedScene" uid="uid://dtcotjhfc4ego" path="res://3rdPersonCam.tscn" id="20_ckf6d"]
+[ext_resource type="Animation" uid="uid://cueqadihy87cj" path="res://Animations/sit to stand2.anim" id="20_ilb4s"]
+[ext_resource type="Animation" uid="uid://u2k12u8a02om" path="res://Animations/sit to stand.anim" id="21_q74gi"]
 [ext_resource type="AudioStream" uid="uid://yyvbyjtdf101" path="res://Sounds/SFX/vine-boom-sound-effect(chosic.com).mp3" id="21_q74gi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hpmq0"]
@@ -158,6 +165,69 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
+[sub_resource type="Animation" id="Animation_jls4e"]
+resource_name = "Armature|Cube_015Action"
+length = 4.5
+tracks/0/type = "rotation_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Armature")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -3.487548e-08, 0.38268343, 1.4445897e-08, 0.9238795, 0.76666665, 1, 1.3322761e-08, 0.9356495, 3.5319783e-08, -0.35293064, 1.3666667, 1, 3.7748308e-08, 0.005817909, 2.1961993e-10, -0.9999831, 2.1333334, 1, 1.4271673e-09, -0.99928504, -3.772196e-08, -0.03780681, 2.9, 1, -3.7656992e-08, -0.06975647, -2.6332334e-09, 0.9975641, 2.9333334, 1, -3.7748787e-08, -0.0029087004, -1.0980038e-10, 0.99999577, 3.7, 1, -1.3174193e-09, 0.99939084, 3.772595e-08, 0.034899496, 4.4666667, 1, 3.7664496e-08, 0.06685403, 2.5236693e-09, -0.99776274, 4.5, 1, 3.7748947e-08, 3.673819e-16, 1.386828e-23, -1)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("%Skeleton:LeftUpperLeg")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, -6.548587e-11, 7.288712e-10, -0.99999994, 5.960507e-08)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("%Skeleton:LeftShoulder")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.49999905, -0.5000009, -0.49999917, 0.5000009)
+
+[sub_resource type="Animation" id="Animation_4mx44"]
+resource_name = "Armature|mixamo_com"
+length = 4.5
+tracks/0/type = "rotation_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Armature")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -3.7748947e-08, 0, 0, 1)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("%Skeleton:LeftUpperLeg")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, -6.548587e-11, 7.288712e-10, -0.99999994, 5.960507e-08)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("%Skeleton:LeftShoulder")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.49999905, -0.5000009, -0.49999917, 0.5000009)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j0q6s"]
+_data = {
+&"Armature|Cube_015Action": SubResource("Animation_jls4e"),
+&"Armature|mixamo_com": SubResource("Animation_4mx44"),
+&"Cast Spell": ExtResource("14_8e81o"),
+&"Idle": ExtResource("15_ilb4s"),
+&"Idle Straight": ExtResource("16_w7ba4"),
+&"Walk2": ExtResource("17_kemhk"),
+&"get Hit": ExtResource("18_iouyl"),
+&"sit to stand": ExtResource("21_q74gi"),
+&"sit to stand2": ExtResource("20_ilb4s")
+}
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_go3uk"]
 animation = &"Idle Straight"
 
@@ -231,10 +301,10 @@ tracks/2/path = NodePath("CharacterBody3D:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
 "update": 0,
-"values": [Vector3(1.051648, -1.5707964, 1.7120458)]
+"values": []
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -243,10 +313,10 @@ tracks/3/path = NodePath("CharacterBody3D:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
 "update": 0,
-"values": [Vector3(0.5962183, 0.039276615, -1.6967171)]
+"values": []
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -358,7 +428,18 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.55),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(0.16493829, 0.43286085, -1.490219), Vector3(0.324, 0.312, -1.763)]
+"values": [Vector3(0.16493829, 0.43286085, -1.490219), Vector3(-0.046, 0.312, -1.763)]
+}
+tracks/6/type = "method"
+tracks/6/imported = false
+tracks/6/enabled = false
+tracks/6/path = NodePath("CharacterBody3D/CameraPivot/CharacterCam")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"values": []
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -373,7 +454,7 @@ tracks/6/keys = {
 "values": [true]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_repcq"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oipal"]
 _data = {
 &"RESET": SubResource("Animation_xolg8"),
 &"intro": SubResource("Animation_oy0wj")
@@ -872,11 +953,10 @@ script = ExtResource("18_xolg8")
 canvas = NodePath("../UI Elements")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1503050043]
-libraries/ = SubResource("AnimationLibrary_repcq")
-autoplay = &"intro"
+libraries/ = SubResource("AnimationLibrary_oipal")
 
 [node name="Camera3D" type="Camera3D" parent="AnimationPlayer" unique_id=170743946]
-transform = Transform3D(0.59059155, 0.29312986, -0.75184876, 0.059538763, 0.91332525, 0.40285495, 0.8047713, -0.28268686, 0.5219496, 0.16493829, 0.43286085, -1.490219)
+transform = Transform3D(0.59059155, 0.29312983, -0.75184864, 0.059538763, 0.91332513, 0.4028549, 0.8047713, -0.28268683, 0.5219495, 0.16493829, 0.43286085, -1.490219)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="AnimationPlayer" unique_id=1240111257]
 stream = ExtResource("21_q74gi")

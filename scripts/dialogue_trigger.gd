@@ -13,13 +13,13 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	# Keep prompt positioned correctly
-	if inRange:
-		var prompt = get_prompt()
-
-		if prompt:
-			var world_pos = global_transform.origin + Vector3(0, 0.5, 0)
-			var screen_pos = get_viewport().get_camera_3d().unproject_position(world_pos)
-			prompt.position = screen_pos
+	#if inRange:
+		#var prompt = get_prompt()
+#
+		#if prompt:
+			#var world_pos = global_transform.origin + Vector3(0, 0.5, 0)
+			#var screen_pos = get_viewport().get_camera_3d().unproject_position(world_pos)
+			#prompt.position = screen_pos
 
 	
 	if Input.is_action_just_pressed("ui_interact") and inRange:

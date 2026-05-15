@@ -36,6 +36,7 @@ func switch_world_scene(scene_name: String):
 	overworld_container.add_child(newMap)
 	current_overworld = newMap
 	overworld_container.show()
+	get_viewport().use_occlusion_culling = false
 	ui_scene.hide()
 
 
