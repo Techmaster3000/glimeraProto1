@@ -34,6 +34,8 @@ extends Node3D
 @onready var player_effects_label: RichTextLabel = %player_effects_label
 @onready var enemy_effects_label: RichTextLabel = %enemy_effects_label
 @onready var enemy_weapon_icon: TextureRect = %EnemyWeaponIcon
+@onready var player_effects_container: HBoxContainer = %PlayerEffectsContainer
+@onready var enemy_portrait: TextureRect = %EnemyPortrait
 
 # ── Lifecycle ─────────────────────────────────────────────────────────────────
 func _ready() -> void:
@@ -50,10 +52,11 @@ func _ready() -> void:
 	BattleManager.start_battle()
 	_setup_cards()
 	enemy_name_label.text = BattleManager.enemy.unit_name
+	if enemy_portrait and BattleManager.enemy.portrait:
+		enemy_portrait.texture = BattleManager.enemy.portrait
 	enemy_element.text = "Element: %s" % Weapon.element_name(BattleManager.enemy.element)
 	_on_player_hp(PlayerManager.data.current_hp, PlayerManager.data.max_hp)
 	_on_enemy_hp(BattleManager.enemy.current_hp, BattleManager.enemy.max_hp)
-
 	player_hit_flash.modulate.a = 0.0
 	enemy_hit_flash.modulate.a = 0.0
 	
@@ -66,8 +69,7 @@ func _ready() -> void:
 		flash.add_theme_stylebox_override("panel", style)
 
 func _process(_delta: float) -> void:
-	if player_effects_label:
-		player_effects_label.text = PlayerManager.data.get_effects_text()
+	_refresh_effects(player_effects_container, PlayerManager.data)
 	if enemy_effects_label:
 		enemy_effects_label.text = BattleManager.enemy.get_effects_text()
 
@@ -176,6 +178,7 @@ func _on_enemy_timer(remaining: float, total: float, weapon_name: String, elemen
 
 func _on_battle_ended(player_won: bool, weapons_dropped: Array[Weapon], consumables_dropped: Array[Consumable]) -> void:
 	result_label.text = "🏆 VICTORY!" if player_won else "💀 DEFEATED"
+	continue_btn.text = "Continue" if player_won else "Try Again"
 	result_label.modulate = Color.YELLOW if player_won else Color.RED
 	_populate_rewards(weapons_dropped, consumables_dropped)
 	result_screen.show()
@@ -253,3 +256,39 @@ func _flash_bar(flash: Panel, bar: ProgressBar, color: Color) -> void:
 	tween.tween_property(flash, "modulate:a", 0.0, 0.4)\
 		.set_trans(Tween.TRANS_QUAD)\
 		.set_ease(Tween.EASE_OUT)
+# ── effects
+func _refresh_effects(container: HBoxContainer, unit: UnitData) -> void:
+	for child in container.get_children():
+		child.queue_free()
+	
+	if unit.active_effects.size() == 0:
+		return
+	
+	for ae in unit.active_effects:
+		var effect = ae.effect
+		var hbox = HBoxContainer.new()
+		hbox.add_theme_constant_override("separation", 2)
+		
+		if effect.icon:
+			var icon1 = TextureRect.new()
+			icon1.texture = effect.icon
+			icon1.custom_minimum_size = Vector2(40, 40)
+			icon1.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+			icon1.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+			icon1.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+			hbox.add_child(icon1)
+		
+		if effect.icon2:
+			var icon2 = TextureRect.new()
+			icon2.texture = effect.icon2
+			icon2.custom_minimum_size = Vector2(40, 40)
+			icon2.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+			icon2.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+			icon2.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+			hbox.add_child(icon2)
+		
+		var lbl = Label.new()
+		lbl.text = "%.1f" % ae.remaining
+		lbl.add_theme_font_size_override("font_size", 12)
+		hbox.add_child(lbl)
+		container.add_child(hbox)
