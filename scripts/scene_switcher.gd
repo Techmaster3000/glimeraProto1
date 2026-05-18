@@ -2,10 +2,13 @@ extends Node
 var pauseScene = preload("res://Grafting/Equip UI.tscn") # EquipUI scene
 var pauseInstance
 @export var canvas : CanvasLayer
+@export var equip_ui: Control
+
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_cancel"):
 		if get_tree().paused:
+			_toggle_menu_camera(false)
 			get_tree().paused = false
 			pauseInstance.queue_free()
 			SFXPlayer.play_sfx(load("res://Sounds/SFX/WIN_CLO_001.wav"))
@@ -13,8 +16,37 @@ func _process(delta: float) -> void:
 			pauseInstance = pauseScene.instantiate()
 			canvas.add_child(pauseInstance)
 			GraftGlobals.menu_opened.emit()
+			_toggle_menu_camera(true)
 			get_tree().paused = true
 			SFXPlayer.play_sfx(load("res://Sounds/SFX/STA_OPE_001.wav"))
 			
 
-		
+func _toggle_menu_camera(active: bool) -> void:
+	var players = get_tree().get_nodes_in_group("player")
+	var player = null
+	for p in players:
+		if not p.is_inside_tree():
+			continue
+		var parent = p.get_parent()
+		var is_in_subviewport = false
+		while parent != null:
+			if parent is SubViewport:
+				is_in_subviewport = true
+				break
+			parent = parent.get_parent()
+		if not is_in_subviewport:
+			player = p
+			break
+
+	if player:
+		var menu_cam = player.get_node_or_null("MenuCamera")
+		var char_cam = player.get_node_or_null("CameraPivot/CharacterCam")
+		if menu_cam and char_cam:
+			if active:
+				char_cam.set_meta("original_transform", char_cam.global_transform)
+				char_cam.global_transform = menu_cam.global_transform
+				if player.has_method("face_menu_camera"):
+					player.face_menu_camera()
+			else:
+				if char_cam.has_meta("original_transform"):
+					char_cam.global_transform = char_cam.get_meta("original_transform")

@@ -92,3 +92,12 @@ func rotate_toward(direction: Vector3, delta: float):
 func apply_knockback(dir: Vector3, strength: float = 3.0, duration: float = 0.2):
 	knockback_velocity = dir * strength
 	knockback_time = duration
+
+func face_menu_camera() -> void:
+	var menu_cam = get_node_or_null("MenuCamera")
+	if menu_cam:
+		var dir = menu_cam.global_position - global_position
+		dir.y = 0
+		dir = dir.normalized()
+		var target_angle = atan2(dir.x, dir.z) - PI / 2
+		$"MAsked Gli".rotation.y = target_angle
