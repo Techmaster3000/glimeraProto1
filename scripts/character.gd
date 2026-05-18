@@ -1,8 +1,7 @@
-# Player.gd
 extends CharacterBody3D
 
 const SPEED := 2.0
-const JUMP_VELOCITY := 5.0
+const JUMP_VELOCITY := 2.0
 const TURN_SPEED := 9.0
 
 @onready var camera := $"CameraPivot/CharacterCam" as Camera3D
@@ -76,3 +75,8 @@ func rotate_toward(direction: Vector3, delta: float):
 func apply_knockback(dir: Vector3, strength := 4.0, duration := 0.2):
 	knockback_velocity = dir.normalized() * strength
 	knockback_time = duration
+
+
+func _on_respawn_area_3d_body_entered(body: Node3D) -> void:
+	$".".global_transform.origin = Vector3.ZERO
+	pass # Replace with function body.
