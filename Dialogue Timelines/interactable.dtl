@@ -43,13 +43,27 @@ elif {target} == "door_neighbour2":
 	No ones responding.
 elif {target} == "door_building1":
 	No ones here.
+elif {target} == "door_building7":
+	if {talkedTo} == false:
+		[signal arg="open_door7"]
+		join Gli left
+		join skull right
+		Gli: Hell-
+		skull: Begone with you
+		[signal arg="close_door7"]
+		leave skull
+		Gli: Rude.
+		leave Gli
+		set {talkedTo} = true
+	else:
+		There is no response
 elif {target} == "frz_chr_outside_house":
 	join skull right
 	if {talkedTo} == false:
 		Gli: H-hello? Are you alright…?
 		This figure is completely motionless. It seems they fell over in the middle of knocking on your door.
 		Gli: …
-		set {talkedTo} = true
+		set {talkedTo2} = true
 	else:
 		Gli: I’m going to get some help, okay?
 		The figure remains frozen in place.

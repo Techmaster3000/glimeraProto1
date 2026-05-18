@@ -56,7 +56,7 @@ func _process(delta: float) -> void:
 				"door_building6":
 					Dialogic.VAR.set_variable("target","door_building1")
 				"door_building7":
-					Dialogic.VAR.set_variable("target","door_building1")
+					Dialogic.VAR.set_variable("target","door_building7")
 				"door_building8":
 					Dialogic.VAR.set_variable("target","door_building1")
 				"door_building9":
@@ -90,6 +90,10 @@ func DialogicSignal(arg:String):
 		"open_door":
 			var game = get_tree().current_scene
 			game.transition_to_street("res://Streets/Street1-1.tscn", "Spawn_FromHouse")
+		"open_door7":
+			%AnimationPlayerDoor.play("door_opening")
+		"close_door7":
+			%AnimationPlayerDoor.play_backwards("door_opening")
 		"start_quest_1":
 			print("quest 1 started")
 			Dialogic.VAR.set_variable("quest_1","started")
