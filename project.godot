@@ -13,7 +13,6 @@ config_version=5
 config/name="GLIMERA proto1"
 run/main_scene="uid://ynp6rt5ks1hu"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
-run/max_fps=60
 config/icon="res://images/icon.svg"
 
 [audio]
@@ -31,11 +30,14 @@ ControllerIcons="*uid://d2cyg24h3ss8r"
 GraftGlobals="*uid://ddwa1wyywsuth"
 SFXPlayer="*uid://bhojwcno7gi1b"
 MusicPlayer="*uid://blpcv03sdkav6"
+StoryFlags="*uid://285ib4l7abgw"
+TimeManager="*uid://ddg0be1awl7mb"
 
 [dialogic]
 
 directories/dch_directory={
 "Gli": "res://characters/Gli.dch",
+"overjoyed looking Figure": "res://characters/overjoyed looking Figure.dch",
 "skull": "res://characters/skull.dch"
 }
 directories/dtl_directory={
@@ -54,18 +56,24 @@ glossary/default_case_sensitive=true
 layout/style_list=["res://Dialogue Timelines/New_File.tres", "res://Dialogue Timelines/myStyle.tres"]
 layout/default_style="res://Dialogue Timelines/New_File.tres"
 variables={
+"TalkedToFolder": {
+"talkedTo2": false,
+"talkedTo3": false,
+"talkedTo3_2": false
+},
 "event": "",
 "have_rope": false,
 "have_violin": false,
 "quest_1": "default",
 "talkedTo": false,
-"target": "default"
+"target": "default",
+"wrong_statue": false
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.03
 text/initial_text_reveal_skippable=true
-text/text_reveal_skip_delay=0.1
-text/advance_delay=0.1
+text/text_reveal_skip_delay=0.05
+text/advance_delay=0.05
 text/autoadvance_per_character_delay=0.1
 text/autoadvance_ignored_characters_enabled=true
 animations/join_default_length=0.5
@@ -95,6 +103,12 @@ audio/channel_defaults={
 },
 "music": {
 "audio_bus": "Music",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+},
+"sfx": {
+"audio_bus": "SFX",
 "fade_length": 0.0,
 "loop": true,
 "volume": 0.0

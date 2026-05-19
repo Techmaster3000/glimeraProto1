@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://nt5alitb46d5"]
+
+[ext_resource type="Texture2D" uid="uid://dfc83pm5hqos8" path="res://Textures/Sky Panorama/Panorama_Sky_17-512x512.png" id="1_7b2gm"]
+[ext_resource type="Script" uid="uid://dw8y6vf1lwabx" path="res://Streets/day_night.gd" id="2_wetts"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_3jxbn"]
+panorama = ExtResource("1_7b2gm")
+
+[sub_resource type="Sky" id="Sky_rwgd3"]
+sky_material = SubResource("PanoramaSkyMaterial_3jxbn")
+
+[sub_resource type="Environment" id="Environment_bi58s"]
+background_mode = 2
+sky = SubResource("Sky_rwgd3")
+sky_rotation = Vector3(0, 0, -1.5707964)
+ambient_light_source = 3
+sdfgi_use_occlusion = true
+glow_enabled = true
+glow_intensity = 0.1
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.005
+
+[node name="Environment" type="Node" unique_id=484110873]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2119075343]
+environment = SubResource("Environment_bi58s")
+
+[node name="SunContainer" type="Node3D" parent="." unique_id=1461919655]
+transform = Transform3D(4.3711385e-08, -0.9999999, -8.742278e-08, -0.9999999, -4.3711385e-08, 0, -3.8213705e-15, 8.742277e-08, -1, 0, 0, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SunContainer" unique_id=1019118454]
+transform = Transform3D(-4.3711395e-08, -8.568166e-08, -1.0000001, 0, -1.0000001, 8.5681684e-08, -1, -1.4210855e-14, 4.3711395e-08, -12.18256, 0.08687538, 1.0650333e-06)
+light_color = Color(1, 0.6156863, 0.5647059, 1)
+shadow_enabled = true
+
+[node name="DayNight" type="Node" parent="." unique_id=1245064596]
+script = ExtResource("2_wetts")

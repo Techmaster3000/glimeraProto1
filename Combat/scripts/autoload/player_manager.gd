@@ -3,6 +3,7 @@ extends Node
 #const SAVE_PATH: String = "user://player.tres"
 
 var data: PlayerData
+signal cameraswitch(toPlayer : bool, camera : Camera3D)
 
 # ── Graft index → weapon mapping ──────────────────────────────────────────────
 # Mirrors GraftPlayer.arm_graftables / leg_graftables — index 0 is the base limb.

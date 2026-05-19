@@ -29,13 +29,14 @@ func _ready():
 # STATE SWITCHING
 # -----------------
 
-func switch_world_scene(scene_name: Resource):
+func switch_world_scene(scene_name: String):
 	if overworld_container.get_child_count() > 0:
 		overworld_container.get_child(0).queue_free()
-	var newMap = scene_name.instantiate()
+	var newMap = load(scene_name).instantiate()
 	overworld_container.add_child(newMap)
 	current_overworld = newMap
 	overworld_container.show()
+	get_viewport().use_occlusion_culling = false
 	ui_scene.hide()
 
 
@@ -143,7 +144,7 @@ func _cleanup_battle():
 func from_main_menu_to_overworld():
 	transition1.playfade(func():
 		$CanvasLayer.show()
-		switch_world_scene(load("res://gli's_house.tscn"))
+		switch_world_scene("res://gli's_house.tscn")
 	)
 
 func from_overworld_to_battle(enemy_data: EnemyData = null):
@@ -164,7 +165,7 @@ func from_battle_to_overworld():
 			if menu_cam and char_cam:
 				)
 
-func transition_to_street(target_street: Resource, spawn_name: String):
+func transition_to_street(target_street: String, spawn_name: String):
 	transition1.playfade(func():
 		switch_world_scene(target_street)
 		var spawn = current_overworld.get_node(spawn_name)
