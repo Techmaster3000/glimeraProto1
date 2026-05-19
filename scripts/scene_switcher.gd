@@ -16,8 +16,9 @@ func _process(delta: float) -> void:
 			pauseInstance = pauseScene.instantiate()
 			canvas.add_child(pauseInstance)
 			GraftGlobals.menu_opened.emit()
-			_toggle_menu_camera(true)
 			get_tree().paused = true
+			_toggle_menu_camera(true)
+			#get_tree().paused = true
 			SFXPlayer.play_sfx(load("res://Sounds/SFX/STA_OPE_001.wav"))
 			
 
@@ -39,14 +40,21 @@ func _toggle_menu_camera(active: bool) -> void:
 			break
 
 	if player:
+		var pivot = player.get_node_or_null("CameraPivot")
+		if pivot:
+			pivot.menu_open = active
+		var menu_cam = player.get_node_or_null("MenuCamera")
+		var char_cam = player.get_node_or_null("CameraPivot/CharacterCam")
+	if player:
+		var pivot = player.get_node_or_null("CameraPivot")
+		if pivot:
+			pivot.menu_open = active
 		var menu_cam = player.get_node_or_null("MenuCamera")
 		var char_cam = player.get_node_or_null("CameraPivot/CharacterCam")
 		if menu_cam and char_cam:
 			if active:
-				char_cam.set_meta("original_transform", char_cam.global_transform)
-				char_cam.global_transform = menu_cam.global_transform
+				menu_cam.make_current()
 				if player.has_method("face_menu_camera"):
 					player.face_menu_camera()
 			else:
-				if char_cam.has_meta("original_transform"):
-					char_cam.global_transform = char_cam.get_meta("original_transform")
+				char_cam.make_current()

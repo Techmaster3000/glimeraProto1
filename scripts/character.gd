@@ -93,6 +93,9 @@ func apply_knockback(dir: Vector3, strength: float = 3.0, duration: float = 0.2)
 	knockback_velocity = dir * strength
 	knockback_time = duration
 
+func reset_model_rotation() -> void:
+	$"MAsked Gli".rotation.y = 0.0
+
 func face_menu_camera() -> void:
 	var menu_cam = get_node_or_null("MenuCamera")
 	if menu_cam:
