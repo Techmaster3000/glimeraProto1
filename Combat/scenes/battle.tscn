@@ -278,10 +278,10 @@ unique_name_in_owner = true
 transform = Transform3D(0.41304907, 0, -0.28176302, 0, 0.5, 0, 0.28176302, 0, 0.41304907, 5.214, -0.103043936, 3.405)
 script = ExtResource("6_r8c2t")
 
-[node name="Armature" parent="Enemy" index="0" unique_id=702117979]
+[node name="Armature" parent="Enemy" index="0" unique_id=582517151]
 transform = Transform3D(1, 0, 0, 0, 1, 7.5497894e-08, 0, -7.5497894e-08, 1, 0, 0, 0)
 
-[node name="Skeleton" parent="Enemy/Armature" index="0" unique_id=1853548626]
+[node name="Skeleton" parent="Enemy/Armature" index="0" unique_id=358456914]
 bones/0/position = Vector3(-0.19295849, 5.616861, 0.039618105)
 bones/0/rotation = Quaternion(-0.022635806, 0.008890023, -0.001056021, 0.99970376)
 bones/1/rotation = Quaternion(0.01116827, -0.004045971, 0.0038487185, 0.99992204)
@@ -308,7 +308,7 @@ bones/26/rotation = Quaternion(-0.023818854, 0.64443403, -0.76383644, -0.0262928
 bones/27/rotation = Quaternion(-5.8975763e-07, 1, 0.00012577094, 3.261923e-07)
 bones/28/position = Vector3(0.09396688, 0.35152736, 0.0076552075)
 
-[node name="AnimationPlayer" parent="Enemy" index="1" unique_id=793344220]
+[node name="AnimationPlayer" parent="Enemy" index="1" unique_id=149446388]
 libraries/ = SubResource("AnimationLibrary_7r0cw")
 autoplay = &"Idle Straight"
 

@@ -11,4 +11,4 @@ func _on_body_entered(body: Node3D) -> void:
 				ObjectiveManager.reveal_objective("find_climb")
 		
 		var game = get_tree().current_scene
-		game.transition_to_street(target_street, spawn_name)
+ 		game.transition_to_street(target_street, spawn_name)
