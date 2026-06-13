@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnk5wgcq2x7lt"
-path.s3tc="res://.godot/imported/Leather022_1K-PNG_Roughness4.png-48f4e76c2da000fe28d8f818121c5a77.s3tc.ctex"
-path.etc2="res://.godot/imported/Leather022_1K-PNG_Roughness4.png-48f4e76c2da000fe28d8f818121c5a77.etc2.ctex"
+path.s3tc="res://.godot/imported/Leather022_1K-PNG_Roughness4.png-937f4931ea22e36548363fc61feb2a37.s3tc.ctex"
+path.etc2="res://.godot/imported/Leather022_1K-PNG_Roughness4.png-937f4931ea22e36548363fc61feb2a37.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Leather022_1K-PNG_Roughness4.png"
-dest_files=["res://.godot/imported/Leather022_1K-PNG_Roughness4.png-48f4e76c2da000fe28d8f818121c5a77.s3tc.ctex", "res://.godot/imported/Leather022_1K-PNG_Roughness4.png-48f4e76c2da000fe28d8f818121c5a77.etc2.ctex"]
+source_file="res://Textures/Leather022_1K-PNG_Roughness4.png"
+dest_files=["res://.godot/imported/Leather022_1K-PNG_Roughness4.png-937f4931ea22e36548363fc61feb2a37.s3tc.ctex", "res://.godot/imported/Leather022_1K-PNG_Roughness4.png-937f4931ea22e36548363fc61feb2a37.etc2.ctex"]
 
 [params]
 

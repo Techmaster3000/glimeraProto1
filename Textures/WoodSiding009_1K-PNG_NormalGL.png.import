@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx4hfiwh5xb78"
-path.s3tc="res://.godot/imported/WoodSiding009_1K-PNG_NormalGL.png-0333470164886aa97b9ba016d1808605.s3tc.ctex"
-path.etc2="res://.godot/imported/WoodSiding009_1K-PNG_NormalGL.png-0333470164886aa97b9ba016d1808605.etc2.ctex"
+path.s3tc="res://.godot/imported/WoodSiding009_1K-PNG_NormalGL.png-3881ce36678dcc2818a2960d0397ae5d.s3tc.ctex"
+path.etc2="res://.godot/imported/WoodSiding009_1K-PNG_NormalGL.png-3881ce36678dcc2818a2960d0397ae5d.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/WoodSiding009_1K-PNG_NormalGL.png"
-dest_files=["res://.godot/imported/WoodSiding009_1K-PNG_NormalGL.png-0333470164886aa97b9ba016d1808605.s3tc.ctex", "res://.godot/imported/WoodSiding009_1K-PNG_NormalGL.png-0333470164886aa97b9ba016d1808605.etc2.ctex"]
+source_file="res://Textures/WoodSiding009_1K-PNG_NormalGL.png"
+dest_files=["res://.godot/imported/WoodSiding009_1K-PNG_NormalGL.png-3881ce36678dcc2818a2960d0397ae5d.s3tc.ctex", "res://.godot/imported/WoodSiding009_1K-PNG_NormalGL.png-3881ce36678dcc2818a2960d0397ae5d.etc2.ctex"]
 
 [params]
 

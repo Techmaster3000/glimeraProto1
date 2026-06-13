@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d53uhno2wodv"
-path.s3tc="res://.godot/imported/Bricks076A_1K-PNG_NormalGL3.png-7c1bae994ba2ac59c14a17756e61c17e.s3tc.ctex"
-path.etc2="res://.godot/imported/Bricks076A_1K-PNG_NormalGL3.png-7c1bae994ba2ac59c14a17756e61c17e.etc2.ctex"
+path.s3tc="res://.godot/imported/Bricks076A_1K-PNG_NormalGL3.png-8cec126785742a761bab5dbe516e0e9b.s3tc.ctex"
+path.etc2="res://.godot/imported/Bricks076A_1K-PNG_NormalGL3.png-8cec126785742a761bab5dbe516e0e9b.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Bricks076A_1K-PNG_NormalGL3.png"
-dest_files=["res://.godot/imported/Bricks076A_1K-PNG_NormalGL3.png-7c1bae994ba2ac59c14a17756e61c17e.s3tc.ctex", "res://.godot/imported/Bricks076A_1K-PNG_NormalGL3.png-7c1bae994ba2ac59c14a17756e61c17e.etc2.ctex"]
+source_file="res://Textures/Bricks076A_1K-PNG_NormalGL3.png"
+dest_files=["res://.godot/imported/Bricks076A_1K-PNG_NormalGL3.png-8cec126785742a761bab5dbe516e0e9b.s3tc.ctex", "res://.godot/imported/Bricks076A_1K-PNG_NormalGL3.png-8cec126785742a761bab5dbe516e0e9b.etc2.ctex"]
 
 [params]
 

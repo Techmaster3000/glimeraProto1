@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bk6j35s2kg42x"
-path.s3tc="res://.godot/imported/Ground048_1K-JPG_orm.png-93c558f50daecf0767ec5638b4af69c3.s3tc.ctex"
-path.etc2="res://.godot/imported/Ground048_1K-JPG_orm.png-93c558f50daecf0767ec5638b4af69c3.etc2.ctex"
+path.s3tc="res://.godot/imported/Ground048_1K-JPG_orm.png-e4cbbf792f0af5b4409f8a5df00579e7.s3tc.ctex"
+path.etc2="res://.godot/imported/Ground048_1K-JPG_orm.png-e4cbbf792f0af5b4409f8a5df00579e7.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Ground048_1K-JPG_orm.png"
-dest_files=["res://.godot/imported/Ground048_1K-JPG_orm.png-93c558f50daecf0767ec5638b4af69c3.s3tc.ctex", "res://.godot/imported/Ground048_1K-JPG_orm.png-93c558f50daecf0767ec5638b4af69c3.etc2.ctex"]
+source_file="res://Textures/Ground048_1K-JPG_orm.png"
+dest_files=["res://.godot/imported/Ground048_1K-JPG_orm.png-e4cbbf792f0af5b4409f8a5df00579e7.s3tc.ctex", "res://.godot/imported/Ground048_1K-JPG_orm.png-e4cbbf792f0af5b4409f8a5df00579e7.etc2.ctex"]
 
 [params]
 

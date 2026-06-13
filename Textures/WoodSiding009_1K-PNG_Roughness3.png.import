@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5asi2vfjk2tp"
-path.s3tc="res://.godot/imported/WoodSiding009_1K-PNG_Roughness3.png-879816194355f00089969c1757735da1.s3tc.ctex"
-path.etc2="res://.godot/imported/WoodSiding009_1K-PNG_Roughness3.png-879816194355f00089969c1757735da1.etc2.ctex"
+path.s3tc="res://.godot/imported/WoodSiding009_1K-PNG_Roughness3.png-04dfa420ac050ef8882a39a09b53f0d2.s3tc.ctex"
+path.etc2="res://.godot/imported/WoodSiding009_1K-PNG_Roughness3.png-04dfa420ac050ef8882a39a09b53f0d2.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/WoodSiding009_1K-PNG_Roughness3.png"
-dest_files=["res://.godot/imported/WoodSiding009_1K-PNG_Roughness3.png-879816194355f00089969c1757735da1.s3tc.ctex", "res://.godot/imported/WoodSiding009_1K-PNG_Roughness3.png-879816194355f00089969c1757735da1.etc2.ctex"]
+source_file="res://Textures/WoodSiding009_1K-PNG_Roughness3.png"
+dest_files=["res://.godot/imported/WoodSiding009_1K-PNG_Roughness3.png-04dfa420ac050ef8882a39a09b53f0d2.s3tc.ctex", "res://.godot/imported/WoodSiding009_1K-PNG_Roughness3.png-04dfa420ac050ef8882a39a09b53f0d2.etc2.ctex"]
 
 [params]
 

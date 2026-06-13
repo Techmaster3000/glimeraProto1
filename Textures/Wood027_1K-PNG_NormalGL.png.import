@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxwl1eckyk2qb"
-path.s3tc="res://.godot/imported/Wood027_1K-PNG_NormalGL.png-0976b5444bbae58f7b31365fed74d020.s3tc.ctex"
-path.etc2="res://.godot/imported/Wood027_1K-PNG_NormalGL.png-0976b5444bbae58f7b31365fed74d020.etc2.ctex"
+path.s3tc="res://.godot/imported/Wood027_1K-PNG_NormalGL.png-4392cbaa0dd2909d60e5a9bfc618e8b3.s3tc.ctex"
+path.etc2="res://.godot/imported/Wood027_1K-PNG_NormalGL.png-4392cbaa0dd2909d60e5a9bfc618e8b3.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Wood027_1K-PNG_NormalGL.png"
-dest_files=["res://.godot/imported/Wood027_1K-PNG_NormalGL.png-0976b5444bbae58f7b31365fed74d020.s3tc.ctex", "res://.godot/imported/Wood027_1K-PNG_NormalGL.png-0976b5444bbae58f7b31365fed74d020.etc2.ctex"]
+source_file="res://Textures/Wood027_1K-PNG_NormalGL.png"
+dest_files=["res://.godot/imported/Wood027_1K-PNG_NormalGL.png-4392cbaa0dd2909d60e5a9bfc618e8b3.s3tc.ctex", "res://.godot/imported/Wood027_1K-PNG_NormalGL.png-4392cbaa0dd2909d60e5a9bfc618e8b3.etc2.ctex"]
 
 [params]
 

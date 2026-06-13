@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gt6ape28efi"
-path.s3tc="res://.godot/imported/Paper003_1K-JPG_Roughness.png-8aa3b276ad17d1b27f2cffbd5eb605d4.s3tc.ctex"
-path.etc2="res://.godot/imported/Paper003_1K-JPG_Roughness.png-8aa3b276ad17d1b27f2cffbd5eb605d4.etc2.ctex"
+path.s3tc="res://.godot/imported/Paper003_1K-JPG_Roughness.png-54170ebed34e55ff807e8f7ffb137b20.s3tc.ctex"
+path.etc2="res://.godot/imported/Paper003_1K-JPG_Roughness.png-54170ebed34e55ff807e8f7ffb137b20.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Paper003_1K-JPG_Roughness.png"
-dest_files=["res://.godot/imported/Paper003_1K-JPG_Roughness.png-8aa3b276ad17d1b27f2cffbd5eb605d4.s3tc.ctex", "res://.godot/imported/Paper003_1K-JPG_Roughness.png-8aa3b276ad17d1b27f2cffbd5eb605d4.etc2.ctex"]
+source_file="res://Textures/Paper003_1K-JPG_Roughness.png"
+dest_files=["res://.godot/imported/Paper003_1K-JPG_Roughness.png-54170ebed34e55ff807e8f7ffb137b20.s3tc.ctex", "res://.godot/imported/Paper003_1K-JPG_Roughness.png-54170ebed34e55ff807e8f7ffb137b20.etc2.ctex"]
 
 [params]
 

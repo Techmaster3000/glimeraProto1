@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dka70sjhtf4n8"
-path.s3tc="res://.godot/imported/Rocks004_1K-JPG_orm.png-87bd002008b8e388dc68469ad3a5307a.s3tc.ctex"
-path.etc2="res://.godot/imported/Rocks004_1K-JPG_orm.png-87bd002008b8e388dc68469ad3a5307a.etc2.ctex"
+path.s3tc="res://.godot/imported/Rocks004_1K-JPG_orm.png-f306dfff61403ce2ec16a35cb757bf61.s3tc.ctex"
+path.etc2="res://.godot/imported/Rocks004_1K-JPG_orm.png-f306dfff61403ce2ec16a35cb757bf61.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Rocks004_1K-JPG_orm.png"
-dest_files=["res://.godot/imported/Rocks004_1K-JPG_orm.png-87bd002008b8e388dc68469ad3a5307a.s3tc.ctex", "res://.godot/imported/Rocks004_1K-JPG_orm.png-87bd002008b8e388dc68469ad3a5307a.etc2.ctex"]
+source_file="res://Textures/Rocks004_1K-JPG_orm.png"
+dest_files=["res://.godot/imported/Rocks004_1K-JPG_orm.png-f306dfff61403ce2ec16a35cb757bf61.s3tc.ctex", "res://.godot/imported/Rocks004_1K-JPG_orm.png-f306dfff61403ce2ec16a35cb757bf61.etc2.ctex"]
 
 [params]
 

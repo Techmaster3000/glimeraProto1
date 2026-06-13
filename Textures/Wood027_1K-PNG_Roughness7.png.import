@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx3d1r1kmmw6n"
-path.s3tc="res://.godot/imported/Wood027_1K-PNG_Roughness7.png-6f66e2ad3e2c04d31b5fc59c04684310.s3tc.ctex"
-path.etc2="res://.godot/imported/Wood027_1K-PNG_Roughness7.png-6f66e2ad3e2c04d31b5fc59c04684310.etc2.ctex"
+path.s3tc="res://.godot/imported/Wood027_1K-PNG_Roughness7.png-609d2e23fc98f55e01c469d28d0f459c.s3tc.ctex"
+path.etc2="res://.godot/imported/Wood027_1K-PNG_Roughness7.png-609d2e23fc98f55e01c469d28d0f459c.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Wood027_1K-PNG_Roughness7.png"
-dest_files=["res://.godot/imported/Wood027_1K-PNG_Roughness7.png-6f66e2ad3e2c04d31b5fc59c04684310.s3tc.ctex", "res://.godot/imported/Wood027_1K-PNG_Roughness7.png-6f66e2ad3e2c04d31b5fc59c04684310.etc2.ctex"]
+source_file="res://Textures/Wood027_1K-PNG_Roughness7.png"
+dest_files=["res://.godot/imported/Wood027_1K-PNG_Roughness7.png-609d2e23fc98f55e01c469d28d0f459c.s3tc.ctex", "res://.godot/imported/Wood027_1K-PNG_Roughness7.png-609d2e23fc98f55e01c469d28d0f459c.etc2.ctex"]
 
 [params]
 

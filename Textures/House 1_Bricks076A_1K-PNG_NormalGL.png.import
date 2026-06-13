@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://11xwomaq7nnb"
-path.s3tc="res://.godot/imported/House 1_Bricks076A_1K-PNG_NormalGL.png-fa009a34fbaf8a79048e2e29d8f622d5.s3tc.ctex"
-path.etc2="res://.godot/imported/House 1_Bricks076A_1K-PNG_NormalGL.png-fa009a34fbaf8a79048e2e29d8f622d5.etc2.ctex"
+path.s3tc="res://.godot/imported/House 1_Bricks076A_1K-PNG_NormalGL.png-07541bfd800bd7eec163b70e291ac7ed.s3tc.ctex"
+path.etc2="res://.godot/imported/House 1_Bricks076A_1K-PNG_NormalGL.png-07541bfd800bd7eec163b70e291ac7ed.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/House 1_Bricks076A_1K-PNG_NormalGL.png"
-dest_files=["res://.godot/imported/House 1_Bricks076A_1K-PNG_NormalGL.png-fa009a34fbaf8a79048e2e29d8f622d5.s3tc.ctex", "res://.godot/imported/House 1_Bricks076A_1K-PNG_NormalGL.png-fa009a34fbaf8a79048e2e29d8f622d5.etc2.ctex"]
+source_file="res://Textures/House 1_Bricks076A_1K-PNG_NormalGL.png"
+dest_files=["res://.godot/imported/House 1_Bricks076A_1K-PNG_NormalGL.png-07541bfd800bd7eec163b70e291ac7ed.s3tc.ctex", "res://.godot/imported/House 1_Bricks076A_1K-PNG_NormalGL.png-07541bfd800bd7eec163b70e291ac7ed.etc2.ctex"]
 
 [params]
 

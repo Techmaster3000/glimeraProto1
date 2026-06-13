@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnneded4v7deg"
-path.s3tc="res://.godot/imported/Asphalt031_1K-JPG_orm.png-7f742570c0759c1d6a246d900e4fce05.s3tc.ctex"
-path.etc2="res://.godot/imported/Asphalt031_1K-JPG_orm.png-7f742570c0759c1d6a246d900e4fce05.etc2.ctex"
+path.s3tc="res://.godot/imported/Asphalt031_1K-JPG_orm.png-fe27572a0a890267e3522ab0d9a9fa25.s3tc.ctex"
+path.etc2="res://.godot/imported/Asphalt031_1K-JPG_orm.png-fe27572a0a890267e3522ab0d9a9fa25.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Asphalt031_1K-JPG_orm.png"
-dest_files=["res://.godot/imported/Asphalt031_1K-JPG_orm.png-7f742570c0759c1d6a246d900e4fce05.s3tc.ctex", "res://.godot/imported/Asphalt031_1K-JPG_orm.png-7f742570c0759c1d6a246d900e4fce05.etc2.ctex"]
+source_file="res://Textures/Asphalt031_1K-JPG_orm.png"
+dest_files=["res://.godot/imported/Asphalt031_1K-JPG_orm.png-fe27572a0a890267e3522ab0d9a9fa25.s3tc.ctex", "res://.godot/imported/Asphalt031_1K-JPG_orm.png-fe27572a0a890267e3522ab0d9a9fa25.etc2.ctex"]
 
 [params]
 

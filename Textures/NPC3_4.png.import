@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://q0xx0xjs3d8f"
-path.s3tc="res://.godot/imported/NPC3_4.png-2c440b9cdd1ece9314acb8e3eaa3d570.s3tc.ctex"
-path.etc2="res://.godot/imported/NPC3_4.png-2c440b9cdd1ece9314acb8e3eaa3d570.etc2.ctex"
+path.s3tc="res://.godot/imported/NPC3_4.png-e423a0212925710475538e3752a53547.s3tc.ctex"
+path.etc2="res://.godot/imported/NPC3_4.png-e423a0212925710475538e3752a53547.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/NPC3_4.png"
-dest_files=["res://.godot/imported/NPC3_4.png-2c440b9cdd1ece9314acb8e3eaa3d570.s3tc.ctex", "res://.godot/imported/NPC3_4.png-2c440b9cdd1ece9314acb8e3eaa3d570.etc2.ctex"]
+source_file="res://Textures/NPC3_4.png"
+dest_files=["res://.godot/imported/NPC3_4.png-e423a0212925710475538e3752a53547.s3tc.ctex", "res://.godot/imported/NPC3_4.png-e423a0212925710475538e3752a53547.etc2.ctex"]
 
 [params]
 

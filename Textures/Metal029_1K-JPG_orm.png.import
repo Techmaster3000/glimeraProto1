@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://digccfd7ev83q"
-path.s3tc="res://.godot/imported/Metal029_1K-JPG_orm.png-4fc2d2fa407c3ef3410fc121167e6e34.s3tc.ctex"
-path.etc2="res://.godot/imported/Metal029_1K-JPG_orm.png-4fc2d2fa407c3ef3410fc121167e6e34.etc2.ctex"
+path.s3tc="res://.godot/imported/Metal029_1K-JPG_orm.png-7159f50dc5d7f9dc12820b3fd043d71b.s3tc.ctex"
+path.etc2="res://.godot/imported/Metal029_1K-JPG_orm.png-7159f50dc5d7f9dc12820b3fd043d71b.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Metal029_1K-JPG_orm.png"
-dest_files=["res://.godot/imported/Metal029_1K-JPG_orm.png-4fc2d2fa407c3ef3410fc121167e6e34.s3tc.ctex", "res://.godot/imported/Metal029_1K-JPG_orm.png-4fc2d2fa407c3ef3410fc121167e6e34.etc2.ctex"]
+source_file="res://Textures/Metal029_1K-JPG_orm.png"
+dest_files=["res://.godot/imported/Metal029_1K-JPG_orm.png-7159f50dc5d7f9dc12820b3fd043d71b.s3tc.ctex", "res://.godot/imported/Metal029_1K-JPG_orm.png-7159f50dc5d7f9dc12820b3fd043d71b.etc2.ctex"]
 
 [params]
 

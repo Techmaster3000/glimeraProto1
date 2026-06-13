@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nw2jggkdvm28"
-path.s3tc="res://.godot/imported/Bricks076A_1K-PNG_Roughness2.png-644c655cbd2afe4c1c74684f648f50a7.s3tc.ctex"
-path.etc2="res://.godot/imported/Bricks076A_1K-PNG_Roughness2.png-644c655cbd2afe4c1c74684f648f50a7.etc2.ctex"
+path.s3tc="res://.godot/imported/Bricks076A_1K-PNG_Roughness2.png-1ba0a1d873e9f41419ef81f7fdc73d48.s3tc.ctex"
+path.etc2="res://.godot/imported/Bricks076A_1K-PNG_Roughness2.png-1ba0a1d873e9f41419ef81f7fdc73d48.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Bricks076A_1K-PNG_Roughness2.png"
-dest_files=["res://.godot/imported/Bricks076A_1K-PNG_Roughness2.png-644c655cbd2afe4c1c74684f648f50a7.s3tc.ctex", "res://.godot/imported/Bricks076A_1K-PNG_Roughness2.png-644c655cbd2afe4c1c74684f648f50a7.etc2.ctex"]
+source_file="res://Textures/Bricks076A_1K-PNG_Roughness2.png"
+dest_files=["res://.godot/imported/Bricks076A_1K-PNG_Roughness2.png-1ba0a1d873e9f41419ef81f7fdc73d48.s3tc.ctex", "res://.godot/imported/Bricks076A_1K-PNG_Roughness2.png-1ba0a1d873e9f41419ef81f7fdc73d48.etc2.ctex"]
 
 [params]
 

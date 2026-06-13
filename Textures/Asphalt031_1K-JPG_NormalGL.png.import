@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chwrknbxsih0g"
-path.s3tc="res://.godot/imported/Asphalt031_1K-JPG_NormalGL.png-7304c904015954c2540dc983ffa3a03d.s3tc.ctex"
-path.etc2="res://.godot/imported/Asphalt031_1K-JPG_NormalGL.png-7304c904015954c2540dc983ffa3a03d.etc2.ctex"
+path.s3tc="res://.godot/imported/Asphalt031_1K-JPG_NormalGL.png-2eb6750b8fb6fdfb8318b91d1b7c1cb3.s3tc.ctex"
+path.etc2="res://.godot/imported/Asphalt031_1K-JPG_NormalGL.png-2eb6750b8fb6fdfb8318b91d1b7c1cb3.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Asphalt031_1K-JPG_NormalGL.png"
-dest_files=["res://.godot/imported/Asphalt031_1K-JPG_NormalGL.png-7304c904015954c2540dc983ffa3a03d.s3tc.ctex", "res://.godot/imported/Asphalt031_1K-JPG_NormalGL.png-7304c904015954c2540dc983ffa3a03d.etc2.ctex"]
+source_file="res://Textures/Asphalt031_1K-JPG_NormalGL.png"
+dest_files=["res://.godot/imported/Asphalt031_1K-JPG_NormalGL.png-2eb6750b8fb6fdfb8318b91d1b7c1cb3.s3tc.ctex", "res://.godot/imported/Asphalt031_1K-JPG_NormalGL.png-2eb6750b8fb6fdfb8318b91d1b7c1cb3.etc2.ctex"]
 
 [params]
 

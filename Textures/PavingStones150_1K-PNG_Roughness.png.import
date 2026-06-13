@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwe2hlqv5i45h"
-path.s3tc="res://.godot/imported/PavingStones150_1K-PNG_Roughness.png-62fad57fdbd5543a316ebed8c667ed7c.s3tc.ctex"
-path.etc2="res://.godot/imported/PavingStones150_1K-PNG_Roughness.png-62fad57fdbd5543a316ebed8c667ed7c.etc2.ctex"
+path.s3tc="res://.godot/imported/PavingStones150_1K-PNG_Roughness.png-30e0b7b53f7afd383554ba34b0f73b3f.s3tc.ctex"
+path.etc2="res://.godot/imported/PavingStones150_1K-PNG_Roughness.png-30e0b7b53f7afd383554ba34b0f73b3f.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/PavingStones150_1K-PNG_Roughness.png"
-dest_files=["res://.godot/imported/PavingStones150_1K-PNG_Roughness.png-62fad57fdbd5543a316ebed8c667ed7c.s3tc.ctex", "res://.godot/imported/PavingStones150_1K-PNG_Roughness.png-62fad57fdbd5543a316ebed8c667ed7c.etc2.ctex"]
+source_file="res://Textures/PavingStones150_1K-PNG_Roughness.png"
+dest_files=["res://.godot/imported/PavingStones150_1K-PNG_Roughness.png-30e0b7b53f7afd383554ba34b0f73b3f.s3tc.ctex", "res://.godot/imported/PavingStones150_1K-PNG_Roughness.png-30e0b7b53f7afd383554ba34b0f73b3f.etc2.ctex"]
 
 [params]
 

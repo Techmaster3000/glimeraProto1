@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2k1osecpwi1g"
-path.s3tc="res://.godot/imported/water_4_metallic.png-0b3bc18a2eafc233f8e39d4fc8f80081.s3tc.ctex"
-path.etc2="res://.godot/imported/water_4_metallic.png-0b3bc18a2eafc233f8e39d4fc8f80081.etc2.ctex"
+path.s3tc="res://.godot/imported/water_4_metallic.png-2603122d266869b99135cbc0cc1b062f.s3tc.ctex"
+path.etc2="res://.godot/imported/water_4_metallic.png-2603122d266869b99135cbc0cc1b062f.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/water_4_metallic.png"
-dest_files=["res://.godot/imported/water_4_metallic.png-0b3bc18a2eafc233f8e39d4fc8f80081.s3tc.ctex", "res://.godot/imported/water_4_metallic.png-0b3bc18a2eafc233f8e39d4fc8f80081.etc2.ctex"]
+source_file="res://Textures/water_4_metallic.png"
+dest_files=["res://.godot/imported/water_4_metallic.png-2603122d266869b99135cbc0cc1b062f.s3tc.ctex", "res://.godot/imported/water_4_metallic.png-2603122d266869b99135cbc0cc1b062f.etc2.ctex"]
 
 [params]
 

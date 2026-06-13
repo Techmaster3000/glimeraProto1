@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wgtg2e4eu4pk"
-path.s3tc="res://.godot/imported/water4_orm.png-c3dd362ee7a78252887a4a3118ac5e90.s3tc.ctex"
-path.etc2="res://.godot/imported/water4_orm.png-c3dd362ee7a78252887a4a3118ac5e90.etc2.ctex"
+path.s3tc="res://.godot/imported/water4_orm.png-35d152bb95fd98bacb94c583b155484d.s3tc.ctex"
+path.etc2="res://.godot/imported/water4_orm.png-35d152bb95fd98bacb94c583b155484d.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/water4_orm.png"
-dest_files=["res://.godot/imported/water4_orm.png-c3dd362ee7a78252887a4a3118ac5e90.s3tc.ctex", "res://.godot/imported/water4_orm.png-c3dd362ee7a78252887a4a3118ac5e90.etc2.ctex"]
+source_file="res://Textures/water4_orm.png"
+dest_files=["res://.godot/imported/water4_orm.png-35d152bb95fd98bacb94c583b155484d.s3tc.ctex", "res://.godot/imported/water4_orm.png-35d152bb95fd98bacb94c583b155484d.etc2.ctex"]
 
 [params]
 

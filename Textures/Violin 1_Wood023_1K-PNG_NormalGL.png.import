@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://co60i45gu2bi6"
-path.s3tc="res://.godot/imported/Violin 1_Wood023_1K-PNG_NormalGL.png-cca04cdf47d5a87833529308a6978228.s3tc.ctex"
-path.etc2="res://.godot/imported/Violin 1_Wood023_1K-PNG_NormalGL.png-cca04cdf47d5a87833529308a6978228.etc2.ctex"
+path.s3tc="res://.godot/imported/Violin 1_Wood023_1K-PNG_NormalGL.png-fef16d57f980722635675514c083a874.s3tc.ctex"
+path.etc2="res://.godot/imported/Violin 1_Wood023_1K-PNG_NormalGL.png-fef16d57f980722635675514c083a874.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Violin 1_Wood023_1K-PNG_NormalGL.png"
-dest_files=["res://.godot/imported/Violin 1_Wood023_1K-PNG_NormalGL.png-cca04cdf47d5a87833529308a6978228.s3tc.ctex", "res://.godot/imported/Violin 1_Wood023_1K-PNG_NormalGL.png-cca04cdf47d5a87833529308a6978228.etc2.ctex"]
+source_file="res://Textures/Violin 1_Wood023_1K-PNG_NormalGL.png"
+dest_files=["res://.godot/imported/Violin 1_Wood023_1K-PNG_NormalGL.png-fef16d57f980722635675514c083a874.s3tc.ctex", "res://.godot/imported/Violin 1_Wood023_1K-PNG_NormalGL.png-fef16d57f980722635675514c083a874.etc2.ctex"]
 
 [params]
 

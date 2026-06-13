@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c316xpsw0tc1s"
-path.s3tc="res://.godot/imported/PavingStones135_1K-JPG_orm.png-6d944e22bcb18d6cfc1d234084c53ff3.s3tc.ctex"
-path.etc2="res://.godot/imported/PavingStones135_1K-JPG_orm.png-6d944e22bcb18d6cfc1d234084c53ff3.etc2.ctex"
+path.s3tc="res://.godot/imported/PavingStones135_1K-JPG_orm.png-cf28446be884965209ef0f33404d5e27.s3tc.ctex"
+path.etc2="res://.godot/imported/PavingStones135_1K-JPG_orm.png-cf28446be884965209ef0f33404d5e27.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/PavingStones135_1K-JPG_orm.png"
-dest_files=["res://.godot/imported/PavingStones135_1K-JPG_orm.png-6d944e22bcb18d6cfc1d234084c53ff3.s3tc.ctex", "res://.godot/imported/PavingStones135_1K-JPG_orm.png-6d944e22bcb18d6cfc1d234084c53ff3.etc2.ctex"]
+source_file="res://Textures/PavingStones135_1K-JPG_orm.png"
+dest_files=["res://.godot/imported/PavingStones135_1K-JPG_orm.png-cf28446be884965209ef0f33404d5e27.s3tc.ctex", "res://.godot/imported/PavingStones135_1K-JPG_orm.png-cf28446be884965209ef0f33404d5e27.etc2.ctex"]
 
 [params]
 
