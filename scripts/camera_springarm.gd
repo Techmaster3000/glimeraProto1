@@ -58,6 +58,7 @@ func _process(delta: float) -> void:
 	# (e.g. coming back from a battle, where this node was process-disabled).
 	_update_mouse_mode()
 
+	# ── Controller look (polled, so scaled by delta) ──────────────────────────
 	if not _can_look():
 		return
 	var look := Input.get_vector("look_left", "look_right", "look_up", "look_down")
@@ -71,6 +72,7 @@ func _process(delta: float) -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if not _can_look():
 		return
+	# ── Mouse look (event delta is already frame-independent — no delta) ───────
 	if event is InputEventMouseMotion:
 		_apply_look(
 			event.relative.x * mouse_sensibility,
