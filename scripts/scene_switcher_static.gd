@@ -29,7 +29,8 @@ func toggle_menu() -> void:
 	if _is_open():
 		close_menu()
 	else:
-		open_menu()
+		if Dialogic.current_timeline == null:
+			open_menu()
 
 func open_menu() -> void:
 	if _is_open():
